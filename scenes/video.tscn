@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://dbpitusqi6c0o"]
+
+[ext_resource type="Script" uid="uid://6bhws1x0s1ie" path="res://scripts/video.gd" id="1_887ou"]
+[ext_resource type="Texture2D" uid="uid://uhuwe4x2uv20" path="res://assets/menu/img/EVA.png" id="2_m7b26"]
+[ext_resource type="FontFile" uid="uid://dwfncfar0s4c3" path="res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf" id="4_r1vu5"]
+[ext_resource type="AudioStream" uid="uid://76y8qofitnt8" path="res://assets/menu/audio/SFX/maquina de escribir.WAV" id="5_khwxl"]
+
+[sub_resource type="Environment" id="Environment_887ou"]
+background_mode = 3
+adjustment_enabled = true
+
+[node name="Video" type="Control" unique_id=315331956]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_887ou")
+
+[node name="Vaca" type="TextureRect" parent="." unique_id=539598258]
+light_mask = 2
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 651.0
+texture = ExtResource("2_m7b26")
+stretch_mode = 4
+
+[node name="Titlebox" type="VBoxContainer" parent="." unique_id=333921505]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 97.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Titlebox" unique_id=335584808]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_r1vu5")
+theme_override_font_sizes/font_size = 105
+text = "Video"
+horizontal_alignment = 1
+
+[node name="HoverSFX" type="AudioStreamPlayer" parent="." unique_id=1000699065]
+stream = ExtResource("5_khwxl")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1435002466]
+layout_mode = 0
+offset_left = 814.0
+offset_top = 338.0
+offset_right = 1111.0
+offset_bottom = 780.0
+theme_override_constants/separation = 12
+
+[node name="CheckFullscreen" type="CheckButton" parent="VBoxContainer" unique_id=1566660001]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_r1vu5")
+theme_override_font_sizes/font_size = 30
+text = "Pantalla completa"
+
+[node name="Bright" type="Label" parent="VBoxContainer" unique_id=1233403956]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_r1vu5")
+theme_override_font_sizes/font_size = 30
+text = "Brillo"
+horizontal_alignment = 1
+
+[node name="BrightSlider" type="HSlider" parent="VBoxContainer" unique_id=367880561]
+layout_mode = 2
+min_value = 0.5
+max_value = 2.0
+step = 0.1
+value = 1.0
+
+[node name="Contrast" type="Label" parent="VBoxContainer" unique_id=1158412104]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_r1vu5")
+theme_override_font_sizes/font_size = 30
+text = "Contraste"
+horizontal_alignment = 1
+
+[node name="ContrastSlider" type="HSlider" parent="VBoxContainer" unique_id=1279632054]
+layout_mode = 2
+min_value = 0.5
+max_value = 2.0
+step = 0.1
+value = 1.0
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=648576708]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_r1vu5")
+theme_override_font_sizes/font_size = 40
+text = "Atras"
+flat = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=424759454]
+environment = SubResource("Environment_887ou")
+
+[connection signal="toggled" from="VBoxContainer/CheckFullscreen" to="." method="_on_check_fullscreen_toggled"]
+[connection signal="value_changed" from="VBoxContainer/BrightSlider" to="." method="_on_BrightSlider_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/ContrastSlider" to="." method="_on_ContrastSlider_value_changed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

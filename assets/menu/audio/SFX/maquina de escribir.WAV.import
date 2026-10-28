@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://76y8qofitnt8"
+path="res://.godot/imported/maquina de escribir.WAV-947e0072bcb9c376f9b2f1b2856c8206.sample"
+
+[deps]
+
+source_file="res://assets/menu/audio/SFX/maquina de escribir.WAV"
+dest_files=["res://.godot/imported/maquina de escribir.WAV-947e0072bcb9c376f9b2f1b2856c8206.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

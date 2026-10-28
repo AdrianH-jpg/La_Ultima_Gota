@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://txoasnwfkepc"]
+
+[ext_resource type="Script" uid="uid://dmr7ul50y1h7t" path="res://scripts/escena_uno.gd" id="1_a35h6"]
+[ext_resource type="Texture2D" uid="uid://bc1qi7ugn6xw4" path="res://assets/Image/Matadero.jpeg" id="2_brm5a"]
+
+[node name="EscenaUno" type="Node2D" unique_id=1086005845]
+script = ExtResource("1_a35h6")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=1431524484]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -964.0
+offset_top = -540.0
+offset_right = 959.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_brm5a")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=9982643]
+
+[node name="SFXViento" type="AudioStreamPlayer" parent="." unique_id=515172286]
+
+[node name="SFXAves" type="AudioStreamPlayer" parent="." unique_id=1441753114]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=906528600]
+
+[node name="FadeRect" type="ColorRect" parent="CanvasLayer" unique_id=891386399]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -542.0
+offset_right = 961.0
+offset_bottom = 539.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.003921569)

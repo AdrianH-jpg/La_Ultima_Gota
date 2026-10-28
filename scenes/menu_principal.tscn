@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://d1ihp8mipcl1v"]
+
+[ext_resource type="Script" uid="uid://ceqjocsn1yx11" path="res://scripts/menu_principal.gd" id="1_iep14"]
+[ext_resource type="Texture2D" uid="uid://uhuwe4x2uv20" path="res://assets/menu/img/EVA.png" id="2_w5ui5"]
+[ext_resource type="FontFile" uid="uid://dwfncfar0s4c3" path="res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf" id="4_486ty"]
+[ext_resource type="AudioStream" uid="uid://76y8qofitnt8" path="res://assets/menu/audio/SFX/maquina de escribir.WAV" id="5_qcl6i"]
+[ext_resource type="AudioStream" uid="uid://bnegf7dyhg6q6" path="res://assets/menu/audio/SFX/VACA.WAV" id="6_nxt0m"]
+[ext_resource type="AudioStream" uid="uid://bdqr10glgbg4n" path="res://assets/sound/SFX_lluvia_bucle.mp3" id="6_qcl6i"]
+
+[sub_resource type="FontVariation" id="FontVariation_qcl6i"]
+base_font = ExtResource("4_486ty")
+variation_embolden = 0.52
+
+[sub_resource type="FontVariation" id="FontVariation_486ty"]
+base_font = ExtResource("4_486ty")
+variation_embolden = 0.52
+
+[sub_resource type="FontVariation" id="FontVariation_w5ui5"]
+base_font = ExtResource("4_486ty")
+variation_embolden = 0.52
+
+[sub_resource type="FontVariation" id="FontVariation_nxt0m"]
+base_font = ExtResource("4_486ty")
+variation_embolden = 0.52
+
+[node name="MenuPrincipal" type="Control" unique_id=922573290]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iep14")
+
+[node name="Vaca" type="TextureRect" parent="." unique_id=1445926923]
+light_mask = 2
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 651.0
+texture = ExtResource("2_w5ui5")
+stretch_mode = 4
+
+[node name="CapaEfectos" type="CanvasLayer" parent="." unique_id=2017895658]
+
+[node name="Oscuridad" type="ColorRect" parent="CapaEfectos" unique_id=80899897]
+offset_right = 1929.0
+offset_bottom = 1084.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Destello" type="ColorRect" parent="CapaEfectos" unique_id=638705924]
+offset_right = 1926.0
+offset_bottom = 1086.0
+mouse_filter = 2
+
+[node name="Titlebox" type="VBoxContainer" parent="." unique_id=1455151414]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 97.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Titlebox" unique_id=1900437678]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_486ty")
+theme_override_font_sizes/font_size = 105
+text = "  La Última Gota"
+
+[node name="MenuBox" type="VBoxContainer" parent="." unique_id=862967658]
+propagate_maximum_size = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -145.0
+offset_right = -648.0
+offset_bottom = 205.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="Play" type="Button" parent="MenuBox" unique_id=44411773]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.28118658, 0.2811869, 0.28118753, 1)
+theme_override_fonts/font = SubResource("FontVariation_qcl6i")
+theme_override_font_sizes/font_size = 48
+text = "JUGAR"
+flat = true
+
+[node name="Options" type="Button" parent="MenuBox" unique_id=2044197519]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
+theme_override_fonts/font = SubResource("FontVariation_486ty")
+theme_override_font_sizes/font_size = 48
+text = "OPCIONES"
+flat = true
+
+[node name="Credits" type="Button" parent="MenuBox" unique_id=938540043]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
+theme_override_fonts/font = SubResource("FontVariation_w5ui5")
+theme_override_font_sizes/font_size = 48
+text = "CRÉDITOS"
+flat = true
+
+[node name="Salir" type="Button" parent="MenuBox" unique_id=1941246181]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
+theme_override_fonts/font = SubResource("FontVariation_nxt0m")
+theme_override_font_sizes/font_size = 48
+text = "SALIR"
+flat = true
+
+[node name="HoverSFX" type="AudioStreamPlayer" parent="." unique_id=191888745]
+stream = ExtResource("5_qcl6i")
+
+[node name="PlaySFX" type="AudioStreamPlayer" parent="." unique_id=1796687486]
+stream = ExtResource("6_nxt0m")
+
+[node name="MenuSFX" type="AudioStreamPlayer" parent="." unique_id=956386611]
+stream = ExtResource("6_qcl6i")
+volume_db = -5.0
+autoplay = true
+
+[connection signal="mouse_entered" from="MenuBox/Play" to="." method="_on_play_mouse_entered"]
+[connection signal="mouse_exited" from="MenuBox/Play" to="." method="_on_play_mouse_exited"]
+[connection signal="pressed" from="MenuBox/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MenuBox/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MenuBox/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="MenuBox/Salir" to="." method="_on_salir_pressed"]
