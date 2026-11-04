@@ -6,11 +6,18 @@ extends Control
 @onready var oscuridad: ColorRect = $CapaEfectos/Oscuridad
 @onready var destello: ColorRect = $CapaEfectos/Destello
 
+# acceso al rasholaser
+@onready var rayo: VideoStreamPlayer = $Rayo
+@onready var timer_rayo: Timer = $TimerRayo
+
 @onready var bus_index = AudioServer.get_bus_index("Music")
 @onready var Hover_SFX = $HoverSFX
 @onready var Play_SFX = $PlaySFX
 @onready var music = $MenuSFX
 func _ready():
+	timer_rayo.start(2.0)
+	
+	
 	# Estado inicial: todo negro, sin destello, y sin poder clickear los botones
 	oscuridad.color = Color.BLACK
 	oscuridad.modulate.a = 1.0
@@ -129,4 +136,30 @@ func _revelar_imagen() -> void:
 	oscuridad.modulate.a = 0.0
 	oscuridad.mouse_filter = Control.MOUSE_FILTER_IGNORE  # ya se pueden usar los botones
  
-	
+func _activar_rayo() -> void:
+	rayo.show()
+	rayo.play()
+
+
+func _programar_rayo() -> void:
+	timer_rayo.start(randf_range(02.0, 10.0))
+
+
+func _on_timer_rayo_timeout() -> void:
+	_activar_rayo()
+
+
+func _on_rayo_finished() -> void:
+	var transicion = create_tween()
+
+	transicion.tween_property(rayo, "modulate:a", 0.0, 0.8) \
+		.set_trans(Tween.TRANS_SINE) \
+		.set_ease(Tween.EASE_OUT)
+
+	await transicion.finished
+
+	rayo.hide()
+	rayo.stop()
+	rayo.modulate.a = 1.0
+
+	_programar_rayo()

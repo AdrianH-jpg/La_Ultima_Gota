@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://ceqjocsn1yx11" path="res://scripts/menu_principal.gd" id="1_iep14"]
 [ext_resource type="Texture2D" uid="uid://uhuwe4x2uv20" path="res://assets/menu/img/EVA.png" id="2_w5ui5"]
+[ext_resource type="VideoStream" uid="uid://bre1bjl7squ3s" path="res://assets/video/EvaMenu.ogv" id="3_nxt0m"]
 [ext_resource type="FontFile" uid="uid://dwfncfar0s4c3" path="res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf" id="4_486ty"]
+[ext_resource type="VideoStream" uid="uid://okkfb27dspem" path="res://assets/video/Rayo.ogv" id="5_2xgxd"]
 [ext_resource type="AudioStream" uid="uid://76y8qofitnt8" path="res://assets/menu/audio/SFX/maquina de escribir.WAV" id="5_qcl6i"]
 [ext_resource type="AudioStream" uid="uid://bnegf7dyhg6q6" path="res://assets/menu/audio/SFX/VACA.WAV" id="6_nxt0m"]
 [ext_resource type="AudioStream" uid="uid://bdqr10glgbg4n" path="res://assets/sound/SFX_lluvia_bucle.mp3" id="6_qcl6i"]
@@ -33,12 +35,23 @@ grow_vertical = 2
 script = ExtResource("1_iep14")
 
 [node name="Vaca" type="TextureRect" parent="." unique_id=1445926923]
+visible = false
 light_mask = 2
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 651.0
 texture = ExtResource("2_w5ui5")
 stretch_mode = 4
+
+[node name="EvaMenu" type="VideoStreamPlayer" parent="." unique_id=2036674944]
+layout_mode = 0
+offset_left = -3.0
+offset_right = 1929.0
+offset_bottom = 1087.0
+stream = ExtResource("3_nxt0m")
+autoplay = true
+expand = true
+loop = true
 
 [node name="CapaEfectos" type="CanvasLayer" parent="." unique_id=2017895658]
 
@@ -117,6 +130,18 @@ theme_override_font_sizes/font_size = 48
 text = "SALIR"
 flat = true
 
+[node name="Rayo" type="VideoStreamPlayer" parent="." unique_id=1296247061]
+visible = false
+layout_mode = 0
+offset_left = -7.0
+offset_top = -10.0
+offset_right = 1930.0
+offset_bottom = 1093.0
+mouse_filter = 2
+stream = ExtResource("5_2xgxd")
+speed_scale = 0.7
+expand = true
+
 [node name="HoverSFX" type="AudioStreamPlayer" parent="." unique_id=191888745]
 stream = ExtResource("5_qcl6i")
 
@@ -128,9 +153,14 @@ stream = ExtResource("6_qcl6i")
 volume_db = -5.0
 autoplay = true
 
+[node name="TimerRayo" type="Timer" parent="." unique_id=1431057795]
+one_shot = true
+
 [connection signal="mouse_entered" from="MenuBox/Play" to="." method="_on_play_mouse_entered"]
 [connection signal="mouse_exited" from="MenuBox/Play" to="." method="_on_play_mouse_exited"]
 [connection signal="pressed" from="MenuBox/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MenuBox/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="MenuBox/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="MenuBox/Salir" to="." method="_on_salir_pressed"]
+[connection signal="finished" from="Rayo" to="." method="_on_rayo_finished"]
+[connection signal="timeout" from="TimerRayo" to="." method="_on_timer_rayo_timeout"]
