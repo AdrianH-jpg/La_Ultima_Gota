@@ -1,6 +1,7 @@
+GPUParticles2D
+ColorRect
 Timer
 VideoStreamPlayer
-ColorRect
 CanvasLayer
 AudioStreamPlayer
 AudioStreamPlayer2D
@@ -12,4 +13,3 @@ Sprite2D
 CollisionShape2D
 Area2D
 TextureButton
-Node

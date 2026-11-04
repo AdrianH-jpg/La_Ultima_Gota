@@ -1,5 +1,5 @@
 074be9f7e871dfbc28f549d432fdadac
-::res://::1793775378
+::res://::1793781495
 default_bus_layout.tres::AudioBusLayout::4609484418081704599::1793775115::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::5335535523962611770::1793775115::1793775380::1::::<><><>0<>0<>b2eb2fb96a022b516b31d14895e14402<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 Options.gd::GDScript::1096674236176475782::1793775115::0::1::::<>Node<><>0<>0<><>::
@@ -21,7 +21,7 @@ plugin.gd::GDScript::3484415935520294050::1793775115::0::1::::DMPlugin<>EditorPl
 settings.gd::GDScript::5108079527952811623::1793775115::0::1::::DMSettings<>Node<><>0<>1<><>::
 test_scene.gd::GDScript::7098965565189014022::1793775115::0::1::::BaseDialogueTestScene<>Node2D<><>0<>0<><>::
 test_scene.tscn::PackedScene::1416400481679934567::1793775115::0::1::::<><><>0<>0<><>::uid://c8e16qdgu40wo::::res://addons/dialogue_manager/test_scene.gd
-::res://addons/dialogue_manager/assets/::1793775115
+::res://addons/dialogue_manager/assets/::1793775381
 cue.svg::CompressedTexture2D::8984212286236488153::1793775115::1793775381::1::::<><><>0<>0<>cc530c195f5450e8abddf8b55f4fe3a4<>res://.godot/imported/cue.svg-9417a7473d6bdedbede8aaea1abc9540.ctex::
 icon.svg::CompressedTexture2D::9148339284877624195::1793775115::1793775381::1::::<><><>0<>0<>b9cd01d47b7432b7516dc9b23d8cf543<>res://.godot/imported/icon.svg-17eb5d3e2a3cfbe59852220758c5b7bd.ctex::
 logo.svg::CompressedTexture2D::5429062918046365927::1793775115::1793775381::1::::<><><>0<>0<>c25328fb4554e8314f941de0820bff60<>res://.godot/imported/logo.svg-f01e5595358a81255be3ce1c43f31397.ctex::
@@ -81,25 +81,25 @@ uk.po::Translation::-1::1793775115::0::1::::<><><>0<>0<><>::
 zh.po::Translation::-1::1793775115::0::1::::<><><>0<>0<><>::
 zh_TW.po::Translation::-1::1793775115::0::1::::<><><>0<>0<><>::
 ::res://addons/dialogue_manager/nodes/::1793775115
-::res://addons/dialogue_manager/nodes/actionable/::1793775115
+::res://addons/dialogue_manager/nodes/actionable/::1793775381
 dialogue_actionable_2d.gd::GDScript::5901237711912492118::1793775115::0::1::::DialogueActionable2D<>Area2D<><>0<>1<><>::
 dialogue_actionable_2d.svg::CompressedTexture2D::633639466343336200::1793775115::1793775381::1::::<><><>0<>0<>f0551305132ff8090d6a0c95b93639ed<>res://.godot/imported/dialogue_actionable_2d.svg-fab4e58d6b3980b100fb8a5494b4d5cb.ctex::
 dialogue_actionable_3d.gd::GDScript::6903975539224856803::1793775115::0::1::::DialogueActionable3D<>Area3D<><>0<>1<><>::
 dialogue_actionable_3d.svg::CompressedTexture2D::8244189379320439736::1793775115::1793775381::1::::<><><>0<>0<>362957bfbec1b11e38bcd98d1fa0a0e9<>res://.godot/imported/dialogue_actionable_3d.svg-66fe4924d1964b29285ae978ab731ec3.ctex::
-::res://addons/dialogue_manager/nodes/context/::1793775115
+::res://addons/dialogue_manager/nodes/context/::1793775381
 dialogue_state_context.gd::GDScript::5042899489950419202::1793775115::0::1::::DialogueStateContext<>Node<><>0<>1<><>::
 dialogue_state_context.svg::CompressedTexture2D::6724885804837281750::1793775115::1793775381::1::::<><><>0<>0<>d5d7708b112b458fb993ac55a3447072<>res://.godot/imported/dialogue_state_context.svg-767b17bec3f66ee3adfc460e2805a08f.ctex::
-::res://addons/dialogue_manager/nodes/dialogue_label/::1793775115
+::res://addons/dialogue_manager/nodes/dialogue_label/::1793775381
 DialogueLabel.tscn::PackedScene::6771929106479827130::1793775115::0::1::::<><><>0<>0<><>::uid://b8beyexrpj6n7::::res://addons/dialogue_manager/nodes/dialogue_label/DialogueLabel.cs
 dialogue_label.gd::GDScript::480611383085669467::1793775115::0::1::::DialogueLabel<>RichTextLabel<><>0<>1<><>::
 dialogue_label.svg::CompressedTexture2D::1316149482825896921::1793775115::1793775381::1::::<><><>0<>0<>305a03116c2781451b4adbf0da15d5f0<>res://.godot/imported/dialogue_label.svg-d4dcce28fb3dfdb414d1a2c4579fb6a5.ctex::
 dialogue_label.tscn::PackedScene::5518490004210093266::1793775115::0::1::::<><><>0<>0<><>::uid://g32um0mltv5d::::res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.gd
-::res://addons/dialogue_manager/nodes/marker/::1793775115
+::res://addons/dialogue_manager/nodes/marker/::1793775381
 dialogue_marker_2d.gd::GDScript::6399861528730054688::1793775115::0::1::::DialogueMarker2D<>Marker2D<><>0<>0<><>::
 dialogue_marker_2d.svg::CompressedTexture2D::5360687104023422902::1793775115::1793775381::1::::<><><>0<>0<>6ed55bf7cd4cc215a10c2e9db5a017ec<>res://.godot/imported/dialogue_marker_2d.svg-1eedb01d2a05819be5ce0e675c93eeab.ctex::
 dialogue_marker_3d.gd::GDScript::2522360685604519171::1793775115::0::1::::DialogueMarker3D<>Marker3D<><>0<>0<><>::
 dialogue_marker_3d.svg::CompressedTexture2D::3423169967588786959::1793775115::1793775381::1::::<><><>0<>0<>2534418184a483411aa73fe898a88749<>res://.godot/imported/dialogue_marker_3d.svg-f68ab9ede59096854a7c6ee123dd8e4e.ctex::
-::res://addons/dialogue_manager/nodes/responses_menu/::1793775115
+::res://addons/dialogue_manager/nodes/responses_menu/::1793775381
 dialogue_responses_menu.gd::GDScript::2520211531407682507::1793775115::0::1::::DialogueResponsesMenu<>Container<><>0<>0<><>::
 dialogue_responses_menu.svg::CompressedTexture2D::8371359403825774630::1793775115::1793775381::1::::<><><>0<>0<>7271fe6fc4db607ec089aaa1696202d7<>res://.godot/imported/dialogue_responses_menu.svg-c2f1aeac68c19756dc5732e31dba2439.ctex::
 ::res://addons/dialogue_manager/utilities/::1793775115
@@ -116,60 +116,70 @@ find_in_dialogue_view.gd::GDScript::1182765515527006779::1793775115::0::1::::<>P
 find_in_dialogue_view.tscn::PackedScene::1783514634430556025::1793775115::0::1::::<><><>0<>0<><>::uid://q368fmxxa8sd::::res://addons/dialogue_manager/views/find_in_dialogue_view.gd
 main_view.gd::GDScript::5365867961863611872::1793775115::0::1::::<>Control<><>0<>1<><>::
 main_view.tscn::PackedScene::4884668666408697448::1793775115::0::1::::<><><>0<>0<><>::uid://cipjcc7bkh1pc::::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/cue_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>uid://klpiq4tk3t7a::::res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://s41qxl30184y::::res://addons/dialogue_manager/components/blank_slate.tscn
-::res://assets/::1793775115
-zai_OlivettiLettera22Typewriter.ttf::FontFile::5950544326307603093::1793775115::1793775380::1::::<><><>0<>0<>aaaeb0244a9a1ea1e8f58f4ad4f485fc<>res://.godot/imported/zai_OlivettiLettera22Typewriter.ttf-be7939e251e369e613a66afead6db7c6.fontdata::
-::res://assets/Image/::1793775115
+::res://assets/::1793783496
+::res://assets/fonts/::1793781496
+GARA.TTF::FontFile::9092095278885114651::1790748539::1793781496::1::::<><><>0<>0<>ca3e6870465767dea7e169abb73e93a8<>res://.godot/imported/GARA.TTF-e24ea28be7804207e8c8342f30df6f8b.fontdata::
+GARABD.TTF::FontFile::1465556686547969862::1790748539::1793781496::1::::<><><>0<>0<>803e07e502dc930e6313aecc05e35552<>res://.godot/imported/GARABD.TTF-8bdafade6d54cd62b3f3875da4c4a34d.fontdata::
+GARAIT.TTF::FontFile::4990850768427500045::1790748539::1793781496::1::::<><><>0<>0<>a393dbcd686724ca71bb0600b8a3ea50<>res://.godot/imported/GARAIT.TTF-844ea0587a470f1ead8b478f1b9ebc8f.fontdata::
+speltalefont-demo-regular.otf::FontFile::316057417781132102::1700833332::1793781496::1::::<><><>0<>0<>a3b37dcc54e27d9917b38569188b2344<>res://.godot/imported/speltalefont-demo-regular.otf-84f4484d910e53858b7b8e5d06da9948.fontdata::
+zai_OlivettiLettera22Typewriter.ttf::FontFile::5950544326307603093::1793775115::1793781496::1::::<><><>0<>0<>6be27cdc5d276c70cdb7c55667ace185<>res://.godot/imported/zai_OlivettiLettera22Typewriter.ttf-2a94fdf744538c8de84e1d5922290fa5.fontdata::
+::res://assets/Image/::1793775381
 Matadero.jpeg::CompressedTexture2D::2581459662744746221::1793775115::1793775381::1::::<><><>0<>0<>d808ab175bebaba0f9376357746b7a71<>res://.godot/imported/Matadero.jpeg-b35cd0a4fb369d4e7eafc791e1fd33ef.ctex::
 Oficina.jpg::CompressedTexture2D::1201887406190660926::1793775115::1793775381::1::::<><><>0<>0<>52d24ff8736589233ccc9d97ec780c5c<>res://.godot/imported/Oficina.jpg-8f945c9d6569ef1f2e69ccb9e47bb511.ctex::
 telegrama.png::CompressedTexture2D::7546447591147101647::1793775115::1793775381::1::::<><><>0<>0<>f89a52497e357b4d1385c991f8e0762e<>res://.godot/imported/telegrama.png-5ed06a04b6dfcadae8d0b909deb04c27.ctex::
-::res://assets/menu/::1793775115
+::res://assets/menu/::1793775381
 COWnoEYE.png::CompressedTexture2D::3579334801436643746::1793775115::1793775381::1::::<><><>0<>0<>afa57a2317dfb5c6e4d35daece10b2c3<>res://.godot/imported/COWnoEYE.png-2e9a378f787ae178a6058e609715d645.ctex::
 cowPNG.png::CompressedTexture2D::4766897385862056811::1793775115::1793775381::1::::<><><>0<>0<>9680b4f78c863adf3bb89061071ee680<>res://.godot/imported/cowPNG.png-bcadba76a2c762fb5a4a79d5d8e6067f.ctex::
 fondoOJO.png::CompressedTexture2D::7969983806577143533::1793775115::1793775380::1::::<><><>0<>0<>3b798c8228ebde05b26a607b3af57d74<>res://.godot/imported/fondoOJO.png-3131c7db8dde59312d121c68d1792c10.ctex::
 ojoCOWpng2.png::CompressedTexture2D::590895228478713994::1793775115::1793775380::1::::<><><>0<>0<>62d8c15c9a04cace05ad443e6d0b145a<>res://.godot/imported/ojoCOWpng2.png-54956597457009c0afa40a2f9fafd79c.ctex::
 ojoCOWpng.png::CompressedTexture2D::1011614889156497729::1793775115::1793775381::1::::<><><>0<>0<>7441393dda860b270c49118f9acbd99d<>res://.godot/imported/ojoCOWpng.png-af038dfd1f177c37a5606b375d694659.ctex::
 ::res://assets/menu/audio/::1793775115
-::res://assets/menu/audio/Music/::1793775115
+::res://assets/menu/audio/Music/::1793775380
 Destellos de otra dimension.ogg::AudioStreamOggVorbis::3820783301696301105::1793775115::1793775380::1::::<><><>0<>0<>6515c784d8eb8c1b9248af3840251b43<>res://.godot/imported/Destellos de otra dimension.ogg-f1d36654740d9784eaabcb6df67b852a.oggvorbisstr::
-::res://assets/menu/audio/SFX/::1793775115
+::res://assets/menu/audio/SFX/::1793775381
 maquina de escribir.WAV::AudioStreamWAV::2311555708057640467::1793775115::1793775381::1::::<><><>0<>0<>37e18535b82ac4282dfdbf2642c9db8d<>res://.godot/imported/maquina de escribir.WAV-947e0072bcb9c376f9b2f1b2856c8206.sample::
 maquina termina 2.WAV::AudioStreamWAV::2092162445039838527::1793775115::1793775381::1::::<><><>0<>0<>635c86ace407863dd04892c9b3d2d2f6<>res://.godot/imported/maquina termina 2.WAV-1d470d9073944301bb37c3ea4975231e.sample::
 maquina termina.WAV::AudioStreamWAV::4575168577998691500::1793775115::1793775381::1::::<><><>0<>0<>ec88f63db74a62cb1304bc790a3f7d98<>res://.godot/imported/maquina termina.WAV-dcc1e0afac643fc093bea332b5e82144.sample::
 VACA.WAV::AudioStreamWAV::3307508079411579035::1793775115::1793775381::1::::<><><>0<>0<>556853f168285c45d60ae6183bdba53b<>res://.godot/imported/VACA.WAV-aa570943a6f1c6ae53399c403afeb3f2.sample::
-::res://assets/menu/fonts/::1793775115
+::res://assets/menu/fonts/::1793775380
 zai_OlivettiLettera22Typewriter.ttf::FontFile::8714531655803390740::1793775115::1793775380::1::::<><><>0<>0<>9fb7459ca90ea7ae368f1a1779c95f7c<>res://.godot/imported/zai_OlivettiLettera22Typewriter.ttf-510f38f61e9f9835b9bf133010c64b90.fontdata::
-::res://assets/menu/img/::1793775115
+::res://assets/menu/img/::1793775381
 COWnoEYE.png::CompressedTexture2D::3579334801436643746::1793775115::1793775381::1::::<><><>0<>0<>a381a962cd537f99827a24b1db508185<>res://.godot/imported/COWnoEYE.png-714a72bc567b10311f945d46a093e957.ctex::
 cowPNG.png::CompressedTexture2D::4766897385862056811::1793775115::1793775381::1::::<><><>0<>0<>77eab93000d5f0605a5087a83c96afac<>res://.godot/imported/cowPNG.png-8aa3921b866a9cc5dd81217ae7e4f593.ctex::
 EVA.png::CompressedTexture2D::1419481400334938867::1793775115::1793775381::1::::<><><>0<>0<>069f3df1aad567aada63cc9d56ea0b59<>res://.godot/imported/EVA.png-602fa6e9f324dad90bac273a86bd02f0.ctex::
 fondoOJO.png::CompressedTexture2D::7969983806577143533::1793775115::1793775380::1::::<><><>0<>0<>3cfa1c26a15903e156f9a49687d6dff4<>res://.godot/imported/fondoOJO.png-1fb36a5e4a64af83eeac47bd86af22c0.ctex::
 ojoCOWpng2.png::CompressedTexture2D::590895228478713994::1793775115::1793775380::1::::<><><>0<>0<>b1fde031b379398c3ea3e12d54d48d52<>res://.godot/imported/ojoCOWpng2.png-e1137d1e732309b845d5c3fa43d4081c.ctex::
 ojoCOWpng.png::CompressedTexture2D::1011614889156497729::1793775115::1793775381::1::::<><><>0<>0<>08157d29d04fc6142edfc5a1a639e7b6<>res://.godot/imported/ojoCOWpng.png-0c31f16f495976911c6fac2cdc36e5b1.ctex::
-::res://assets/sound/::1793775115
+::res://assets/sound/::1793775381
 logo.wav::AudioStreamWAV::6817933332607677536::1793775115::1793775381::1::::<><><>0<>0<>33c37ea8888ec11ed1e22fc9556d1225<>res://.godot/imported/logo.wav-c68cc251391f1b2a2c8505092b0f28e5.sample::
 SFX_lluvia.wav::AudioStreamWAV::5257068558993013351::1793775115::1793775381::1::::<><><>0<>0<>07cd5705414aaecc3934f85a880e24cd<>res://.godot/imported/SFX_lluvia.wav-55a380331befe050d09ee918ec19b052.sample::
 SFX_lluvia_bucle.mp3::AudioStreamMP3::2631097201051146823::1793775115::1793775380::1::::<><><>0<>0<>49cfb7117ffa88d66ad91f855843610f<>res://.godot/imported/SFX_lluvia_bucle.mp3-adba96f83fed343b065829544ef09eb1.mp3str::
-::res://assets/video/::1793775115
+::res://assets/textures/::1793783512
+gotaTEXTURE.png::CompressedTexture2D::2180504535831343548::1793783261::1793783517::1::::<><><>0<>0<>d44cf3852202ecc560ca6f52eb0d3461<>res://.godot/imported/gotaTEXTURE.png-65da4076e3309970eca57ec587f99b9a.ctex::
+::res://assets/video/::1793778213
+EvaMenu.ogv::VideoStreamTheora::3589469455343364090::1793777906::0::1::::<><><>0<>0<><>::
 logito.ogv::VideoStreamTheora::5880707496371256948::1793775115::0::1::::<><><>0<>0<><>::
-::res://dialogue/::1793775115
+Rayo.ogv::VideoStreamTheora::1003903783061977168::1793777035::0::1::::<><><>0<>0<><>::
+::res://dialogue/::1793775381
 actoUno.dialogue::Resource/DialogueResource::4311075499016502700::1793775115::1793775381::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>ccbc9fe2f1362a2a4e09c4413f79a422<>res://.godot/imported/actoUno.dialogue-958f7874c64d13e6190ca0feb9b19f5b.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 escena_1.dialogue::Resource/DialogueResource::7670103236786470046::1793775115::1793775381::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>d7352c609e8c404fb400f14e3bfae1d3<>res://.godot/imported/escena_1.dialogue-b6c6483b191ef7fc7a8350ac33c2fb5d.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 new_style_box_flat.tres::StyleBoxFlat::3589957398121641421::1793775115::0::1::::<><><>0<>0<><>::
 ::res://dialogue/scene_dialogue/::1793775115
 balloon.gd::GDScript::5204834151406439186::1793775115::0::1::::<>CanvasLayer<><>0<>0<><>::
 balloon.tscn::PackedScene::7657683933328883502::1793775115::0::1::::<><><>0<>0<><>::uid://cgfi4f5k51r75::::res://dialogue/scene_dialogue/balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.tscn<>uid://brfacrmrmvkp6::::res://dialogue/new_style_box_flat.tres<>uid://bb52rsfwhkxbn::::res://addons/dialogue_manager/nodes/responses_menu/dialogue_responses_menu.gd
-::res://scenes/::1793775115
+::res://scenes/::1793783030
 ActoUno.tscn::PackedScene::4890062394239858011::1793775115::0::1::::<><><>0<>0<><>::uid://51a72n8fjwaa::::res://scripts/acto_uno.gd<>uid://dfrs5iaecl0k6::::res://assets/Image/telegrama.png<>uid://byrnpr7d0vprj::::res://scenes/click_telegrama.gd<>uid://b2ok1v4d8kqoq::::res://dialogue/actoUno.dialogue
 click_telegrama.gd::GDScript::4106864403140683679::1793775115::0::1::::<>Area2D<><>0<>0<><>::
 credits.tscn::PackedScene::931230134161938729::1793775115::0::1::::<><><>0<>0<><>::uid://ceqjocsn1yx11::::res://scripts/menu_principal.gd<>uid://uhuwe4x2uv20::::res://assets/menu/img/EVA.png<>uid://dwfncfar0s4c3::::res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf<>uid://76y8qofitnt8::::res://assets/menu/audio/SFX/maquina de escribir.WAV
 escena_uno.tscn::PackedScene::1381919721874139824::1793775115::0::1::::<><><>0<>0<><>::uid://dmr7ul50y1h7t::::res://scripts/escena_uno.gd<>uid://bc1qi7ugn6xw4::::res://assets/Image/Matadero.jpeg
-menu_principal.tscn::PackedScene::9001140565750390453::1793775115::0::1::::<><><>0<>0<><>::uid://ceqjocsn1yx11::::res://scripts/menu_principal.gd<>uid://uhuwe4x2uv20::::res://assets/menu/img/EVA.png<>uid://dwfncfar0s4c3::::res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf<>uid://76y8qofitnt8::::res://assets/menu/audio/SFX/maquina de escribir.WAV<>uid://bnegf7dyhg6q6::::res://assets/menu/audio/SFX/VACA.WAV<>uid://bdqr10glgbg4n::::res://assets/sound/SFX_lluvia_bucle.mp3
+menu_principal.tscn::PackedScene::9001140565750390453::1793783030::0::1::::<><><>0<>0<><>::uid://ceqjocsn1yx11::::res://scripts/menu_principal.gd<>uid://uhuwe4x2uv20::::res://assets/menu/img/EVA.png<>uid://bre1bjl7squ3s::::res://assets/video/EvaMenu.ogv<>uid://erdoi62k4r71::::res://assets/fonts/speltalefont-demo-regular.otf<>uid://okkfb27dspem::::res://assets/video/Rayo.ogv<>uid://76y8qofitnt8::::res://assets/menu/audio/SFX/maquina de escribir.WAV<>uid://wrdtur2pt7go::::res://scenes/menu_principal.gdshader<>uid://bnegf7dyhg6q6::::res://assets/menu/audio/SFX/VACA.WAV<>uid://bdqr10glgbg4n::::res://assets/sound/SFX_lluvia_bucle.mp3
 opening_sequence.gd.tscn::PackedScene::458260699740921831::1793775115::0::1::::<><><>0<>0<><>::uid://cp1wnmvunfo5i::::res://assets/video/logito.ogv<>uid://c4ewmo7mvqn0k::::res://assets/sound/logo.wav<>uid://uaclntjttox1::::res://scripts/opening_sequence.gd<>uid://cg5tfew2oeocl::::res://assets/sound/SFX_lluvia.wav
 options.tscn::PackedScene::6300392796305952274::1793775115::0::1::::<><><>0<>0<><>::uid://ceqjocsn1yx11::::res://scripts/menu_principal.gd<>uid://uhuwe4x2uv20::::res://assets/menu/img/EVA.png<>uid://dwfncfar0s4c3::::res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf<>uid://buo20ivi6uhu4::::res://assets/menu/audio/Music/Destellos de otra dimension.ogg<>uid://76y8qofitnt8::::res://assets/menu/audio/SFX/maquina de escribir.WAV
+menu_principal.gdshader::Shader::1579466140894484482::1793783030::0::1::::<><><>0<>0<><>::
 video.tscn::PackedScene::7260937306066918368::1793775115::0::1::::<><><>0<>0<><>::uid://6bhws1x0s1ie::::res://scripts/video.gd<>uid://uhuwe4x2uv20::::res://assets/menu/img/EVA.png<>uid://dwfncfar0s4c3::::res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf<>uid://76y8qofitnt8::::res://assets/menu/audio/SFX/maquina de escribir.WAV
-::res://scripts/::1793775115
+::res://scripts/::1793780141
 acto_uno.gd::GDScript::2159397715870823504::1793775115::0::1::::<>Node2D<><>0<>0<><>::
 escena_uno.gd::GDScript::8038601881471305567::1793775115::0::1::::<>Node2D<><>0<>0<><>::
-menu_principal.gd::GDScript::5087198373532410602::1793775115::0::1::::<>Control<><>0<>0<><>::
+menu_principal.gd::GDScript::5087198373532410602::1793780141::0::1::::<>Control<><>0<>0<><>::
 opening_sequence.gd::GDScript::1403918663069043208::1793775115::0::1::::<>VideoStreamPlayer<><>0<>0<><>::
 video.gd::GDScript::2178383823612715004::1793775115::0::1::::<>Control<><>0<>0<><>::
