@@ -4,9 +4,11 @@
 [ext_resource type="Script" uid="uid://dln4hn3au11kl" path="res://scripts/climate_post_process.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://c2bbrcf2owahc" path="res://assets/Image/ESCUELABG.png" id="2_px3en"]
 [ext_resource type="Shader" uid="uid://c1xnbxq3tfm0o" path="res://shader/climate_post_process.gdshader" id="3"]
+[ext_resource type="Shader" uid="uid://qj742ae0445k" path="res://whiteOutline.gdshader" id="3_grihq"]
 [ext_resource type="Texture2D" uid="uid://cig7iqslywomv" path="res://assets/characters/HABLANDO/hablando_00.png" id="3_uxie2"]
 [ext_resource type="Script" uid="uid://dvh4oweov1brw" path="res://scripts/climate_bar.gd" id="4"]
 [ext_resource type="Texture2D" uid="uid://doxq3jdg334km" path="res://assets/characters/HABLANDO/hablando_01.png" id="4_nqrh8"]
+[ext_resource type="Texture2D" uid="uid://ves2c1cdph6f" path="res://assets/textures/outlineTEXTURE.png" id="4_p37xc"]
 [ext_resource type="Texture2D" uid="uid://dtw077yv6581m" path="res://assets/characters/HABLANDO/hablando_02.png" id="5_grihq"]
 [ext_resource type="Texture2D" uid="uid://bnfqcdckcjybb" path="res://assets/characters/HABLANDO/hablando_03.png" id="6_p37xc"]
 [ext_resource type="Texture2D" uid="uid://bj57gd0t165qm" path="res://assets/characters/HABLANDO/hablando_04.png" id="7_fq3di"]
@@ -110,6 +112,14 @@
 [ext_resource type="Texture2D" uid="uid://bp6gudskgbin4" path="res://assets/characters/RODAR_OJOS/rodar_ojos_32.png" id="105_mj2f0"]
 [ext_resource type="Texture2D" uid="uid://1ees603nw53h" path="res://assets/characters/RODAR_OJOS/rodar_ojos_33.png" id="106_a8v2k"]
 [ext_resource type="Texture2D" uid="uid://lr6htev1h0gw" path="res://assets/characters/RODAR_OJOS/rodar_ojos_34.png" id="107_6f8k7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pbj5h"]
+shader = ExtResource("3_grihq")
+shader_parameter/outline_color = Color(1.1097851, 1.1042392, 1.1097851, 1)
+shader_parameter/outline_size = 3.0
+shader_parameter/paper_texture = ExtResource("4_p37xc")
+shader_parameter/texture_strength = 0.800000038
+shader_parameter/texture_scale = 1.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xcf42"]
 animations = [{
@@ -469,11 +479,13 @@ position = Vector2(960, 537)
 texture = ExtResource("2_px3en")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World" unique_id=1538729755]
+material = SubResource("ShaderMaterial_pbj5h")
 position = Vector2(1504, 489)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_xcf42")
 animation = &"rodar_ojos"
-frame_progress = 0.49839255
+frame = 34
+frame_progress = 0.0022200346
 
 [node name="ClimatePostProcess" type="CanvasLayer" parent="." unique_id=2037086332]
 layer = 10
