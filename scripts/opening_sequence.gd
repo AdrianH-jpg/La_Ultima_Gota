@@ -75,7 +75,7 @@ func _on_video_finished() -> void:
 	
 	# Aparece el texto "la ultima gota"
 	var e_in := create_tween()
-	texto_presenta.text = "LA ÚLTIMA GOTA"
+	texto_presenta.text = "LA ULTIMA GOTA"
 	e_in.tween_property(texto_presenta, "modulate:a", 1.0, FADE_TIME)
 	await e_in.finished
 	if not is_inside_tree() or _saltando:

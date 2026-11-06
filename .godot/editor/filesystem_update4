@@ -1,1 +1,5 @@
+res://scenes/escena_teo.tscn
 res://scenes/menu_principal.gdshader
+res://scenes/opening_sequence.gd.tscn
+res://scripts/opening_sequence.gd
+res://scenes/escena_uno.tscn

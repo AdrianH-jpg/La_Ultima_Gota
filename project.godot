@@ -13,7 +13,6 @@ config_version=5
 config/name="La Estancia"
 run/main_scene="uid://d1ihp8mipcl1v"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [audio]
 
@@ -22,6 +21,7 @@ buses/default_bus_layout="uid://b6w4sgmf1cmxj"
 [autoload]
 
 DialogueManager="*uid://c3rodes2l3gxb"
+Climate="*uid://cl176mus5yj3d"
 
 [dialogue_manager]
 
