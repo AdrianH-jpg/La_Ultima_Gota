@@ -1,0 +1,24 @@
+~ start
+
+Narrador: Ella se acerca con los ojos brillantes y te ofrece un abrazo.
+
+if Climate.mood() == "sombrio"
+	Narrador: El aire se siente pesado, como si el mundo hubiera perdido color.
+
+- Aceptar el abrazo
+	do Climate.add(15)
+	Ella: Gracias por quedarte conmigo.
+- Quedarte en silencio
+	do Climate.add(-10)
+	Ella: ...Está bien.
+- Rechazarla
+	do Climate.add(-20)
+	Ella: Entiendo.
+
+if Climate.value >= 80
+	Narrador: Todo vibra a tu alrededor, casi demasiado intenso.
+elif Climate.value <= 25
+	Narrador: Los sonidos llegan apagados, lejanos.
+
+=> END
+

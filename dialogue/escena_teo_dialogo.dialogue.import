@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://coy70uydoqbip"
+path="res://.godot/imported/escena_teo_dialogo.dialogue-6b83d160082afdb9ccf87c4f7a4e91cf.tres"
+
+[deps]
+
+source_file="res://dialogue/escena_teo_dialogo.dialogue"
+dest_files=["res://.godot/imported/escena_teo_dialogo.dialogue-6b83d160082afdb9ccf87c4f7a4e91cf.tres"]
+
+[params]
+
+defaults=true

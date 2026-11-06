@@ -44,6 +44,11 @@ lines = {
 },
 "5": {
 &"id": "5",
+&"next_id": "6",
+&"type": ""
+},
+"6": {
+&"id": "6",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",

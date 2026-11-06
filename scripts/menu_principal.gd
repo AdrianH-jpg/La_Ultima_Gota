@@ -1,33 +1,10 @@
 extends Control
 
-@export var tiempo_inicial: float = 1.35   # segundos en negro antes del rayo
-@export var retraso_trueno: float = 0.25   # el trueno suena un poco después del rayo
- 
-@onready var oscuridad: ColorRect = $CapaEfectos/Oscuridad
-@onready var destello: ColorRect = $CapaEfectos/Destello
 
 @onready var bus_index = AudioServer.get_bus_index("Music")
 @onready var Hover_SFX = $HoverSFX
-@onready var Play_SFX = $PlaySFX
 @onready var music = $MenuSFX
 func _ready():
-	# Estado inicial: todo negro, sin destello, y sin poder clickear los botones
-	oscuridad.color = Color.BLACK
-	oscuridad.modulate.a = 1.0
-	oscuridad.mouse_filter = Control.MOUSE_FILTER_STOP
- 
-	destello.color = Color.WHITE
-	destello.modulate.a = 0.0
-	destello.mouse_filter = Control.MOUSE_FILTER_IGNORE
- 
-	await get_tree().create_timer(tiempo_inicial).timeout
-	if not is_inside_tree():
-		return
-	_relampago()
-	
-	
-	music.stream.loop = true   # Por si no lo pusiste en el import
-	music.play()
 	for boton in $MenuBox.get_children():
 		# Verificamos que el elemento sea realmente un botón (por si acaso pusiste un Label ahí adentro)
 		if boton is Button:
@@ -105,28 +82,5 @@ func _on_salir_pressed() -> void:
 
 func _on_video_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/video.tscn")
-	
-	
-func _relampago() -> void:
-	var t := create_tween()
- 
-	# 1) Primer golpe de luz, muy rápido
-	t.tween_property(destello, "modulate:a", 1.0, 0.04)
- 
-	# 2) En el pico de luz se quita la oscuridad: aparece la imagen
-	t.tween_callback(_revelar_imagen)
- 
-	# 3) Baja rápido y vuelve a subir: el segundo parpadeo del rayo
-	t.tween_property(destello, "modulate:a", 0.15, 0.08)
-	t.tween_property(destello, "modulate:a", 0.85, 0.05)
- 
-	# 4) Se apaga suavemente
-	t.tween_property(destello, "modulate:a", 0.0, 0.6) \
-		.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
- 
- 
-func _revelar_imagen() -> void:
-	oscuridad.modulate.a = 0.0
-	oscuridad.mouse_filter = Control.MOUSE_FILTER_IGNORE  # ya se pueden usar los botones
  
 	

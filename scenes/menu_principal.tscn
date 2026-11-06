@@ -40,19 +40,6 @@ offset_bottom = 651.0
 texture = ExtResource("2_w5ui5")
 stretch_mode = 4
 
-[node name="CapaEfectos" type="CanvasLayer" parent="." unique_id=2017895658]
-
-[node name="Oscuridad" type="ColorRect" parent="CapaEfectos" unique_id=80899897]
-offset_right = 1929.0
-offset_bottom = 1084.0
-mouse_filter = 2
-color = Color(0, 0, 0, 1)
-
-[node name="Destello" type="ColorRect" parent="CapaEfectos" unique_id=638705924]
-offset_right = 1926.0
-offset_bottom = 1086.0
-mouse_filter = 2
-
 [node name="Titlebox" type="VBoxContainer" parent="." unique_id=1455151414]
 layout_mode = 1
 anchors_preset = 10
