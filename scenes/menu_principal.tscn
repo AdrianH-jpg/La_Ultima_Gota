@@ -52,6 +52,7 @@ texture = ExtResource("2_w5ui5")
 stretch_mode = 4
 
 [node name="EvaMenu" type="VideoStreamPlayer" parent="." unique_id=2036674944]
+texture_filter = 2
 layout_mode = 0
 offset_left = -3.0
 offset_right = 1929.0
@@ -67,7 +68,6 @@ position = Vector2(965, -56)
 amount = 100
 amount_ratio = 0.5
 texture = ExtResource("6_8k4fm")
-lifetime = 1.5999999999999999
 process_material = SubResource("ParticleProcessMaterial_sam43")
 
 [node name="CapaEfectos" type="CanvasLayer" parent="." unique_id=2017895658]
@@ -161,7 +161,7 @@ modulate = Color(1, 1, 1, 0.13725491)
 position = Vector2(938, 20)
 amount = 250
 texture = ExtResource("6_8k4fm")
-lifetime = 1.5999999999999999
+lifetime = 1.6
 process_material = SubResource("ParticleProcessMaterial_sam43")
 
 [node name="HoverSFX" type="AudioStreamPlayer" parent="." unique_id=191888745]
