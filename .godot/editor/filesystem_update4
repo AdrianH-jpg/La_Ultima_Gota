@@ -1,5 +1,8 @@
-res://scripts/escena_2a.gd
-res://shader/climate_post_process.gdshader
 res://scripts/escena_uno.gd
-res://scenes/escena_uno.tscn
+res://scripts/opening_sequence.gd
+res://scenes/opening_sequence.gd.tscn
+res://shader/climate_post_process.gdshader
 res://scenes/escena_2a.tscn
+res://scripts/escena_2a.gd
+res://scripts/escena_3.gd
+res://scenes/escena_3.tscn

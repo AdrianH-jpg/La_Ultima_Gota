@@ -6,7 +6,8 @@
 script = ExtResource("1_le8yj")
 using_states = PackedStringArray()
 cues = {
-"escena_1": "2"
+"escena_1": "2",
+"matadero": "3"
 }
 character_names = PackedStringArray()
 first_cue = "0"
@@ -24,15 +25,13 @@ lines = {
 "2": {
 &"id": "2",
 &"next_id": "3",
-&"static_id": "",
-&"text": "El 10 de noviembre de 1985, el muro de contención de la Laguna Epecuén colapsó, inundando rápidamente la localidad de Villa Epecuén de manera indetenible, pero con la suficiente lentitud para permitir que sus habitantes evacuaran el pueblo sin que se registraran víctimas fatales.",
-&"type": "dialogue"
+&"type": "cue"
 },
 "3": {
 &"id": "3",
 &"next_id": "4",
 &"static_id": "",
-&"text": "Es lo que cuenta la historia oficial... Pero la verdadera historia de la destrucción de Epecuén comienza durante una fuerte tormenta el 28 de Abril de 1968...",
+&"text": "Acá se luce Teobaldo con su prosa literaria, sus años como elfo desnutrido, horas y horas de rol lo convierten en un maestro narrador.",
 &"type": "dialogue"
 },
 "4": {
@@ -44,11 +43,6 @@ lines = {
 },
 "5": {
 &"id": "5",
-&"next_id": "6",
-&"type": ""
-},
-"6": {
-&"id": "6",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",

@@ -6,271 +6,42 @@
 script = ExtResource("1_uwrbh")
 using_states = PackedStringArray()
 cues = {
-"start": "2"
+"cocina": "1"
 }
-character_names = PackedStringArray()
-first_cue = "1"
+character_names = PackedStringArray("Eva")
+first_cue = "0"
 lines = {
 "0": {
 &"id": "0",
 &"next_id": "1",
-&"type": ""
-},
-"1": {
-&"id": "1",
-&"next_id": "2",
 &"type": "cue"
 },
-"10": {
-&"id": "10",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"11": {
-&"id": "11",
-&"next_id": "12",
-&"type": ""
-},
-"12": {
-&"id": "12",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
+"1": {
+&"character": "Eva",
+&"id": "1",
+&"next_id": "2",
+&"static_id": "",
+&"text": "[i]Esa botella seguramente esté vacía en unas horas... Dos mates más y arranco.[/i]",
+&"type": "dialogue"
 },
 "2": {
 &"id": "2",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Climate"
-}, {
-&"i": 10,
-&"type": "dot"
-}, {
-&"function": "set_visuals",
-&"i": 11,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 23,
-&"type": "variable",
-&"value": "false"
-}, {
-&"i": 28,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "3",
-&"type": "mutation"
-},
-"3": {
-&"id": "3",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "hide_all_characters",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 32,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "4",
-&"type": "mutation"
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
 },
 "4": {
 &"id": "4",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "black",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 18,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
 &"next_id": "5",
-&"type": "mutation"
+&"type": ""
 },
 "5": {
 &"id": "5",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "background",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 23,
-&"type": "string",
-&"value": "negro"
-}, {
-&"i": 30,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "6",
-&"type": "mutation"
-},
-"6": {
-&"id": "6",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "wait",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "number",
-&"value": 1.0
-}, {
-&"i": 20,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "7",
-&"type": "mutation"
-},
-"7": {
-&"id": "7",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "caption",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 20,
-&"type": "string",
-&"value": "17 AÑOS MÁS TARDE"
-}]), Array[Dictionary]([{
-&"i": 41,
-&"type": "number",
-&"value": 1.0
-}]), Array[Dictionary]([{
-&"i": 46,
-&"type": "number",
-&"value": 2.0
-}, {
-&"i": 49,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "8",
-&"type": "mutation"
-},
-"8": {
-&"id": "8",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "caption",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 20,
-&"type": "string",
-&"value": "Martes 5 de noviembre de 1985"
-}]), Array[Dictionary]([{
-&"i": 53,
-&"type": "number",
-&"value": 1.0
-}]), Array[Dictionary]([{
-&"i": 58,
-&"type": "number",
-&"value": 2.0
-}, {
-&"i": 61,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "9",
-&"type": "mutation"
-},
-"9": {
-&"id": "9",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "goto",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "escena_03b_cocina"
-}, {
-&"i": 36,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "10",
-&"type": "mutation"
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
 }
 }
 metadata/dialogue_manager_version = "4.0.3"

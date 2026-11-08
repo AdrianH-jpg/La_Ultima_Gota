@@ -1,5 +1,5 @@
 074be9f7e871dfbc28f549d432fdadac
-::res://::1794158277
+::res://::1794169889
 default_bus_layout.tres::AudioBusLayout::4609484418081704599::1794076308::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::5335535523962611770::1794076308::1794079004::1::::<><><>0<>0<>b2eb2fb96a022b516b31d14895e14402<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 Options.gd::GDScript::1096674236176475782::1794076308::0::1::::<>Node<><>0<>0<><>::
@@ -118,7 +118,7 @@ main_view.gd::GDScript::5365867961863611872::1794076308::0::1::::<>Control<><>0<
 main_view.tscn::PackedScene::4884668666408697448::1794076308::0::1::::<><><>0<>0<><>::uid://cipjcc7bkh1pc::::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/cue_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>uid://klpiq4tk3t7a::::res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://s41qxl30184y::::res://addons/dialogue_manager/components/blank_slate.tscn
 ::res://assets/::1794079001
 zai_OlivettiLettera22Typewriter.ttf::FontFile::5950544326307603093::1794076308::1794079001::1::::<><><>0<>0<>aaaeb0244a9a1ea1e8f58f4ad4f485fc<>res://.godot/imported/zai_OlivettiLettera22Typewriter.ttf-be7939e251e369e613a66afead6db7c6.fontdata::
-::res://assets/Image/::1794159059
+::res://assets/Image/::1794159060
 ESCUELABG.png::CompressedTexture2D::6670095712873338400::1794078777::1794079005::1::::<><><>0<>0<>82ccd53f9eb20bf4a0ed711a18f78d57<>res://.godot/imported/ESCUELABG.png-d4513fae736a6c6c500ad51a7065c25b.ctex::
 habitacion hospital.png::CompressedTexture2D::3379431146061616127::1794159059::1794159060::1::::<><><>0<>0<>00e4299a334cb065872e06a448a6793c<>res://.godot/imported/habitacion hospital.png-7fc34a253ce76d728240c940b6a4f0f9.ctex::
 Matadero.jpeg::CompressedTexture2D::2581459662744746221::1794076308::1794079004::1::::<><><>0<>0<>d808ab175bebaba0f9376357746b7a71<>res://.godot/imported/Matadero.jpeg-b35cd0a4fb369d4e7eafc791e1fd33ef.ctex::
@@ -155,18 +155,16 @@ SFX_lluvia.wav::AudioStreamWAV::5257068558993013351::1794076308::1794079006::1::
 SFX_lluvia_bucle.mp3::AudioStreamMP3::2631097201051146823::1794076308::1794079001::1::::<><><>0<>0<>49cfb7117ffa88d66ad91f855843610f<>res://.godot/imported/SFX_lluvia_bucle.mp3-adba96f83fed343b065829544ef09eb1.mp3str::
 ::res://assets/video/::1794076308
 logito.ogv::VideoStreamTheora::5880707496371256948::1794076308::0::1::::<><><>0<>0<><>::
-::res://dialogue/::1794150822
+::res://dialogue/::1794173327
 actoUno.dialogue::Resource/DialogueResource::4311075499016502700::1794076308::1794079006::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>ccbc9fe2f1362a2a4e09c4413f79a422<>res://.godot/imported/actoUno.dialogue-958f7874c64d13e6190ca0feb9b19f5b.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
-escena_1.dialogue::Resource/DialogueResource::7670103236786470046::1794150821::1794150822::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>d7352c609e8c404fb400f14e3bfae1d3<>res://.godot/imported/escena_1.dialogue-b6c6483b191ef7fc7a8350ac33c2fb5d.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+escena_1.dialogue::Resource/DialogueResource::7670103236786470046::1794173326::1794173327::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>d7352c609e8c404fb400f14e3bfae1d3<>res://.godot/imported/escena_1.dialogue-b6c6483b191ef7fc7a8350ac33c2fb5d.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 escena_teo_dialogo.dialogue::Resource/DialogueResource::5807018920730193507::1794078777::1794079006::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>900afba707acdada9876d5a5714d6cab<>res://.godot/imported/escena_teo_dialogo.dialogue-6b83d160082afdb9ccf87c4f7a4e91cf.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 new_style_box_flat.tres::StyleBoxFlat::3589957398121641421::1794076308::0::1::::<><><>0<>0<><>::
-::res://dialogue/scenes_0/::1794158429
+::res://dialogue/scenes_0/::1794175000
 escena_00_creditos.dialogue::Resource/DialogueResource::7269419000225813636::1794142628::1794142629::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>7c74386d5a92b1104d84aa6cbb35d000<>res://.godot/imported/escena_00_creditos.dialogue-8448b2b641629196ab10a05abfd8cce5.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 escena_01_matadero.dialogue::Resource/DialogueResource::8219092655606229494::1794142628::1794142629::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>2bb4832b08bb640378a213d40006f161<>res://.godot/imported/escena_01_matadero.dialogue-f76d5dcecc8d0368e5aa337e758670d4.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
-escena_02a_hospital.dialogue::Resource/DialogueResource::7364785920351630289::1794158428::1794158429::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>cfad97a1689ac8eb74461d4a7c35f650<>res://.godot/imported/escena_02a_hospital.dialogue-f1e0478dd49d8d65fd06711144eb8f11.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
-escena_02b_pesadilla.dialogue::Resource/DialogueResource::7677795916723345555::1794142629::1794142629::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>9bab9bb9631303a590335c0ec875f105<>res://.godot/imported/escena_02b_pesadilla.dialogue-1d55dffa9c009bba113c1e201aa530ff.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
-escena_02c_hospital.dialogue::Resource/DialogueResource::316053565170512578::1794142629::1794142629::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>c07a471f784940c6f334f51eddbff900<>res://.godot/imported/escena_02c_hospital.dialogue-05f5aab6ba66fd7249a8a1ee683036cc.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
-escena_03a_titulo.dialogue::Resource/DialogueResource::5684260323231039385::1794142629::1794142629::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>9c54d468c7ffd9acb8bd0f33eb01f35b<>res://.godot/imported/escena_03a_titulo.dialogue-4e1b11776d29f65f48e26d012cd4aa0e.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+escena_02a_hospital.dialogue::Resource/DialogueResource::7364785920351630289::1794174253::1794174254::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>cfad97a1689ac8eb74461d4a7c35f650<>res://.godot/imported/escena_02a_hospital.dialogue-f1e0478dd49d8d65fd06711144eb8f11.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+escena_03a_titulo.dialogue::Resource/DialogueResource::5684260323231039385::1794175266::1794175266::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>9c54d468c7ffd9acb8bd0f33eb01f35b<>res://.godot/imported/escena_03a_titulo.dialogue-4e1b11776d29f65f48e26d012cd4aa0e.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 escena_03b_cocina.dialogue::Resource/DialogueResource::97703831201530074::1794142629::1794142629::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>914e6804e22484575aaa5ee371b11372<>res://.godot/imported/escena_03b_cocina.dialogue-dd1eecc59b1e4c3bdc039f022487f02b.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 escena_04_corral.dialogue::Resource/DialogueResource::3497650981170318814::1794142629::1794142629::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>5b67c6699326e38355e5196553f911bf<>res://.godot/imported/escena_04_corral.dialogue-b59385f91443e411e3762e560ec694e6.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 escena_05_tranquera.dialogue::Resource/DialogueResource::5187711735892553606::1794142629::1794142629::1::::<><>res://addons/dialogue_manager/assets/icon.svg<>0<>0<>a45a7e8d58e9b85c44fac0d64aa79e81<>res://.godot/imported/escena_05_tranquera.dialogue-a303918605144a4ccdb6238f4d3f0b17.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
@@ -176,29 +174,31 @@ escena_06c.dialogue::Resource/DialogueResource::5750717072947919071::1794142629:
 ::res://dialogue/scene_dialogue/::1794078777
 balloon.gd::GDScript::5204834151406439186::1794076308::0::1::::<>CanvasLayer<><>0<>0<><>::
 balloon.tscn::PackedScene::7657683933328883502::1794078777::0::1::::<><><>0<>0<><>::uid://cgfi4f5k51r75::::res://dialogue/scene_dialogue/balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.tscn<>uid://brfacrmrmvkp6::::res://dialogue/new_style_box_flat.tres<>uid://bb52rsfwhkxbn::::res://addons/dialogue_manager/nodes/responses_menu/dialogue_responses_menu.gd
-::res://scenes/::1794158428
+::res://scenes/::1794174743
 ActoUno.tscn::PackedScene::4890062394239858011::1794076308::0::1::::<><><>0<>0<><>::uid://51a72n8fjwaa::::res://scripts/acto_uno.gd<>uid://dfrs5iaecl0k6::::res://assets/Image/telegrama.png<>uid://byrnpr7d0vprj::::res://scenes/click_telegrama.gd<>uid://b2ok1v4d8kqoq::::res://dialogue/actoUno.dialogue
 click_telegrama.gd::GDScript::4106864403140683679::1794076308::0::1::::<>Area2D<><>0<>0<><>::
 clima_ui.tscn::PackedScene::-1::1794149388::0::1::::<><><>0<>0<><>::uid://dln4hn3au11kl::::res://scripts/climate_post_process.gd<>uid://c1xnbxq3tfm0o::::res://shader/climate_post_process.gdshader<>uid://dvh4oweov1brw::::res://scripts/climate_bar.gd
 credits.tscn::PackedScene::931230134161938729::1794076308::0::1::::<><><>0<>0<><>::uid://ceqjocsn1yx11::::res://scripts/menu_principal.gd<>uid://uhuwe4x2uv20::::res://assets/menu/img/EVA.png<>uid://dwfncfar0s4c3::::res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf<>uid://76y8qofitnt8::::res://assets/menu/audio/SFX/maquina de escribir.WAV
-escena_2a.tscn::PackedScene::5480467049044946260::1794158209::0::1::::<><><>0<>0<><>::uid://catyloal1r7yo::::res://scripts/escena_2a.gd
+escena_2a.tscn::PackedScene::5480467049044946260::1794174743::0::1::::<><><>0<>0<><>::uid://catyloal1r7yo::::res://scripts/escena_2a.gd<>uid://bofa0cijdb7t8::::res://assets/Image/habitacion hospital.png<>uid://chggmi27t3yr3::::res://assets/Image/WIP.png<>uid://bdqr10glgbg4n::::res://assets/sound/SFX_lluvia_bucle.mp3
 escena_teo.tscn::PackedScene::2276212922192006084::1794142517::0::1::::<><><>0<>0<><>::uid://bjvjerejirpth::::res://scripts/escena_teo.gd<>uid://dln4hn3au11kl::::res://scripts/climate_post_process.gd<>uid://c2bbrcf2owahc::::res://assets/Image/ESCUELABG.png<>uid://c1xnbxq3tfm0o::::res://shader/climate_post_process.gdshader<>uid://dvh4oweov1brw::::res://scripts/climate_bar.gd<>uid://ciatqxcrgaxoc::::res://icon.svg
 escena_uno.tscn::PackedScene::1381919721874139824::1794158428::0::1::::<><><>0<>0<><>::uid://dmr7ul50y1h7t::::res://scripts/escena_uno.gd<>uid://b1qfrpbdjca7q::::res://assets/Image/mataderoESCENA.png
 menu_principal.tscn::PackedScene::9001140565750390453::1794078777::0::1::::<><><>0<>0<><>::uid://ceqjocsn1yx11::::res://scripts/menu_principal.gd<>uid://uhuwe4x2uv20::::res://assets/menu/img/EVA.png<>uid://dwfncfar0s4c3::::res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf<>uid://76y8qofitnt8::::res://assets/menu/audio/SFX/maquina de escribir.WAV<>uid://bnegf7dyhg6q6::::res://assets/menu/audio/SFX/VACA.WAV<>uid://bdqr10glgbg4n::::res://assets/sound/SFX_lluvia_bucle.mp3
-opening_sequence.gd.tscn::PackedScene::458260699740921831::1794076308::0::1::::<><><>0<>0<><>::uid://cp1wnmvunfo5i::::res://assets/video/logito.ogv<>uid://c4ewmo7mvqn0k::::res://assets/sound/logo.wav<>uid://uaclntjttox1::::res://scripts/opening_sequence.gd<>uid://cg5tfew2oeocl::::res://assets/sound/SFX_lluvia.wav
+opening_sequence.gd.tscn::PackedScene::458260699740921831::1794173274::0::1::::<><><>0<>0<><>::uid://cp1wnmvunfo5i::::res://assets/video/logito.ogv<>uid://c4ewmo7mvqn0k::::res://assets/sound/logo.wav<>uid://uaclntjttox1::::res://scripts/opening_sequence.gd<>uid://cg5tfew2oeocl::::res://assets/sound/SFX_lluvia.wav
 options.tscn::PackedScene::6300392796305952274::1794076308::0::1::::<><><>0<>0<><>::uid://ceqjocsn1yx11::::res://scripts/menu_principal.gd<>uid://uhuwe4x2uv20::::res://assets/menu/img/EVA.png<>uid://dwfncfar0s4c3::::res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf<>uid://buo20ivi6uhu4::::res://assets/menu/audio/Music/Destellos de otra dimension.ogg<>uid://76y8qofitnt8::::res://assets/menu/audio/SFX/maquina de escribir.WAV
+escena_3.tscn::PackedScene::9036178788781124134::1794175266::0::1::::<><><>0<>0<><>::uid://blnathy8j6fdb::::res://scripts/escena_3.gd
 video.tscn::PackedScene::7260937306066918368::1794076308::0::1::::<><><>0<>0<><>::uid://6bhws1x0s1ie::::res://scripts/video.gd<>uid://uhuwe4x2uv20::::res://assets/menu/img/EVA.png<>uid://dwfncfar0s4c3::::res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf<>uid://76y8qofitnt8::::res://assets/menu/audio/SFX/maquina de escribir.WAV
-::res://scripts/::1794158282
+::res://scripts/::1794174961
 acto_uno.gd::GDScript::2159397715870823504::1794076308::0::1::::<>Node2D<><>0<>0<><>::
 climate.gd::GDScript::5600591434424863551::1794142394::0::1::::<>Node<><>0<>0<><>::
 climate_audio.gd::GDScript::388003422253107118::1794142443::0::1::::<>Node<><>0<>0<><>::
 climate_bar.gd::GDScript::8649465368019401148::1794142465::0::1::::<>ProgressBar<><>0<>0<><>::
 climate_post_process.gd::GDScript::7959950261333852759::1794142422::0::1::::<>CanvasLayer<><>0<>0<><>::
-escena_2a.gd::GDScript::4813542132134829254::1794158203::0::1::::<>Node2D<><>0<>0<><>::
+escena_2a.gd::GDScript::4813542132134829254::1794174818::0::1::::<>Node2D<><>0<>0<><>::
 escena_teo.gd::GDScript::3062026704877631345::1794078777::0::1::::<>Node<><>0<>0<><>::
-escena_uno.gd::GDScript::8038601881471305567::1794158282::0::1::::<>Node2D<><>0<>0<><>::
+escena_uno.gd::GDScript::8038601881471305567::1794173454::0::1::::<>Node2D<><>0<>0<><>::
 menu_principal.gd::GDScript::5087198373532410602::1794078778::0::1::::<>Control<><>0<>0<><>::
-opening_sequence.gd::GDScript::1403918663069043208::1794076308::0::1::::<>VideoStreamPlayer<><>0<>0<><>::
+opening_sequence.gd::GDScript::1403918663069043208::1794173275::0::1::::<>VideoStreamPlayer<><>0<>0<><>::
+escena_3.gd::GDScript::3185369210849804707::1794175266::0::1::::<>Node2D<><>0<>0<><>::
 video.gd::GDScript::2178383823612715004::1794076308::0::1::::<>Control<><>0<>0<><>::
-::res://shader/::1794158210
-climate_post_process.gdshader::Shader::6646024331070005352::1794158210::0::1::::<><><>0<>0<><>::
+::res://shader/::1794172394
+climate_post_process.gdshader::Shader::6646024331070005352::1794172394::0::1::::<><><>0<>0<><>::

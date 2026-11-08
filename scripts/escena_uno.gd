@@ -25,6 +25,7 @@ func _ready() -> void:
 
 
 func _play_scene() -> void:
+	# ESCENA 2 - fade in al matadero
 	# (SFX: VIENTO SUAVE) (SFX: SONIDO DE AVES)
 	sfx_viento.play()
 	sfx_aves.play()
@@ -42,7 +43,7 @@ func _play_scene() -> void:
 	await t.finished
 
 	# NARRADOR (FUERA DE ESCENA, TEXTO EN PANTALLA)
-	DialogueManager.show_dialogue_balloon(dialogue_resource, "escena_1")
+	DialogueManager.show_dialogue_balloon(dialogue_resource, "matadero")
 	await DialogueManager.dialogue_ended
 
 

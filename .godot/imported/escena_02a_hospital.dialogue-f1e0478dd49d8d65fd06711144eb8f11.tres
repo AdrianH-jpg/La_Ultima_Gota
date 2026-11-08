@@ -6,108 +6,102 @@
 script = ExtResource("1_bnos0")
 using_states = PackedStringArray()
 cues = {
-"cuna": "26",
-"despierta": "35",
-"pesadilla": "30"
+"cuna": "1",
+"despierta": "10",
+"pesadilla_1": "5"
 }
 character_names = PackedStringArray("Patricia")
-first_cue = "25"
+first_cue = "0"
 lines = {
-"24": {
-&"id": "24",
-&"next_id": "25",
-&"type": ""
-},
-"25": {
-&"id": "25",
-&"next_id": "26",
+"0": {
+&"id": "0",
+&"next_id": "1",
 &"type": "cue"
 },
-"26": {
+"1": {
 &"character": "Patricia",
-&"id": "26",
-&"next_id": "27",
-&"notes": "(Patricia comienza a dormirse)",
+&"id": "1",
+&"next_id": "2",
 &"static_id": "",
-&"text": "Arrorró, mi niña, arrorró, mi Sol, arrorró, pedazo de mi corazón...",
+&"text": "Arrorró, mi niña, arrorró, mi sol, arrorró, pedazo de mi corazón...",
 &"type": "dialogue"
 },
-"27": {
-&"id": "27",
+"10": {
+&"character": "Patricia",
+&"id": "10",
+&"next_id": "11",
+&"static_id": "",
+&"text": "[i]Solo fue un sueño, un maldito sueño.[/i]",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
-"28": {
-&"id": "28",
-&"next_id": "29",
+"12": {
+&"id": "12",
+&"next_id": "13",
 &"type": ""
 },
-"29": {
-&"id": "29",
-&"next_id": "30",
+"13": {
+&"id": "13",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"id": "2",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"type": ""
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
 &"type": "cue"
 },
-"30": {
+"5": {
 &"character": "Patricia",
-&"id": "30",
-&"next_id": "31",
+&"id": "5",
+&"next_id": "6",
 &"static_id": "",
-&"text": "[i]¿Dónde estoy? ¿Dónde está mi hija? ¿Qué está pasando?[/i]",
+&"text": "¿Dónde está mi hija? ¿Dónde está mi bebé? Eva, ¿qué te hicieron?",
 &"type": "dialogue"
 },
-"31": {
+"6": {
 &"character": "Patricia",
-&"id": "31",
-&"next_id": "32",
+&"id": "6",
+&"next_id": "7",
 &"static_id": "",
-&"text": "¡¿Quién sos?! ¡No me lastimes! ¡¿Qué hiciste con Eva?! ¡Ayuda!",
+&"text": "¿Quién sos?",
 &"type": "dialogue"
 },
-"32": {
-&"id": "32",
+"7": {
+&"id": "7",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
-"33": {
-&"id": "33",
-&"next_id": "34",
+"8": {
+&"id": "8",
+&"next_id": "9",
 &"type": ""
 },
-"34": {
-&"id": "34",
-&"next_id": "35",
+"9": {
+&"id": "9",
+&"next_id": "10",
 &"type": "cue"
-},
-"35": {
-&"character": "Patricia",
-&"id": "35",
-&"next_id": "36",
-&"static_id": "",
-&"text": "[i]Solo fue una pesadilla, pero fue tan real.[/i]",
-&"type": "dialogue"
-},
-"36": {
-&"id": "36",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"37": {
-&"id": "37",
-&"next_id": "38",
-&"type": ""
-},
-"38": {
-&"id": "38",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
 }
 }
 metadata/dialogue_manager_version = "4.0.3"

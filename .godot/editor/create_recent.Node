@@ -1,12 +1,12 @@
+Label
 ColorRect
 CanvasLayer
 AudioStreamPlayer
-Camera2D
 Sprite2D
+Camera2D
 ProgressBar
 AudioStreamPlayer2D
 TextureRect
-Label
 VideoStreamPlayer
 Control
 CollisionShape2D
