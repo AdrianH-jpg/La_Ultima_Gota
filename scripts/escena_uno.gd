@@ -33,9 +33,13 @@ func _play_scene() -> void:
 	# (1.5 SEGUNDOS DE ESPERA)
 	await get_tree().create_timer(1.5).timeout
 
-	# Opcional: la cámara "focaliza" lentamente la tela colorada
-	# var t := create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-	# t.tween_property(camera, "zoom", Vector2(1.6, 1.6), 6.0)
+		# Zoom out + movimiento de cámara antes del diálogo
+	camera.position = Vector2(-200, 200)
+	camera.zoom = Vector2(2.0, 2.0)
+	var t := create_tween().set_parallel(true).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	t.tween_property(camera, "zoom", Vector2(1.0, 1.0), 4.0)
+	t.tween_property(camera, "position", Vector2(0, 0), 4.0)
+	await t.finished
 
 	# NARRADOR (FUERA DE ESCENA, TEXTO EN PANTALLA)
 	DialogueManager.show_dialogue_balloon(dialogue_resource, "escena_1")

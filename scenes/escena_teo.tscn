@@ -10,6 +10,7 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_climate"]
 shader = ExtResource("3")
 shader_parameter/climate = 0.5
+shader_parameter/effect_mix = 0.0
 shader_parameter/intensity = 1.0
 
 [node name="Main" type="Node" unique_id=2054107555]

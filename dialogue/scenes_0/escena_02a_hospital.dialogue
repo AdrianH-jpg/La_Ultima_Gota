@@ -1,0 +1,37 @@
+# ESCENA 2A - INT. HABITACIÓN DE HOSPITAL 1968 - NOCHE (flashback, sin barra)
+# Plano detalle de la ventana (oscuridad, luego rayo), zoom out, plano general de la habitación.
+#~ start
+#do Climate.set_visuals(false)
+#do Director.hide_all_characters()
+#do Director.black()
+#do Director.background("hospital_ventana")
+#do Director.sfx("tormenta", true)
+#do Director.wait(1.0)
+#do Director.fade_in(0.5)
+#do Director.wait(0.8)
+#do Director.flash(0.4)
+#do Director.bg_zoom(2.2, 1.0, 3.0)
+#do Director.background("hospital_habitacion_1968")
+#do Director.show_character("patricia", "con_eva", "center")
+#do Director.sfx("llanto_bebe", true)
+#do Director.wait(1.5)
+#Patricia: Arrorró, mi niña, arrorró, mi Sol, arrorró, pedazo de mi corazón...
+#do Director.bgm("cancion_cuna")
+#do Director.stop_sfx("llanto_bebe", 2.0)
+## (Patricia comienza a dormirse)
+#do Director.blink(3)
+#do Director.fade_out(1.5)
+#do Director.goto("escena_02b_pesadilla")
+#=> END
+~ cuna
+Patricia: Arrorró, mi niña, arrorró, mi Sol, arrorró, pedazo de mi corazón...
+=> END
+
+~ pesadilla
+Patricia: [i]¿Dónde estoy? ¿Dónde está mi hija? ¿Qué está pasando?[/i]
+Patricia: ¡¿Quién sos?! ¡No me lastimes! ¡¿Qué hiciste con Eva?! ¡Ayuda!
+=> END
+
+~ despierta
+Patricia: [i]Solo fue una pesadilla, pero fue tan real.[/i]
+=> END

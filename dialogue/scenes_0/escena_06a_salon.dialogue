@@ -1,0 +1,24 @@
+# ESCENA 6A - INT. SALÓN DE CLASES - DÍA
+# Primera decisión del jugador. VALORES DE CLIMA PROVISORIOS (a confirmar):
+#   Borrar el pizarrón  -> +3  (un gesto de acción, un poco de aire)
+#   Ignorar y sentarse  -> -5  (se hunde más)
+~ start
+do Director.hide_all_characters()
+do Director.black()
+do Director.background("salon_clases")
+do Director.show_character("eva", "mirando_pizarron", "left")
+do Director.show_character("alumnos", "riendo", "right")
+do Director.fade_in(1.0)
+do Director.sfx("risas")
+# Temporal: sacar esta línea cuando el fondo ya tenga el texto dibujado en el pizarrón.
+Narrador: En el pizarrón, escrito con tiza: «EVA TIENE OLOR A BOSTA».
+- Borrar el pizarrón
+	do Climate.add(3)
+	do Director.fade_out(1.0)
+	do Director.goto("escena_06b")
+	=> END
+- Ignorar y sentarse
+	do Climate.add(-5)
+	do Director.fade_out(1.0)
+	do Director.goto("escena_06c")
+	=> END

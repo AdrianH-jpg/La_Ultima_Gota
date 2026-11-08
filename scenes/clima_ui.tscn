@@ -1,0 +1,45 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://dln4hn3au11kl" path="res://scripts/climate_post_process.gd" id="2"]
+[ext_resource type="Shader" uid="uid://c1xnbxq3tfm0o" path="res://shader/climate_post_process.gdshader" id="3"]
+[ext_resource type="Script" uid="uid://dvh4oweov1brw" path="res://scripts/climate_bar.gd" id="4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_climate"]
+shader = ExtResource("3")
+shader_parameter/climate = 0.15
+shader_parameter/effect_mix = 0.0
+shader_parameter/intensity = 1.0
+
+[node name="ClimaUI" type="Node"]
+
+[node name="ClimatePostProcess" type="CanvasLayer" parent="."]
+layer = 10
+script = ExtResource("2")
+
+[node name="ColorRect" type="ColorRect" parent="ClimatePostProcess"]
+material = SubResource("ShaderMaterial_climate")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="UI" type="CanvasLayer" parent="."]
+layer = 20
+
+[node name="ClimateBar" type="ProgressBar" parent="UI"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 20.0
+offset_right = 300.0
+offset_bottom = 48.0
+grow_horizontal = 2
+mouse_filter = 2
+max_value = 1.0
+step = 0.001
+value = 0.15
+show_percentage = false
+script = ExtResource("4")

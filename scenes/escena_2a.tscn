@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://ckc1qyjro4amu"]
+
+[ext_resource type="Script" uid="uid://catyloal1r7yo" path="res://scripts/escena_2a.gd" id="1_wags2"]
+[ext_resource type="Texture2D" uid="uid://bofa0cijdb7t8" path="res://assets/Image/habitacion hospital.png" id="2_85krb"]
+[ext_resource type="Texture2D" uid="uid://chggmi27t3yr3" path="res://assets/Image/WIP.png" id="3_56l3q"]
+
+[node name="Escena2" type="Node2D" unique_id=170235811]
+script = ExtResource("1_wags2")
+
+[node name="FondoHospital" type="Sprite2D" parent="." unique_id=74321809]
+position = Vector2(586.5, 368.00012)
+scale = Vector2(2.2353518, 2.4755247)
+texture = ExtResource("2_85krb")
+
+[node name="FondoPesadilla" type="Sprite2D" parent="." unique_id=855400542]
+position = Vector2(585.5, 370.5)
+scale = Vector2(1.1911458, 1.3083333)
+texture = ExtResource("3_56l3q")
+
+[node name="FondoHospitalCalma" type="Sprite2D" parent="." unique_id=1405872390]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2112098318]
+
+[node name="SFXTormenta" type="AudioStreamPlayer" parent="." unique_id=1323599194]
+
+[node name="SFXTormentaElectrica" type="AudioStreamPlayer" parent="." unique_id=1791047172]
+
+[node name="SFXGrito" type="AudioStreamPlayer" parent="." unique_id=367924701]
+
+[node name="SFXGritoMujer" type="AudioStreamPlayer" parent="." unique_id=1246067263]
+
+[node name="SFXLlantoBebe" type="AudioStreamPlayer" parent="." unique_id=268583534]
+
+[node name="BGMCuna" type="AudioStreamPlayer" parent="." unique_id=1920065398]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1226294652]
+
+[node name="FlashRect" type="ColorRect" parent="CanvasLayer" unique_id=2021347956]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0.9764706)
+
+[node name="FadeRect" type="ColorRect" parent="CanvasLayer" unique_id=179094312]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.039215688, 0.039215688, 0.039215688, 1)

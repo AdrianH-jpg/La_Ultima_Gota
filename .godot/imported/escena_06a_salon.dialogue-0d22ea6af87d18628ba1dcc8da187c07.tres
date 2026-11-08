@@ -1,0 +1,451 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ubjxt"]
+
+[resource]
+script = ExtResource("1_ubjxt")
+using_states = PackedStringArray()
+cues = {
+"start": "5"
+}
+character_names = PackedStringArray("Narrador")
+first_cue = "4"
+lines = {
+"10": {
+&"id": "10",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "fade_in",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 20,
+&"type": "number",
+&"value": 1.0
+}, {
+&"i": 23,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "11",
+&"type": "mutation"
+},
+"11": {
+&"id": "11",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "sfx",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": "string",
+&"value": "risas"
+}, {
+&"i": 23,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "13",
+&"type": "mutation"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"type": ""
+},
+"13": {
+&"character": "Narrador",
+&"id": "13",
+&"next_id": "14",
+&"static_id": "",
+&"text": "En el pizarrón, escrito con tiza: «EVA TIENE OLOR A BOSTA».",
+&"type": "dialogue"
+},
+"14": {
+&"id": "14",
+&"next_id": "15",
+&"responses": PackedStringArray("14", "19"),
+&"static_id": "",
+&"text": "Borrar el pizarrón",
+&"type": "response"
+},
+"15": {
+&"id": "15",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Climate"
+}, {
+&"i": 10,
+&"type": "dot"
+}, {
+&"function": "add",
+&"i": 11,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": "number",
+&"value": 3
+}, {
+&"i": 16,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "16",
+&"type": "mutation"
+},
+"16": {
+&"id": "16",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "fade_out",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 21,
+&"type": "number",
+&"value": 1.0
+}, {
+&"i": 24,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "17",
+&"type": "mutation"
+},
+"17": {
+&"id": "17",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "goto",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "escena_06b"
+}, {
+&"i": 29,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "18",
+&"type": "mutation"
+},
+"18": {
+&"id": "18",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"19": {
+&"id": "19",
+&"next_id": "20",
+&"static_id": "",
+&"text": "Ignorar y sentarse",
+&"type": "response"
+},
+"20": {
+&"id": "20",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Climate"
+}, {
+&"i": 10,
+&"type": "dot"
+}, {
+&"function": "add",
+&"i": 11,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": "number",
+&"value": -5
+}, {
+&"i": 17,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "21",
+&"type": "mutation"
+},
+"21": {
+&"id": "21",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "fade_out",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 21,
+&"type": "number",
+&"value": 1.0
+}, {
+&"i": 24,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "22",
+&"type": "mutation"
+},
+"22": {
+&"id": "22",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "goto",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "escena_06c"
+}, {
+&"i": 29,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "23",
+&"type": "mutation"
+},
+"23": {
+&"id": "23",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"24": {
+&"id": "24",
+&"next_id": "25",
+&"type": ""
+},
+"25": {
+&"id": "25",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"type": ""
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"type": "cue"
+},
+"5": {
+&"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "hide_all_characters",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 32,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"6": {
+&"id": "6",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "black",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "7",
+&"type": "mutation"
+},
+"7": {
+&"id": "7",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "background",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 23,
+&"type": "string",
+&"value": "salon_clases"
+}, {
+&"i": 37,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "8",
+&"type": "mutation"
+},
+"8": {
+&"id": "8",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "show_character",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 27,
+&"type": "string",
+&"value": "eva"
+}]), Array[Dictionary]([{
+&"i": 34,
+&"type": "string",
+&"value": "mirando_pizarron"
+}]), Array[Dictionary]([{
+&"i": 54,
+&"type": "string",
+&"value": "left"
+}, {
+&"i": 60,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "9",
+&"type": "mutation"
+},
+"9": {
+&"id": "9",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Director"
+}, {
+&"i": 11,
+&"type": "dot"
+}, {
+&"function": "show_character",
+&"i": 12,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 27,
+&"type": "string",
+&"value": "alumnos"
+}]), Array[Dictionary]([{
+&"i": 38,
+&"type": "string",
+&"value": "riendo"
+}]), Array[Dictionary]([{
+&"i": 48,
+&"type": "string",
+&"value": "right"
+}, {
+&"i": 55,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "10",
+&"type": "mutation"
+}
+}
+metadata/dialogue_manager_version = "4.0.3"

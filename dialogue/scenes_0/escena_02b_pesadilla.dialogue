@@ -1,0 +1,22 @@
+# ESCENA 2B - EXT. PUEBLO EPECUÉN - NOCHE (PESADILLA, sin barra)
+# Cámara subjetiva en primera persona: Patricia no puede moverse.
+# Fondo: calle inundada, agua hasta las rodillas, luz de rayos.
+~ start
+do Climate.set_visuals(false)
+do Director.hide_all_characters()
+do Director.stop_bgm(0.5)
+do Director.black()
+do Director.background("pueblo_inundado_noche")
+do Director.show_character("mujer_extrana", "ojos_blancos", "center")
+do Director.sfx("tormenta_electrica", true)
+do Director.fade_in(0.8)
+do Director.flash(0.3)
+do Director.sfx("grito")
+Patricia: [i]¿Dónde estoy? ¿Dónde está mi hija? ¿Qué está pasando?[/i]
+Patricia: ¡¿Quién sos?! ¡No me lastimes! ¡¿Qué hiciste con Eva?! ¡Ayuda!
+do Director.sfx("grito_mujer")
+do Director.wait(1.0)
+do Director.fade_out(2.0)
+do Director.stop_all_sfx(0.5)
+do Director.goto("escena_02c_hospital")
+=> END

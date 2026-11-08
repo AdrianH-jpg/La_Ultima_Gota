@@ -1,0 +1,14 @@
+# ESCENA 2C - INT. HABITACIÓN DE HOSPITAL 1968 - NOCHE (sin barra)
+# La tormenta ya no se ve por la ventana. Patricia despierta empapada de sudor.
+~ start
+do Climate.set_visuals(false)
+do Director.hide_all_characters()
+do Director.black()
+do Director.background("hospital_habitacion_1968_calma")
+do Director.show_character("patricia", "asustada_con_eva", "center")
+do Director.fade_in(1.0)
+do Director.wait(1.0)
+Patricia: [i]Solo fue una pesadilla, pero fue tan real.[/i]
+do Director.fade_out(1.5)
+do Director.goto("escena_03a_titulo")
+=> END
