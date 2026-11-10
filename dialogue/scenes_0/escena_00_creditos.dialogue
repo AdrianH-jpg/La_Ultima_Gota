@@ -1,0 +1,14 @@
+# ESCENA 0 - CRÉDITOS DE APERTURA (pantalla en negro, sin barra de clima)
+~ start
+do Climate.set_visuals(false)
+do Director.hide_all_characters()
+do Director.black()
+do Director.bgm("audio_logo")
+do Director.logo(4.0)
+do Director.center_text("Outer Space Games INC presenta", 0.8, 2.0)
+do Director.sfx("lluvia", true)
+do Director.center_text("LA ÚLTIMA GOTA", 0.8, 2.0)
+do Director.center_text("ACTO 1", 0.5, 1.0)
+do Director.stop_all_sfx(1.0)
+do Director.goto("escena_01_matadero")
+=> END

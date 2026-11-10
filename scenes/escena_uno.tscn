@@ -1,41 +1,10 @@
 [gd_scene format=3 uid="uid://txoasnwfkepc"]
 
 [ext_resource type="Script" uid="uid://dmr7ul50y1h7t" path="res://scripts/escena_uno.gd" id="1_a35h6"]
-[ext_resource type="Texture2D" uid="uid://bc1qi7ugn6xw4" path="res://assets/Image/Matadero.jpeg" id="2_brm5a"]
-[ext_resource type="Script" uid="uid://dvh4oweov1brw" path="res://scripts/climate_bar.gd" id="2_cp0kr"]
-[ext_resource type="Shader" uid="uid://c1xnbxq3tfm0o" path="res://shader/climate_post_process.gdshader" id="2_hs364"]
-[ext_resource type="Script" uid="uid://dln4hn3au11kl" path="res://scripts/climate_post_process.gd" id="3_a4ufi"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_cp0kr"]
-shader = ExtResource("2_hs364")
-shader_parameter/climate = 0.5
-shader_parameter/intensity = 1.0
+[ext_resource type="Texture2D" uid="uid://b1qfrpbdjca7q" path="res://assets/Image/mataderoESCENA.png" id="2_brm5a"]
 
 [node name="EscenaUno" type="Node2D" unique_id=1086005845]
 script = ExtResource("1_a35h6")
-
-[node name="CanvasLayer3" type="CanvasLayer" parent="." unique_id=166548680]
-layer = 20
-
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer3" unique_id=1160922368]
-offset_right = 4.0
-offset_bottom = 27.0
-script = ExtResource("2_cp0kr")
-
-[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=741773184]
-layer = 10
-script = ExtResource("3_a4ufi")
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer2" unique_id=1908177964]
-material = SubResource("ShaderMaterial_cp0kr")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1.0
-offset_right = -1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=1431524484]
 anchors_preset = 15
@@ -50,15 +19,19 @@ grow_vertical = 2
 texture = ExtResource("2_brm5a")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=9982643]
+position = Vector2(-200, 200)
+zoom = Vector2(2, 2)
 
 [node name="SFXViento" type="AudioStreamPlayer" parent="." unique_id=515172286]
+autoplay = true
 
 [node name="SFXAves" type="AudioStreamPlayer" parent="." unique_id=1441753114]
+autoplay = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=906528600]
-visible = false
 
 [node name="FadeRect" type="ColorRect" parent="CanvasLayer" unique_id=891386399]
+unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

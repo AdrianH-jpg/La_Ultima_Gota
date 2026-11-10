@@ -1,0 +1,13 @@
+# ESCENA 5 - EXT. TRANQUERA PROPIEDAD EVA - DÍA
+# Escena SIN diálogo: es solo imagen. Se resuelve como una secuencia de comandos
+# con tiempos. Si más adelante querés agregar un pensamiento de Eva, va entre el
+# fade_in y el wait.
+~ start
+do Director.hide_all_characters()
+do Director.black()
+do Director.background("tranquera_camino_tierra")
+do Director.fade_in(1.0)
+do Director.wait(5.0)
+do Director.fade_out(1.0)
+do Director.goto("escena_06a_salon")
+=> END
