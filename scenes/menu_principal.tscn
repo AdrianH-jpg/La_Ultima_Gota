@@ -2,26 +2,36 @@
 
 [ext_resource type="Script" uid="uid://ceqjocsn1yx11" path="res://scripts/menu_principal.gd" id="1_iep14"]
 [ext_resource type="Texture2D" uid="uid://uhuwe4x2uv20" path="res://assets/menu/img/EVA.png" id="2_w5ui5"]
-[ext_resource type="FontFile" uid="uid://dwfncfar0s4c3" path="res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf" id="4_486ty"]
+[ext_resource type="VideoStream" uid="uid://bre1bjl7squ3s" path="res://assets/video/EvaMenu.ogv" id="3_nxt0m"]
+[ext_resource type="FontFile" uid="uid://erdoi62k4r71" path="res://assets/fonts/speltalefont-demo-regular.otf" id="4_8k4fm"]
+[ext_resource type="VideoStream" uid="uid://okkfb27dspem" path="res://assets/video/Rayo.ogv" id="5_2xgxd"]
 [ext_resource type="AudioStream" uid="uid://76y8qofitnt8" path="res://assets/menu/audio/SFX/maquina de escribir.WAV" id="5_qcl6i"]
+[ext_resource type="Texture2D" uid="uid://6ciudl0s4kmu" path="res://assets/textures/gotaTEXTURE.png" id="6_8k4fm"]
 [ext_resource type="AudioStream" uid="uid://bnegf7dyhg6q6" path="res://assets/menu/audio/SFX/VACA.WAV" id="6_nxt0m"]
 [ext_resource type="AudioStream" uid="uid://bdqr10glgbg4n" path="res://assets/sound/SFX_lluvia_bucle.mp3" id="6_qcl6i"]
 
-[sub_resource type="FontVariation" id="FontVariation_qcl6i"]
-base_font = ExtResource("4_486ty")
-variation_embolden = 0.52
+[sub_resource type="Curve" id="Curve_lgh5n"]
+_data = [Vector2(0.09748427, 1), 0.0, 0.0, 0, 0, Vector2(0.35220125, 0.99180317), -0.15332675, -0.15332675, 0, 0, Vector2(0.5974843, 0.90983593), -0.6683477, -0.6683477, 0, 0, Vector2(0.7358491, 0.6393442), -2.110071, -2.110071, 0, 0, Vector2(1, 0.04838705), 0.0, 0.0, 0, 0]
+point_count = 5
 
-[sub_resource type="FontVariation" id="FontVariation_486ty"]
-base_font = ExtResource("4_486ty")
-variation_embolden = 0.52
+[sub_resource type="CurveTexture" id="CurveTexture_8k4fm"]
+curve = SubResource("Curve_lgh5n")
 
-[sub_resource type="FontVariation" id="FontVariation_w5ui5"]
-base_font = ExtResource("4_486ty")
-variation_embolden = 0.52
-
-[sub_resource type="FontVariation" id="FontVariation_nxt0m"]
-base_font = ExtResource("4_486ty")
-variation_embolden = 0.52
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_sam43"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(960, 20, 1)
+direction = Vector3(0, 1, 0)
+spread = 5.0
+initial_velocity_min = 850.0
+initial_velocity_max = 1100.0
+gravity = Vector3(0, 98, 0)
+alpha_curve = SubResource("CurveTexture_8k4fm")
+turbulence_enabled = true
+turbulence_noise_scale = 5.0
+turbulence_noise_speed = Vector3(0.5, 0.2, 0)
+turbulence_influence_min = 0.020000001
+turbulence_influence_max = 0.05
 
 [node name="MenuPrincipal" type="Control" unique_id=922573290]
 layout_mode = 3
@@ -33,6 +43,7 @@ grow_vertical = 2
 script = ExtResource("1_iep14")
 
 [node name="Vaca" type="TextureRect" parent="." unique_id=1445926923]
+visible = false
 light_mask = 2
 layout_mode = 0
 offset_right = 1152.0
@@ -40,7 +51,27 @@ offset_bottom = 651.0
 texture = ExtResource("2_w5ui5")
 stretch_mode = 4
 
+[node name="EvaMenu" type="VideoStreamPlayer" parent="." unique_id=2036674944]
+texture_filter = 2
+layout_mode = 0
+offset_left = -3.0
+offset_right = 1929.0
+offset_bottom = 1087.0
+stream = ExtResource("3_nxt0m")
+autoplay = true
+expand = true
+loop = true
+
+[node name="LluviaFondo" type="GPUParticles2D" parent="." unique_id=1506883946]
+modulate = Color(1, 1, 1, 0.05882353)
+position = Vector2(965, -56)
+amount = 100
+amount_ratio = 0.5
+texture = ExtResource("6_8k4fm")
+process_material = SubResource("ParticleProcessMaterial_sam43")
+
 [node name="CapaEfectos" type="CanvasLayer" parent="." unique_id=2017895658]
+visible = false
 
 [node name="Oscuridad" type="ColorRect" parent="CapaEfectos" unique_id=80899897]
 offset_right = 1929.0
@@ -54,38 +85,34 @@ offset_bottom = 1086.0
 mouse_filter = 2
 
 [node name="Titlebox" type="VBoxContainer" parent="." unique_id=1455151414]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 97.0
-grow_horizontal = 2
+layout_mode = 0
+offset_left = 33.0
+offset_top = 57.0
+offset_right = 1487.0
+offset_bottom = 273.0
 
 [node name="Label" type="Label" parent="Titlebox" unique_id=1900437678]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_486ty")
-theme_override_font_sizes/font_size = 105
-text = "  La Última Gota"
+theme_override_fonts/font = ExtResource("4_8k4fm")
+theme_override_font_sizes/font_size = 150
+text = "  LA ULTIMA GOTA"
 
 [node name="MenuBox" type="VBoxContainer" parent="." unique_id=862967658]
 propagate_maximum_size = false
-layout_mode = 1
-anchors_preset = 14
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_top = -145.0
-offset_right = -648.0
-offset_bottom = 205.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 0
+offset_left = 9.0
+offset_top = 260.0
+offset_right = 1123.0
+offset_bottom = 669.0
 theme_override_constants/separation = 30
+alignment = 1
 
 [node name="Play" type="Button" parent="MenuBox" unique_id=44411773]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.28118658, 0.2811869, 0.28118753, 1)
-theme_override_fonts/font = SubResource("FontVariation_qcl6i")
+theme_override_fonts/font = ExtResource("4_8k4fm")
 theme_override_font_sizes/font_size = 48
 text = "JUGAR"
 flat = true
@@ -94,7 +121,7 @@ flat = true
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
-theme_override_fonts/font = SubResource("FontVariation_486ty")
+theme_override_fonts/font = ExtResource("4_8k4fm")
 theme_override_font_sizes/font_size = 48
 text = "OPCIONES"
 flat = true
@@ -103,19 +130,39 @@ flat = true
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
-theme_override_fonts/font = SubResource("FontVariation_w5ui5")
+theme_override_fonts/font = ExtResource("4_8k4fm")
 theme_override_font_sizes/font_size = 48
-text = "CRÉDITOS"
+text = "CREDITOS"
 flat = true
 
 [node name="Salir" type="Button" parent="MenuBox" unique_id=1941246181]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
-theme_override_fonts/font = SubResource("FontVariation_nxt0m")
+theme_override_fonts/font = ExtResource("4_8k4fm")
 theme_override_font_sizes/font_size = 48
 text = "SALIR"
 flat = true
+
+[node name="Rayo" type="VideoStreamPlayer" parent="." unique_id=1296247061]
+visible = false
+layout_mode = 0
+offset_left = -7.0
+offset_top = -10.0
+offset_right = 1930.0
+offset_bottom = 1093.0
+mouse_filter = 2
+stream = ExtResource("5_2xgxd")
+speed_scale = 0.7
+expand = true
+
+[node name="LluviaParticulas" type="GPUParticles2D" parent="." unique_id=1978174235]
+modulate = Color(1, 1, 1, 0.13725491)
+position = Vector2(938, 20)
+amount = 250
+texture = ExtResource("6_8k4fm")
+lifetime = 1.6
+process_material = SubResource("ParticleProcessMaterial_sam43")
 
 [node name="HoverSFX" type="AudioStreamPlayer" parent="." unique_id=191888745]
 stream = ExtResource("5_qcl6i")
@@ -128,9 +175,14 @@ stream = ExtResource("6_qcl6i")
 volume_db = -5.0
 autoplay = true
 
+[node name="TimerRayo" type="Timer" parent="." unique_id=1431057795]
+one_shot = true
+
 [connection signal="mouse_entered" from="MenuBox/Play" to="." method="_on_play_mouse_entered"]
 [connection signal="mouse_exited" from="MenuBox/Play" to="." method="_on_play_mouse_exited"]
 [connection signal="pressed" from="MenuBox/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MenuBox/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="MenuBox/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="MenuBox/Salir" to="." method="_on_salir_pressed"]
+[connection signal="finished" from="Rayo" to="." method="_on_rayo_finished"]
+[connection signal="timeout" from="TimerRayo" to="." method="_on_timer_rayo_timeout"]
