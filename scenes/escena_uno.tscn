@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://txoasnwfkepc"]
 
 [ext_resource type="Script" uid="uid://dmr7ul50y1h7t" path="res://scripts/escena_uno.gd" id="1_a35h6"]
-[ext_resource type="Texture2D" uid="uid://bc1qi7ugn6xw4" path="res://assets/Image/Matadero.jpeg" id="2_brm5a"]
+[ext_resource type="Texture2D" uid="uid://b1qfrpbdjca7q" path="res://assets/Image/mataderoESCENA.png" id="2_brm5a"]
 
 [node name="EscenaUno" type="Node2D" unique_id=1086005845]
 script = ExtResource("1_a35h6")
@@ -19,14 +19,19 @@ grow_vertical = 2
 texture = ExtResource("2_brm5a")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=9982643]
+position = Vector2(-200, 200)
+zoom = Vector2(2, 2)
 
 [node name="SFXViento" type="AudioStreamPlayer" parent="." unique_id=515172286]
+autoplay = true
 
 [node name="SFXAves" type="AudioStreamPlayer" parent="." unique_id=1441753114]
+autoplay = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=906528600]
 
 [node name="FadeRect" type="ColorRect" parent="CanvasLayer" unique_id=891386399]
+unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

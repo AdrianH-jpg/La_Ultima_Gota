@@ -1,0 +1,19 @@
+# ESCENA 3B - INT. COCINA COMEDOR CASA EVA - MADRUGADA
+# AQUÍ APARECE POR PRIMERA VEZ LA BARRA. Eva arranca en desesperanza (15):
+# casi blanco y negro, frío, apagado.
+# Fondo: reloj en la pared marca 4:45, botellas de alcohol sobre un mueble.
+~ start
+do Director.hide_all_characters()
+do Director.black()
+do Director.background("cocina_comedor_madrugada")
+do Director.show_character("eva", "cansada", "left")
+do Climate.snap(15)
+do Climate.set_visuals(true)
+do Director.fade_in(2.0)
+do Director.wait(1.5)
+do Director.sfx("gallo")
+Gallo: ¡Kikirikiiiiii!
+Eva: [i]Cada vez más temprano canta ese gallo, faltan 15 minutos para las 5:00... Dos mates más y arranco...[/i]
+do Director.fade_out(1.0)
+do Director.goto("escena_04_corral")
+=> END

@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://d10gsrna1ljjy"]
+
+[ext_resource type="Script" uid="uid://blnathy8j6fdb" path="res://scripts/escena_3.gd" id="1_6hrd2"]
+
+[node name="escena_3" type="Node2D" unique_id=1206504489]
+script = ExtResource("1_6hrd2")
+
+[node name="FondoCocina" type="Sprite2D" parent="." unique_id=1891199790]
+
+[node name="SFXReloj" type="AudioStreamPlayer" parent="." unique_id=1107778509]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1771897202]
+
+[node name="FadeRect" type="ColorRect" parent="CanvasLayer" unique_id=282637140]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.008202022, 0.008202025, 0.008202025, 1)
+
+[node name="Sobreimpreso" type="Label" parent="CanvasLayer" unique_id=506721698]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1

@@ -3,7 +3,6 @@
 [ext_resource type="VideoStream" uid="uid://cp1wnmvunfo5i" path="res://assets/video/logito.ogv" id="1_7e0sv"]
 [ext_resource type="AudioStream" uid="uid://c4ewmo7mvqn0k" path="res://assets/sound/logo.wav" id="2_exwf2"]
 [ext_resource type="Script" uid="uid://uaclntjttox1" path="res://scripts/opening_sequence.gd" id="2_vrguo"]
-[ext_resource type="FontFile" uid="uid://erdoi62k4r71" path="res://assets/fonts/speltalefont-demo-regular.otf" id="4_kaxj8"]
 [ext_resource type="AudioStream" uid="uid://cg5tfew2oeocl" path="res://assets/sound/SFX_lluvia.wav" id="4_vrguo"]
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" unique_id=1166612246]
@@ -29,7 +28,6 @@ autoplay = true
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-theme_override_fonts/font = ExtResource("4_kaxj8")
 theme_override_font_sizes/font_size = 40
 text = "Outer Space Games INC presenta..."
 horizontal_alignment = 1

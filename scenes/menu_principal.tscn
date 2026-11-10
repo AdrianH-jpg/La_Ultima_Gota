@@ -41,6 +41,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_iep14")
+tiempo_inicial = null
+retraso_trueno = null
 
 [node name="Vaca" type="TextureRect" parent="." unique_id=1445926923]
 visible = false
