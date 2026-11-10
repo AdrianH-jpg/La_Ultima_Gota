@@ -18,9 +18,10 @@ var menu = "res://scenes/menu_principal.tscn"
 
 func _ready():
 	# Si este nodo no pertenece al grupo del menú, no hace nada
-	if not is_in_group("menu_principal"):
+	# Si la escena actual no es el menú, no hace nada
+	if get_tree().current_scene.scene_file_path != menu:
 		return
-	
+		
 	# ---------- Código que solo debe ejecutarse en el menú ----------
 	timer_rayo.start(2.0)
 	
@@ -45,6 +46,7 @@ func _ready():
 			boton.mouse_entered.connect(_al_hacer_hover.bind(boton))
 			boton.mouse_exited.connect(_al_quitar_hover.bind(boton))
 			
+		
 func _al_hacer_hover(boton_tocado: Button) -> void:
 	Hover_SFX.play() # ¡Suena el hover!
 	
