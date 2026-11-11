@@ -1,16 +1,4 @@
-# ESCENA 4 - EXT. CORRAL DE LUNA - MADRUGADA
-# Eva acaricia a Luna. (Eva susurra.)
-~ start
-do Director.hide_all_characters()
-do Director.black()
-do Director.background("corral_luna_madrugada")
-do Director.show_character("eva", "acariciando", "left")
-do Director.show_character("luna", "neutral", "right")
-do Director.fade_in(1.0)
-Eva: Buen día, Lunita, ¿cómo está la vaca más linda de todo el mundo?
-Eva: Hoy vuelvo más tarde, toca limpiar el balneario, así que no me extrañes mucho, ¿sí?
-do Director.sfx("mugido_vaca")
-Luna: ¡Muuuuuuuuuu!
-do Director.fade_out(1.0)
-do Director.goto("escena_05_tranquera")
+~ corral
+Eva: Lunita, ya le di de comer a las gallinas, ahí tenés agua y comida.
+Eva: Con el curso vamos a limpiar el balneario para la apertura de temporada, como todos los años, viste. Te amo, no me extrañes mucho.
 => END

@@ -6,227 +6,50 @@
 script = ExtResource("1_beihu")
 using_states = PackedStringArray()
 cues = {
-"start": "5"
+"tranquera": "1"
 }
-character_names = PackedStringArray()
-first_cue = "4"
+character_names = PackedStringArray("Eva")
+first_cue = "0"
 lines = {
-"10": {
-&"id": "10",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "fade_out",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 21,
-&"type": "number",
-&"value": 1.0
-}, {
-&"i": 24,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "cue"
 },
-&"next_id": "11",
-&"type": "mutation"
+"1": {
+&"character": "Eva",
+&"id": "1",
+&"next_id": "2",
+&"static_id": "",
+&"text": "[i]¿Estará vacía la botella cuando llegue? ¿Cómo sería mi vida si... Si mamá... Se durmiera boca arriba y se ahogara en su propio vómito? Dios... En qué estoy pensando...[/i]",
+&"type": "dialogue"
 },
-"11": {
-&"id": "11",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "goto",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "escena_06a_salon"
-}, {
-&"i": 35,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "12",
-&"type": "mutation"
-},
-"12": {
-&"id": "12",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"13": {
-&"id": "13",
-&"next_id": "14",
-&"type": ""
-},
-"14": {
-&"id": "14",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
+"2": {
+&"character": "Eva",
+&"id": "2",
+&"next_id": "3",
+&"static_id": "",
+&"text": "[i]Preferiría que deje de tomar, que todo esté bien... Estoy tan cansada...[/i]",
+&"type": "dialogue"
 },
 "3": {
 &"id": "3",
-&"next_id": "4",
-&"type": ""
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
 },
 "4": {
 &"id": "4",
 &"next_id": "5",
-&"type": "cue"
+&"type": ""
 },
 "5": {
 &"id": "5",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "hide_all_characters",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 32,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "6",
-&"type": "mutation"
-},
-"6": {
-&"id": "6",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "black",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 18,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "7",
-&"type": "mutation"
-},
-"7": {
-&"id": "7",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "background",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 23,
-&"type": "string",
-&"value": "tranquera_camino_tierra"
-}, {
-&"i": 48,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "8",
-&"type": "mutation"
-},
-"8": {
-&"id": "8",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "fade_in",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 20,
-&"type": "number",
-&"value": 1.0
-}, {
-&"i": 23,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "9",
-&"type": "mutation"
-},
-"9": {
-&"id": "9",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "wait",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "number",
-&"value": 5.0
-}, {
-&"i": 20,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "10",
-&"type": "mutation"
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
 }
 }
 metadata/dialogue_manager_version = "4.0.3"

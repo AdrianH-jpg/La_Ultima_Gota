@@ -484,8 +484,7 @@ position = Vector2(1504, 489)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_xcf42")
 animation = &"rodar_ojos"
-frame = 34
-frame_progress = 0.0022200346
+frame_progress = 0.9759545
 
 [node name="ClimatePostProcess" type="CanvasLayer" parent="." unique_id=2037086332]
 layer = 10

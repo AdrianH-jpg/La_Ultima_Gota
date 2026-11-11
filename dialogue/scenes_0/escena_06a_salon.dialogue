@@ -1,24 +1,26 @@
-# ESCENA 6A - INT. SALÓN DE CLASES - DÍA
-# Primera decisión del jugador. VALORES DE CLIMA PROVISORIOS (a confirmar):
-#   Borrar el pizarrón  -> +3  (un gesto de acción, un poco de aire)
-#   Ignorar y sentarse  -> -5  (se hunde más)
-~ start
-do Director.hide_all_characters()
-do Director.black()
-do Director.background("salon_clases")
-do Director.show_character("eva", "mirando_pizarron", "left")
-do Director.show_character("alumnos", "riendo", "right")
-do Director.fade_in(1.0)
-do Director.sfx("risas")
-# Temporal: sacar esta línea cuando el fondo ya tenga el texto dibujado en el pizarrón.
-Narrador: En el pizarrón, escrito con tiza: «EVA TIENE OLOR A BOSTA».
-- Borrar el pizarrón
-	do Climate.add(3)
-	do Director.fade_out(1.0)
-	do Director.goto("escena_06b")
-	=> END
+~ pizarron
+Eva: [i]Ese fue Guillermo, seguro, es el único imbécil capaz de escribir tan mal. Seguramente lo mandó Pilar.[/i]
+- Borrar el insulto
+	=> opcion_a
+- Borrar el insulto y un par de líneas del conteo para los votos
+	=> opcion_b
 - Ignorar y sentarse
 	do Climate.add(-5)
-	do Director.fade_out(1.0)
-	do Director.goto("escena_06c")
 	=> END
+
+~ opcion_a
+do mostrar_pilar_a()
+Pilar: Borrar el pizarrón no te borra el olor a mierda, ¿sabías?
+do sonido_risas()
+Pilar: Vamos a hacer una colecta para comprarte desodorantes, inversión a futuro para nuestras narices, ¿no, chicos?
+do sonido_risas(true)
+Eva: ...
+do Climate.add(1)
+=> END
+
+~ opcion_b
+do mostrar_pilar_b()
+Pilar: ¡Qué hacés, pendeja sucia! ¡Lo hiciste a propósito! ¡Volvé a escribir los votos que borraste!
+Pilar: Este año voy a ganar la corona de Reina del Lago por tercera vez consecutiva… Y eso no te gusta, ¿verdad? Pendeja envidiosa.
+do Climate.add(3)
+=> END

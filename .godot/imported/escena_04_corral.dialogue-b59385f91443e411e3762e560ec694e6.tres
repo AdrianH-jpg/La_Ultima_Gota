@@ -6,323 +6,50 @@
 script = ExtResource("1_r1i6n")
 using_states = PackedStringArray()
 cues = {
-"start": "3"
+"corral": "1"
 }
-character_names = PackedStringArray("Eva", "Luna")
-first_cue = "2"
+character_names = PackedStringArray("Eva")
+first_cue = "0"
 lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "cue"
+},
 "1": {
+&"character": "Eva",
 &"id": "1",
 &"next_id": "2",
-&"type": ""
-},
-"10": {
-&"character": "Eva",
-&"id": "10",
-&"next_id": "11",
 &"static_id": "",
-&"text": "Hoy vuelvo más tarde, toca limpiar el balneario, así que no me extrañes mucho, ¿sí?",
+&"text": "Lunita, ya le di de comer a las gallinas, ahí tenés agua y comida.",
 &"type": "dialogue"
-},
-"11": {
-&"id": "11",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "sfx",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 16,
-&"type": "string",
-&"value": "mugido_vaca"
-}, {
-&"i": 29,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "12",
-&"type": "mutation"
-},
-"12": {
-&"character": "Luna",
-&"id": "12",
-&"next_id": "13",
-&"static_id": "",
-&"text": "¡Muuuuuuuuuu!",
-&"type": "dialogue"
-},
-"13": {
-&"id": "13",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "fade_out",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 21,
-&"type": "number",
-&"value": 1.0
-}, {
-&"i": 24,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "14",
-&"type": "mutation"
-},
-"14": {
-&"id": "14",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "goto",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "escena_05_tranquera"
-}, {
-&"i": 38,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "15",
-&"type": "mutation"
-},
-"15": {
-&"id": "15",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"16": {
-&"id": "16",
-&"next_id": "17",
-&"type": ""
-},
-"17": {
-&"id": "17",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
 },
 "2": {
+&"character": "Eva",
 &"id": "2",
 &"next_id": "3",
-&"type": "cue"
+&"static_id": "",
+&"text": "Con el curso vamos a limpiar el balneario para la apertura de temporada, como todos los años, viste. Te amo, no me extrañes mucho.",
+&"type": "dialogue"
 },
 "3": {
 &"id": "3",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "hide_all_characters",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 32,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "4",
-&"type": "mutation"
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
 },
 "4": {
 &"id": "4",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "black",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 18,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
 &"next_id": "5",
-&"type": "mutation"
+&"type": ""
 },
 "5": {
 &"id": "5",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "background",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 23,
-&"type": "string",
-&"value": "corral_luna_madrugada"
-}, {
-&"i": 46,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "6",
-&"type": "mutation"
-},
-"6": {
-&"id": "6",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "show_character",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 27,
-&"type": "string",
-&"value": "eva"
-}]), Array[Dictionary]([{
-&"i": 34,
-&"type": "string",
-&"value": "acariciando"
-}]), Array[Dictionary]([{
-&"i": 49,
-&"type": "string",
-&"value": "left"
-}, {
-&"i": 55,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "7",
-&"type": "mutation"
-},
-"7": {
-&"id": "7",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "show_character",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 27,
-&"type": "string",
-&"value": "luna"
-}]), Array[Dictionary]([{
-&"i": 35,
-&"type": "string",
-&"value": "neutral"
-}]), Array[Dictionary]([{
-&"i": 46,
-&"type": "string",
-&"value": "right"
-}, {
-&"i": 53,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "8",
-&"type": "mutation"
-},
-"8": {
-&"id": "8",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Director"
-}, {
-&"i": 11,
-&"type": "dot"
-}, {
-&"function": "fade_in",
-&"i": 12,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 20,
-&"type": "number",
-&"value": 1.0
-}, {
-&"i": 23,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "9",
-&"type": "mutation"
-},
-"9": {
-&"character": "Eva",
-&"id": "9",
-&"next_id": "10",
-&"static_id": "",
-&"text": "Buen día, Lunita, ¿cómo está la vaca más linda de todo el mundo?",
-&"type": "dialogue"
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
 }
 }
 metadata/dialogue_manager_version = "4.0.3"

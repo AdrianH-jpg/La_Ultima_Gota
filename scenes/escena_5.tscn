@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cn04m7m3k70j0"]
+
+[ext_resource type="Script" uid="uid://b6wh73236xs3j" path="res://scripts/escena_5.gd" id="1_vu1vq"]
+
+[node name="Escena5" type="Node2D" unique_id=470631550]
+script = ExtResource("1_vu1vq")
+
+[node name="FondoTranquera" type="Sprite2D" parent="." unique_id=953167303]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1434965412]
+layer = 50
+
+[node name="FadeRect" type="ColorRect" parent="CanvasLayer" unique_id=432626728]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

@@ -21,7 +21,7 @@ lines = {
 &"id": "1",
 &"next_id": "2",
 &"static_id": "",
-&"text": "[i]Esa botella seguramente esté vacía en unas horas... Dos mates más y arranco.[/i]",
+&"text": "[i]Esa botella seguramente esté vacía en unas horas... Agh, bueno... Dos mates más y arranco.[/i]",
 &"type": "dialogue"
 },
 "2": {

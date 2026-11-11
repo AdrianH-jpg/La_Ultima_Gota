@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c1oat6lcg6c5o"]
+
+[ext_resource type="Texture2D" uid="uid://c2bbrcf2owahc" path="res://assets/Image/ESCUELABG.png" id="1_nr0k5"]
+[ext_resource type="Script" uid="uid://c0tgbk2epysj0" path="res://scripts/escena_6.gd" id="1_oe5kk"]
+
+[node name="Escena6" type="Node2D" unique_id=2039744324]
+script = ExtResource("1_oe5kk")
+
+[node name="FondoSalon" type="Sprite2D" parent="." unique_id=1384521454]
+position = Vector2(960, 540)
+texture = ExtResource("1_nr0k5")
+
+[node name="FondoPilarA" type="Sprite2D" parent="." unique_id=1490344650]
+
+[node name="FondoPilarB" type="Sprite2D" parent="." unique_id=1969802890]
+
+[node name="SFXRisas" type="AudioStreamPlayer" parent="." unique_id=124138734]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=81070966]
+layer = 50
+
+[node name="FadeRect" type="ColorRect" parent="CanvasLayer" unique_id=1767382179]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
