@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cyemc5ah1o63j"]
+
+[ext_resource type="Script" uid="uid://om5mgnyuh7c1" path="res://guion/escena_guion.gd" id="1_vwsed"]
+[ext_resource type="Texture2D" uid="uid://cglnb6sc87g85" path="res://assets/Image/balneario_placeholder.png" id="2_aj2kj"]
+
+[node name="Escena12" type="Node2D" unique_id=1282837372]
+script = ExtResource("1_vwsed")
+archivo = "escena_12"
+
+[node name="FondoPileta" type="Sprite2D" parent="." unique_id=700416175]
+texture = ExtResource("2_aj2kj")
+
+[node name="FondoGranizo" type="Sprite2D" parent="." unique_id=2014930978]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=959059390]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1445741330]
+layer = 50
+
+[node name="FadeRect" type="ColorRect" parent="CanvasLayer" unique_id=79033826]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FlashRect" type="ColorRect" parent="CanvasLayer" unique_id=1941579779]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)

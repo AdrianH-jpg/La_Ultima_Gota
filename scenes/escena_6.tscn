@@ -7,6 +7,7 @@
 script = ExtResource("1_oe5kk")
 archivo = "escena_6"
 titulos = Array[String](["pizarron"])
+siguiente_escena = "uid://cyemc5ah1o63j"
 
 [node name="FondoSalon" type="Sprite2D" parent="." unique_id=1384521454]
 position = Vector2(960, 540)
