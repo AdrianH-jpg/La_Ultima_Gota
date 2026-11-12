@@ -1,8 +1,8 @@
-res://scenes/escena_2a.tscn
+res://scenes/escena_3.tscn
 res://whiteOutline.gdshader
 res://scenes/menu_principal.gdshader
 res://shader/climate_post_process.gdshader
-res://guion/escena_guion.gd
-res://scenes/escena_uno.tscn
+res://scenes/escena_4.tscn
+res://scenes/escena_5.tscn
+res://scenes/escena_6.tscn
 res://guion/guion.gd
-res://dialogue/scene_dialogue/balloon.tscn

@@ -10,21 +10,21 @@ Eva: [i]Ese fue Guillermo, seguro, es el único imbécil capaz de escribir tan m
 	=> END
 
 ~ opcion_a
-do mostrar_pilar_a()
+#do _mostrar_uno()
 do Guion.mostrar("Pilar", "hablando")
 Pilar: Borrar el pizarrón no te borra el olor a mierda, ¿sabías?
-do sonido_risas()
+# do sonido_risas()
 do Guion.mostrar("Pilar", "mano_gesto")
 Pilar: Vamos a hacer una colecta para comprarte desodorantes, inversión a futuro para nuestras narices, ¿no, chicos?
-do sonido_risas(true)
+#do sonido_risas(true)
 do Guion.mostrar("Eva", "indiferente")
 Eva: ...
 do Climate.add(1)
 => END
 
 ~ opcion_b
-do mostrar_pilar_b()
-do Guion.mostrar("Pilar", "")
+#do mostrar_pilar_b()
+do Guion.mostrar("Pilar", "hablando")
 Pilar: ¡Qué hacés, pendeja sucia! ¡Lo hiciste a propósito! ¡Volvé a escribir los votos que borraste!
 do Guion.mostrar("Pilar", "malvada")
 Pilar: Este año voy a ganar la corona de Reina del Lago por tercera vez consecutiva… Y eso no te gusta, ¿verdad? Pendeja envidiosa.

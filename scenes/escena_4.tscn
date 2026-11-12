@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ciasse1o0lmsq"]
 
 [ext_resource type="Script" uid="uid://om5mgnyuh7c1" path="res://guion/escena_guion.gd" id="1_keh76"]
+[ext_resource type="Texture2D" uid="uid://q3lscuxxpvmj" path="res://assets/Image/CORRAL_luna_placeholder.png" id="2_6qxte"]
 
 [node name="Escena4" type="Node2D" unique_id=776263582]
 script = ExtResource("1_keh76")
@@ -9,6 +10,8 @@ titulos = Array[String](["corral"])
 siguiente_escena = "uid://cn04m7m3k70j0"
 
 [node name="FondoCorral" type="Sprite2D" parent="." unique_id=1550697461]
+position = Vector2(963, 542)
+texture = ExtResource("2_6qxte")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1738150944]
 layer = 50

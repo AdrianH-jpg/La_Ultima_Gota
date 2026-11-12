@@ -1,11 +1,16 @@
 [gd_scene format=3 uid="uid://cn04m7m3k70j0"]
 
-[ext_resource type="Script" uid="uid://b6wh73236xs3j" path="res://scripts/escena_5.gd" id="1_vu1vq"]
+[ext_resource type="Script" uid="uid://om5mgnyuh7c1" path="res://guion/escena_guion.gd" id="1_kau0b"]
+[ext_resource type="Texture2D" uid="uid://djtofry2oqw4n" path="res://assets/Image/camino_rural_eva_placeholder.png" id="2_kau0b"]
 
 [node name="Escena5" type="Node2D" unique_id=470631550]
-script = ExtResource("1_vu1vq")
+script = ExtResource("1_kau0b")
+archivo = "escena_5"
+titulos = Array[String](["tranquera"])
 
 [node name="FondoTranquera" type="Sprite2D" parent="." unique_id=953167303]
+position = Vector2(965, 541)
+texture = ExtResource("2_kau0b")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1434965412]
 layer = 50

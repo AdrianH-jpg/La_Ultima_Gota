@@ -47,8 +47,8 @@ func _mostrar_uno(nombre: String, anim: String) -> void:
 		if ps == null:
 			push_warning("Guion: falta la escena del personaje " + info["escena"]); return
 		var n: Node2D = ps.instantiate()
-		var vp := get_viewport().get_visible_rect().size
-		n.position = Vector2(vp.x * POS_X.get(info.get("posicion", "centro"), 0.5), vp.y)
+		var vp := get_viewport().get_visible_rect().size 
+		n.position = Vector2(vp.x * POS_X.get(info.get("posicion", "centro"), 2), (vp.y - 400))
 		n.scale = Vector2.ONE * float(info.get("escala", 1.0))
 		_capa.add_child(n)
 		_activos[nombre] = n

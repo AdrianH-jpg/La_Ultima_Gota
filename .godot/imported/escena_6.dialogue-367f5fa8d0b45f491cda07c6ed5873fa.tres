@@ -6,8 +6,8 @@
 script = ExtResource("1_rumt1")
 using_states = PackedStringArray()
 cues = {
-"opcion_a": "12",
-"opcion_b": "25",
+"opcion_a": "13",
+"opcion_b": "26",
 "pizarron": "1"
 }
 character_names = PackedStringArray("Eva", "Pilar")
@@ -57,25 +57,13 @@ lines = {
 },
 "11": {
 &"id": "11",
-&"next_id": "12",
+&"next_id": "13",
 &"type": "cue"
 },
 "12": {
 &"id": "12",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"function": "mostrar_pilar_a",
-&"i": 3,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 19,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
 &"next_id": "13",
-&"type": "mutation"
+&"type": ""
 },
 "13": {
 &"id": "13",
@@ -112,27 +100,15 @@ lines = {
 "14": {
 &"character": "Pilar",
 &"id": "14",
-&"next_id": "15",
+&"next_id": "16",
 &"static_id": "",
 &"text": "Borrar el pizarrón no te borra el olor a mierda, ¿sabías?",
 &"type": "dialogue"
 },
 "15": {
 &"id": "15",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"function": "sonido_risas",
-&"i": 3,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 16,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
 &"next_id": "16",
-&"type": "mutation"
+&"type": ""
 },
 "16": {
 &"id": "16",
@@ -169,31 +145,15 @@ lines = {
 "17": {
 &"character": "Pilar",
 &"id": "17",
-&"next_id": "18",
+&"next_id": "19",
 &"static_id": "",
 &"text": "Vamos a hacer una colecta para comprarte desodorantes, inversión a futuro para nuestras narices, ¿no, chicos?",
 &"type": "dialogue"
 },
 "18": {
 &"id": "18",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"function": "sonido_risas",
-&"i": 3,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 16,
-&"type": "variable",
-&"value": "true"
-}, {
-&"i": 20,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
 &"next_id": "19",
-&"type": "mutation"
+&"type": ""
 },
 "19": {
 &"id": "19",
@@ -285,25 +245,13 @@ lines = {
 },
 "24": {
 &"id": "24",
-&"next_id": "25",
+&"next_id": "26",
 &"type": "cue"
 },
 "25": {
 &"id": "25",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"function": "mostrar_pilar_b",
-&"i": 3,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 19,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
 &"next_id": "26",
-&"type": "mutation"
+&"type": ""
 },
 "26": {
 &"id": "26",
@@ -326,9 +274,9 @@ lines = {
 }]), Array[Dictionary]([{
 &"i": 26,
 &"type": "string",
-&"value": ""
+&"value": "hablando"
 }, {
-&"i": 28,
+&"i": 36,
 &"type": "parens_close"
 }])])
 }]),
@@ -443,7 +391,7 @@ lines = {
 "4": {
 &"id": "4",
 &"is_snippet": false,
-&"next_id": "12",
+&"next_id": "13",
 &"next_id_after": "",
 &"type": "goto"
 },
@@ -457,7 +405,7 @@ lines = {
 "6": {
 &"id": "6",
 &"is_snippet": false,
-&"next_id": "25",
+&"next_id": "26",
 &"next_id_after": "",
 &"type": "goto"
 },

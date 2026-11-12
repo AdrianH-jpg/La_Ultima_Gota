@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://c1oat6lcg6c5o"]
 
-[ext_resource type="Texture2D" uid="uid://c2bbrcf2owahc" path="res://assets/Image/ESCUELABG.png" id="1_nr0k5"]
-[ext_resource type="Script" uid="uid://c0tgbk2epysj0" path="res://scripts/escena_6.gd" id="1_oe5kk"]
+[ext_resource type="Script" uid="uid://om5mgnyuh7c1" path="res://guion/escena_guion.gd" id="1_oe5kk"]
+[ext_resource type="Texture2D" uid="uid://bcwgk7ad5opmb" path="res://assets/Image/fondoescuelaVOSTA.png" id="2_oe5kk"]
 
 [node name="Escena6" type="Node2D" unique_id=2039744324]
 script = ExtResource("1_oe5kk")
+archivo = "escena_6"
+titulos = Array[String](["pizarron"])
 
 [node name="FondoSalon" type="Sprite2D" parent="." unique_id=1384521454]
 position = Vector2(960, 540)
-texture = ExtResource("1_nr0k5")
+texture = ExtResource("2_oe5kk")
 
 [node name="FondoPilarA" type="Sprite2D" parent="." unique_id=1490344650]
 
