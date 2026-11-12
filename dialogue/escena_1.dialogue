@@ -2,7 +2,8 @@
 do Guion.pantalla("La historia oficial cuenta que el 10 de noviembre de 1985, el muro de contención de la Laguna Epecuén colapsó inundando rápidamente la localidad de Villa Epecuén de manera indetenible, pero con la suficiente lentitud para permitir que sus habitantes evacuaran el pueblo sin que se registraran víctimas fatales.", false)
 => END
 
-~ start
+~ matadero
+do camara(0,0,1,4)
 Narrador: [i]Esa noche todo cambió.[/i]
 Narrador: [i]Nadie murió… Es lo que dicen, eso piensan todos.[/i]
 Narrador: [i]Pero hay algo que nunca nadie contó sobre aquel 10 de noviembre de 1985...[/i]

@@ -6,10 +6,10 @@
 script = ExtResource("1_jascv")
 using_states = PackedStringArray()
 cues = {
-"cuna": "6",
-"despierta": "21",
-"pesadilla_1": "11",
-"pesadilla_2": "16",
+"cuna": "8",
+"despierta": "27",
+"pesadilla_1": "13",
+"pesadilla_2": "21",
 "titulo_fecha": "1"
 }
 character_names = PackedStringArray("Patricia")
@@ -24,26 +24,15 @@ lines = {
 &"id": "1",
 &"mutation": {
 &"expression": Array[Dictionary]([{
+&"function": "fondo",
 &"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "pantalla",
-&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 18,
+&"i": 9,
 &"type": "string",
-&"value": "LA ÚLTIMA GOTA"
-}]), Array[Dictionary]([{
-&"i": 36,
-&"type": "variable",
-&"value": "false"
+&"value": "FondoHospital"
 }, {
-&"i": 41,
+&"i": 24,
 &"type": "parens_close"
 }])])
 }]),
@@ -54,65 +43,79 @@ lines = {
 },
 "10": {
 &"id": "10",
-&"next_id": "11",
-&"type": "cue"
-},
-"11": {
-&"id": "11",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Patricia"
-}]), Array[Dictionary]([{
-&"i": 29,
-&"type": "string",
-&"value": "grita"
-}, {
-&"i": 36,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "12",
-&"type": "mutation"
-},
-"12": {
-&"character": "Patricia",
-&"id": "12",
-&"next_id": "13",
-&"static_id": "",
-&"text": "¡¿Dónde está mi hija?! ¿Dónde está mi bebé? Eva, ¡¿dónde estás?!",
-&"type": "dialogue"
-},
-"13": {
-&"id": "13",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
+"11": {
+&"id": "11",
+&"next_id": "12",
+&"type": ""
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"type": "cue"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "parpadeo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": "number",
+&"value": 3
+}, {
+&"i": 13,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "14",
+&"type": "mutation"
+},
 "14": {
 &"id": "14",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "fondo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": "string",
+&"value": "FondoPesadilla"
+}, {
+&"i": 25,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
 &"next_id": "15",
-&"type": ""
+&"type": "mutation"
 },
 "15": {
 &"id": "15",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "rayo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 8,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
 &"next_id": "16",
-&"type": "cue"
+&"type": "mutation"
 },
 "16": {
 &"id": "16",
@@ -151,7 +154,7 @@ lines = {
 &"id": "17",
 &"next_id": "18",
 &"static_id": "",
-&"text": "¡¿Quién sos?!",
+&"text": "¡¿Dónde está mi hija?! ¿Dónde está mi bebé? Eva, ¡¿dónde estás?!",
 &"type": "dialogue"
 },
 "18": {
@@ -170,26 +173,11 @@ lines = {
 &"id": "2",
 &"mutation": {
 &"expression": Array[Dictionary]([{
+&"function": "rayo",
 &"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "pantalla",
-&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 18,
-&"type": "string",
-&"value": "Domingo - 28 de abril de 1968"
-}]), Array[Dictionary]([{
-&"i": 51,
-&"type": "variable",
-&"value": "false"
-}, {
-&"i": 56,
+&"i": 8,
 &"type": "parens_close"
 }])])
 }]),
@@ -205,6 +193,101 @@ lines = {
 },
 "21": {
 &"id": "21",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "rayo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 8,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "22",
+&"type": "mutation"
+},
+"22": {
+&"id": "22",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Patricia"
+}]), Array[Dictionary]([{
+&"i": 29,
+&"type": "string",
+&"value": "grita"
+}, {
+&"i": 36,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "23",
+&"type": "mutation"
+},
+"23": {
+&"character": "Patricia",
+&"id": "23",
+&"next_id": "24",
+&"static_id": "",
+&"text": "¡¿Quién sos?!",
+&"type": "dialogue"
+},
+"24": {
+&"id": "24",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"25": {
+&"id": "25",
+&"next_id": "26",
+&"type": ""
+},
+"26": {
+&"id": "26",
+&"next_id": "27",
+&"type": "cue"
+},
+"27": {
+&"id": "27",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "fondo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": "string",
+&"value": "FondoHospitalCalma"
+}, {
+&"i": 29,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "28",
+&"type": "mutation"
+},
+"28": {
+&"id": "28",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -232,38 +315,63 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "22",
+&"next_id": "29",
 &"type": "mutation"
 },
-"22": {
+"29": {
 &"character": "Patricia",
-&"id": "22",
-&"next_id": "23",
+&"id": "29",
+&"next_id": "30",
 &"static_id": "",
 &"text": "[i]Solo fue un sueño... Un maldito sueño.[/i]",
 &"type": "dialogue"
 },
-"23": {
-&"id": "23",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"24": {
-&"id": "24",
-&"next_id": "25",
-&"type": ""
-},
-"25": {
-&"id": "25",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
 "3": {
 &"id": "3",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "pantalla",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": "string",
+&"value": "Domingo - 28 de abril de 1968"
+}]), Array[Dictionary]([{
+&"i": 51,
+&"type": "variable",
+&"value": "false"
+}, {
+&"i": 56,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "4",
+&"type": "mutation"
+},
+"30": {
+&"id": "30",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"31": {
+&"id": "31",
+&"next_id": "32",
+&"type": ""
+},
+"32": {
+&"id": "32",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
@@ -271,16 +379,56 @@ lines = {
 },
 "4": {
 &"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "camara",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 10,
+&"type": "number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 12,
+&"type": "number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 14,
+&"type": "number",
+&"value": 1
+}]), Array[Dictionary]([{
+&"i": 16,
+&"type": "number",
+&"value": 4
+}, {
+&"i": 17,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
 &"next_id": "5",
-&"type": ""
+&"type": "mutation"
 },
 "5": {
 &"id": "5",
-&"next_id": "6",
-&"type": "cue"
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
 },
 "6": {
 &"id": "6",
+&"next_id": "7",
+&"type": ""
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"type": "cue"
+},
+"8": {
+&"id": "8",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -308,28 +456,16 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "7",
+&"next_id": "9",
 &"type": "mutation"
 },
-"7": {
+"9": {
 &"character": "Patricia",
-&"id": "7",
-&"next_id": "8",
+&"id": "9",
+&"next_id": "10",
 &"static_id": "",
 &"text": "Arrorró, mi niña, arrorró, mi sol, arrorró, pedazo de mi corazón...",
 &"type": "dialogue"
-},
-"8": {
-&"id": "8",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"9": {
-&"id": "9",
-&"next_id": "10",
-&"type": ""
 }
 }
 metadata/dialogue_manager_version = "4.0.3"

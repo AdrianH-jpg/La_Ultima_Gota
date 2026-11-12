@@ -6,7 +6,10 @@
 [node name="EscenaUno" type="Node2D" unique_id=1086005845]
 script = ExtResource("1_brm5a")
 archivo = "escena_1"
+titulos = Array[String](["matadero"])
 siguiente_escena = "uid://ckc1qyjro4amu"
+camara_pos_inicial = Vector2(-200, 200)
+camara_zoom_inicial = 2.0
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=1431524484]
 anchors_preset = 15

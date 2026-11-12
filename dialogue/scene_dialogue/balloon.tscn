@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cgfi4f5k51r75" path="res://dialogue/scene_dialogue/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.tscn" id="2_a8ve6"]
-[ext_resource type="StyleBox" uid="uid://brfacrmrmvkp6" path="res://dialogue/new_style_box_flat.tres" id="2_rivqo"]
+[ext_resource type="Texture2D" uid="uid://cm3ousw18v854" path="res://assets/UI/Menu_dialogo/DIALOGUE_BOX.png" id="2_rivqo"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/nodes/responses_menu/dialogue_responses_menu.gd" id="3_72ixx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
@@ -76,6 +76,13 @@ MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_qkmqt")
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jascv"]
+texture = ExtResource("2_rivqo")
+expand_margin_left = 40.0
+expand_margin_top = 450.0
+expand_margin_right = 40.0
+expand_margin_bottom = 20.0
+
 [sub_resource type="Animation" id="Animation_nlsx6"]
 length = 0.001
 tracks/0/type = "bezier"
@@ -140,7 +147,7 @@ grow_vertical = 0
 clip_children = 2
 layout_mode = 2
 mouse_filter = 1
-theme_override_styles/panel = ExtResource("2_rivqo")
+theme_override_styles/panel = SubResource("StyleBoxTexture_jascv")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon/MarginContainer/PanelContainer" unique_id=903640783]
 layout_mode = 2

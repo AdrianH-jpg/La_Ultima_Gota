@@ -10,20 +10,22 @@ script = ExtResource("1_85krb")
 archivo = "escena_2"
 titulos = Array[String](["titulo_fecha", "cuna", "pesadilla_1", "pesadilla_2", "despierta"])
 siguiente_escena = "uid://d10gsrna1ljjy"
+camara_pos_inicial = Vector2(300, -200)
+camara_zoom_inicial = 2.0
 
 [node name="FondoHospital" type="Sprite2D" parent="." unique_id=74321809]
-position = Vector2(586.5, 368.00012)
 scale = Vector2(2.2353518, 2.4755247)
 texture = ExtResource("2_85krb")
 
 [node name="FondoPesadilla" type="Sprite2D" parent="." unique_id=855400542]
-position = Vector2(585.5, 370.5)
 scale = Vector2(1.1911458, 1.3083333)
 texture = ExtResource("3_56l3q")
 
 [node name="FondoHospitalCalma" type="Sprite2D" parent="." unique_id=1405872390]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2112098318]
+position = Vector2(300, -200)
+zoom = Vector2(2, 2)
 
 [node name="SFXTormenta" type="AudioStreamPlayer" parent="." unique_id=1323599194]
 stream = ExtResource("4_85krb")
