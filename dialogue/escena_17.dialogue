@@ -1,0 +1,5 @@
+~ start
+do Guion.pantalla("José acompaña a Eva a su casa, en el camino, José habla entusiasmado sobre videojuegos. Eva escucha pero va distraída con un pensamiento incómodo.", false)
+do Guion.mostrar("Eva", "")
+Eva: [i]Ayer granizó mientras me ahogaba... Ahora hay sol... Será... No. No puede ser.[/i]
+=> END

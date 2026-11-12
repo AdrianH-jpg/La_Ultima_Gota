@@ -1,0 +1,6 @@
+~ corral
+do Guion.mostrar("Eva", "neutro")
+Eva: Lunita, ya le di de comer a las gallinas, ahí tenés agua y comida.
+do Guion.mostrar("Eva", "")
+Eva: Con el curso vamos a limpiar el balneario para la apertura de temporada, como todos los años, viste. Te amo, no me extrañes mucho.
+=> END

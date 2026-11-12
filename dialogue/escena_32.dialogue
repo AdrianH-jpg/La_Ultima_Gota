@@ -1,0 +1,10 @@
+~ start
+do Guion.mostrar("Eva", "llorando")
+Eva: Luna... Lunita... Perdón... Perdón...
+do Guion.mostrar("Luna", "inerte")
+Luna: …
+do Guion.mostrar("Eva", "llorando")
+Eva: Van a pagar...
+do Guion.mostrar("Eva", "")
+Eva: [b]TODOS... VAN... A PAGAR...[/b]
+=> END

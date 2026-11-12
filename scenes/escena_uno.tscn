@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://txoasnwfkepc"]
 
-[ext_resource type="Script" uid="uid://dmr7ul50y1h7t" path="res://scripts/escena_uno.gd" id="1_a35h6"]
+[ext_resource type="Script" uid="uid://om5mgnyuh7c1" path="res://guion/escena_guion.gd" id="1_brm5a"]
 [ext_resource type="Texture2D" uid="uid://b1qfrpbdjca7q" path="res://assets/Image/mataderoESCENA.png" id="2_brm5a"]
 
 [node name="EscenaUno" type="Node2D" unique_id=1086005845]
-script = ExtResource("1_a35h6")
+script = ExtResource("1_brm5a")
+archivo = "escena_1"
+siguiente_escena = "uid://ckc1qyjro4amu"
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=1431524484]
 anchors_preset = 15

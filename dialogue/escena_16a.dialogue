@@ -1,0 +1,26 @@
+~ start
+do Guion.mostrar("José", "apenado")
+José: Qué rico está esto, me hace acordar a uno de mis lugares favoritos en City Bell-- Ah, perdón, estoy hablando de mí otra vez... ¿Venís siempre acá?
+do Guion.mostrar("Eva", "tímida")
+Eva: Es la primera vez que entro...
+do Guion.mostrar("José", "sorprendido")
+José: ¿Posta? Fua, qué loco...
+do Guion.mostrar("José", "casual")
+José: ¿Alguna vez jugaste a aquella cosa?
+do Guion.mostrar("Eva", "sorprendida")
+Eva: No, nunca...
+do Guion.mostrar("José", "emocionado")
+José: ¡Vení! Dale, yo invito.
+do Guion.mostrar("Eva", "confundida")
+Eva: No pasa nada...
+do Guion.mostrar("José", "ríe")
+José: Hay que ponerle fichas para jugar
+do Guion.mostrar("Eva", "sonriendo")
+Eva: Es... Es más divertido de lo que esperaba... Gracias.
+do Guion.mostrar("José", "sonrisa suave")
+José: Sí, ya sé, es uno de mis favoritos. Qué genial que lo tengan acá...
+do Guion.mostrar("José", "casual")
+José: Perdón... Me dijiste un rato y ya pasaron como dos horas... Vamos, te acompaño a tu casa.
+do Guion.mostrar("Eva", "tímida")
+Eva: ¿Ya? Wow... No me di ni cuenta. Sí, vamos.
+=> END

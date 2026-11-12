@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://d10gsrna1ljjy"]
 
-[ext_resource type="Script" uid="uid://blnathy8j6fdb" path="res://scripts/escena_3.gd" id="1_6hrd2"]
+[ext_resource type="Script" uid="uid://om5mgnyuh7c1" path="res://guion/escena_guion.gd" id="1_6hrd2"]
 
 [node name="escena_3" type="Node2D" unique_id=1206504489]
 script = ExtResource("1_6hrd2")
+archivo = "escena_3"
+titulos = Array[String](["fecha", "cocina"])
 
 [node name="FondoCocina" type="Sprite2D" parent="." unique_id=1891199790]
 

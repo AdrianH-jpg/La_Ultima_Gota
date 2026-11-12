@@ -1,0 +1,12 @@
+~ start
+do Guion.mostrar("Eva", "nerviosa")
+Eva: Che, José... ¿Mañana vas a ir al festival?
+do Guion.mostrar("José", "casual")
+José: ¡Sí! ¿Por?
+do Guion.mostrar("Eva", "sonrojada")
+Eva: No sé... Pensaba que... ¿Querés ir conmigo?
+do Guion.mostrar("José", "sonriendo")
+José: ¡Me ganaste! Justo te iba a preguntar lo mismo.
+do Guion.mostrar("José", "")
+José: Entonces nos vemos mañana.
+=> END

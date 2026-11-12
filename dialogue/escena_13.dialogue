@@ -1,0 +1,32 @@
+~ start
+do Guion.mostrar("José", "")
+José: Respira. Hey-- tranquila, ya pasó todo-- Estás bien, ya estás bien.
+do Guion.mostrar("Directora", "preocupación")
+Directora: ¿Qué pasó? Eva... ¿Estás bien?
+do Guion.mostrar("Eva", "voz baja")
+Eva: Na... Nada... Estoy... Sí, estoy bien...
+do Guion.mostrar("José", "enojado")
+José: Esa chica de allá, creo que se llama Pilar, la empujó.
+do Guion.mostrar("Directora", "enojada")
+Directora: Eva, ¿es cierto?
+do Guion.mostrar("Directora", "grita")
+Directora: ¡Ramírez! ¡Venga para acá! ¡YA!
+do Guion.mostrar("Directora", "enojo")
+Directora: ¿Usted tiene idea de la gravedad de lo que acaba de hacer? ¡Su compañera no sabe nadar! ¡Se podría haber ahogado!
+do Guion.mostrar("Pilar", "")
+Pilar: Pero..
+do Guion.mostrar("Directora", "enojo")
+Directora: ¡No terminé de hablar, señorita! Si su compañero no hubiera intervenido, en este momento podríamos estar lamentando una desgracia. ¿Es consciente de eso? ¡No fue gracioso!
+do Guion.mostrar("Pilar", "")
+Pilar: Ay, señora directora, tampoco es para tanto. Seguro está haciendo todo este teatro para llamar la atención. ¡Siempre se hace la mosquita muerta!
+do Guion.mostrar("Directora", "enojo")
+Directora: ¡Basta, Ramírez! No voy a tolerar una sola palabra más.
+do Guion.mostrar("Directora", "enojo")
+Directora: Queda suspendida, señorita Ramírez. Va a cumplir horas adicionales de limpieza y no podrá participar este año en la elección de la Reina del Lago. Y tenga por seguro que voy a hablar con sus padres.
+do Guion.mostrar("Pilar", "enojo")
+Pilar: ¡No podés hacerme eso! ¡No es justo!
+do Guion.mostrar("Directora", "severa")
+Directora: A mí me trata de usted. Y sí, sí puedo. Acabo de hacerlo.
+do Guion.mostrar("Pilar", "")
+Pilar: [i]Ya vas a ver, pendeja roñosa...[/i]
+=> END

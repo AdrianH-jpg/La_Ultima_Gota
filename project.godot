@@ -22,6 +22,7 @@ buses/default_bus_layout="uid://b6w4sgmf1cmxj"
 
 DialogueManager="*uid://c3rodes2l3gxb"
 Climate="*uid://cl176mus5yj3d"
+Guion="*uid://dbyb2w663whw8"
 
 [dialogue_manager]
 
@@ -41,7 +42,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogue/actoUno.dialogue", "res://dialogue/escena_1.dialogue", "res://dialogue/scenes_0/escena_00_creditos.dialogue", "res://dialogue/scenes_0/escena_01_matadero.dialogue", "res://dialogue/scenes_0/escena_02a_hospital.dialogue", "res://dialogue/scenes_0/escena_03a_titulo.dialogue", "res://dialogue/scenes_0/escena_03b_cocina.dialogue", "res://dialogue/scenes_0/escena_04_corral.dialogue", "res://dialogue/scenes_0/escena_05_tranquera.dialogue", "res://dialogue/scenes_0/escena_06a_salon.dialogue", "res://dialogue/scenes_0/escena_06b.dialogue", "res://dialogue/scenes_0/escena_06c.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogue/actoUno.dialogue", "res://dialogue/escena_1.dialogue", "res://dialogue/scenes_0/escena_00_creditos.dialogue", "res://dialogue/scenes_0/escena_01_matadero.dialogue", "res://dialogue/scenes_0/escena_02a_hospital.dialogue", "res://dialogue/scenes_0/escena_03a_titulo.dialogue", "res://dialogue/scenes_0/escena_03b_cocina.dialogue", "res://dialogue/scenes_0/escena_04_corral.dialogue", "res://dialogue/scenes_0/escena_05_tranquera.dialogue", "res://dialogue/scenes_0/escena_06a_salon.dialogue", "res://dialogue/scenes_0/escena_06b.dialogue", "res://dialogue/scenes_0/escena_06c.dialogue", "res://dialogue/escena_22.dialogue", "res://dialogue/escena_23.dialogue", "res://dialogue/escena_24.dialogue", "res://dialogue/escena_25.dialogue", "res://dialogue/escena_26.dialogue", "res://dialogue/escena_27.dialogue", "res://dialogue/escena_28a.dialogue", "res://dialogue/escena_28b.dialogue", "res://dialogue/escena_29.dialogue", "res://dialogue/escena_30.dialogue", "res://dialogue/escena_31.dialogue", "res://dialogue/escena_32.dialogue", "res://dialogue/escena_33.dialogue", "res://dialogue/escena_34.dialogue", "res://dialogue/escena_35a.dialogue", "res://dialogue/escena_35b.dialogue", "res://dialogue/escena_36a.dialogue", "res://dialogue/escena_2.dialogue", "res://dialogue/escena_3.dialogue", "res://dialogue/escena_4.dialogue", "res://dialogue/escena_5.dialogue", "res://dialogue/escena_6.dialogue", "res://dialogue/escena_12.dialogue", "res://dialogue/escena_13.dialogue", "res://dialogue/escena_14.dialogue", "res://dialogue/escena_15.dialogue", "res://dialogue/escena_16a.dialogue", "res://dialogue/escena_16b.dialogue", "res://dialogue/escena_17.dialogue", "res://dialogue/escena_18.dialogue", "res://dialogue/escena_19.dialogue", "res://dialogue/escena_20.dialogue", "res://dialogue/escena_21.dialogue")
 
 [physics]
 

@@ -1,0 +1,27 @@
+~ start
+do Guion.mostrar("Eva", "voz baja")
+Eva: Mamá, me invitaron al festival...
+do Guion.mostrar("Patricia", "exaltada")
+Patricia: No, no, no y no. Ni loca. ¿Vos no viste cómo está el clima últimamente? No.
+do Guion.mostrar("Eva", "molesta")
+Eva: ¡Siempre decís lo mismo! ¡Ayer estuvo hermoso!
+do Guion.mostrar("Patricia", "gritando")
+Patricia: ¡TE DIJE QUE NO SALÍS!
+- Desobedecer.
+	=> desobedecer
+- Obedecer.
+	=> obedecer
+
+~ desobedecer
+do Guion.mostrar("Eva", "enojada")
+Eva: ¡Voy a ir igual! ¡No pienso quedarme encerrada por tus miedos!
+do Guion.ir_a("escena_28a")
+=> END
+
+~ obedecer
+do Guion.mostrar("Eva", "llorando")
+Eva: Siempre hago lo que querés... ¿Qué más tengo que hacer para que me trates bien?
+do Guion.mostrar("Patricia", "apenada")
+Patricia: Quedate conmigo... Hoy no tomo más, te lo prometo.
+do Guion.ir_a("escena_28b")
+=> END

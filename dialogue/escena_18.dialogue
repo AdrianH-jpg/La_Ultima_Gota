@@ -1,0 +1,20 @@
+~ start
+do Guion.mostrar("José", "casual")
+José: ¿Acá vivís?
+do Guion.mostrar("Eva", "apenada")
+Eva: Sí... Gracias por acompañarme, nos vemos mañana en la escuela.
+do Guion.mostrar("José", "sorprendido")
+José: Estás bastante lejos del pueblo...
+do Guion.mostrar("Eva", "apenada")
+Eva: Sí... Ya sé... Tenemos camioneta pero... Mamá no me deja manejar. No sé para qué me enseñó.
+do Guion.mostrar("José", "sonrisa suave")
+José: Yo no me quejo... Me gustó caminar con vos.
+do Guion.mostrar("Eva", "sonrojada")
+Eva: Uh...
+do Guion.mostrar("José", "apenado")
+José: ¿...Sonó raro?
+do Guion.mostrar("Eva", "apenada")
+Eva: No, yo-- Nada... Tengo que irme, nos vemos mañana...
+do Guion.mostrar("José", "casual")
+José: Sí, dale, andá. Nos vemos, descansá.
+=> END

@@ -1,8 +1,8 @@
+AnimatedSprite2D
 ColorRect
 CanvasLayer
 AudioStreamPlayer
 Sprite2D
-AnimatedSprite2D
 GPUParticles2D
 Timer
 VideoStreamPlayer

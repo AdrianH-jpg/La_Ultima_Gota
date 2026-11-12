@@ -1,0 +1,26 @@
+~ start
+do Guion.mostrar("Pilar", "despectiva")
+Pilar: ¿Esa no es la mugrienta de Eva? ¿Con el porteño?
+do Guion.mostrar("Guillermo", "burlón")
+Guillermo: Jajaja, mirá vos... Parece que se consiguió novio.
+do Guion.mostrar("Pilar", "furiosa")
+Pilar: Por culpa de esa hija de puta me suspendieron y me quedé sin la corona... Y ella anda de paseo como si nada.
+do Guion.mostrar("Guillermo", "neutral")
+Guillermo: Pili, ya fue. Mañana es la apertura.
+do Guion.mostrar("Pilar", "malvada")
+Pilar: Che... Vos tenés la camioneta y el carro. Y tu viejo tiene las llaves del matadero, ¿no?
+do Guion.mostrar("Guillermo", "desconfiado")
+Guillermo: Sí... ¿Para qué?
+do Guion.mostrar("Pilar", "sonriendo")
+Pilar: Vamos a llevarle la vaca al matadero. Quiero verla suplicar para recuperarla.
+do Guion.mostrar("Guillermo", "sorprendido")
+Guillermo: ¡¿Estás loca?! Si mi viejo se entera, me mata.
+do Guion.mostrar("Pilar", "insistente")
+Pilar: Mañana todos van a estar en el festival. Nadie se va a enterar...
+do Guion.mostrar("Pilar", "coqueta")
+Pilar: Dale... Después te lo compenso.
+do Guion.mostrar("Guillermo", "coqueto")
+Guillermo: Está bien... Pero me vas a tener que recompensar bien...
+do Guion.mostrar("Pilar", "")
+Pilar: [i]Es tan fácil de convencer...[/i]
+=> END

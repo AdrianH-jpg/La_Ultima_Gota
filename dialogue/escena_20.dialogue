@@ -1,0 +1,3 @@
+~ start
+do Guion.pantalla("Esa noche Eva se va a dormir y cierra los ojos, aún pensando en cómo podría haber sido su tarde si hubiera tenido el coraje de decir que sí...", false)
+=> END

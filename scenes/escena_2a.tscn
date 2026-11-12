@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://ckc1qyjro4amu"]
 
-[ext_resource type="Script" uid="uid://catyloal1r7yo" path="res://scripts/escena_2a.gd" id="1_wags2"]
+[ext_resource type="Script" uid="uid://om5mgnyuh7c1" path="res://guion/escena_guion.gd" id="1_85krb"]
 [ext_resource type="Texture2D" uid="uid://bofa0cijdb7t8" path="res://assets/Image/habitacion hospital.png" id="2_85krb"]
 [ext_resource type="Texture2D" uid="uid://chggmi27t3yr3" path="res://assets/Image/WIP.png" id="3_56l3q"]
 [ext_resource type="AudioStream" uid="uid://bdqr10glgbg4n" path="res://assets/sound/SFX_lluvia_bucle.mp3" id="4_85krb"]
 
 [node name="Escena2" type="Node2D" unique_id=170235811]
-script = ExtResource("1_wags2")
+script = ExtResource("1_85krb")
+archivo = "escena_2"
+titulos = Array[String](["titulo_fecha", "cuna", "pesadilla_1", "pesadilla_2", "despierta"])
+siguiente_escena = "uid://d10gsrna1ljjy"
 
 [node name="FondoHospital" type="Sprite2D" parent="." unique_id=74321809]
 position = Vector2(586.5, 368.00012)

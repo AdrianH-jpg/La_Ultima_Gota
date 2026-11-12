@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://ciasse1o0lmsq"]
 
-[ext_resource type="Script" uid="uid://bsc03v8lwturp" path="res://scripts/escena_4.gd" id="1_keh76"]
+[ext_resource type="Script" uid="uid://om5mgnyuh7c1" path="res://guion/escena_guion.gd" id="1_keh76"]
 
 [node name="Escena4" type="Node2D" unique_id=776263582]
 script = ExtResource("1_keh76")
+archivo = "escena_4"
+titulos = Array[String](["corral"])
+siguiente_escena = "uid://cn04m7m3k70j0"
 
 [node name="FondoCorral" type="Sprite2D" parent="." unique_id=1550697461]
 

@@ -1,0 +1,24 @@
+~ titulo_fecha
+do Guion.pantalla("LA ÚLTIMA GOTA", false)
+do Guion.pantalla("Domingo - 28 de abril de 1968", false)
+=> END
+
+~ cuna
+do Guion.mostrar("Patricia", "canta")
+Patricia: Arrorró, mi niña, arrorró, mi sol, arrorró, pedazo de mi corazón...
+=> END
+
+~ pesadilla_1
+do Guion.mostrar("Patricia", "grita")
+Patricia: ¡¿Dónde está mi hija?! ¿Dónde está mi bebé? Eva, ¡¿dónde estás?!
+=> END
+
+~ pesadilla_2
+do Guion.mostrar("Patricia", "grita")
+Patricia: ¡¿Quién sos?!
+=> END
+
+~ despierta
+do Guion.mostrar("Patricia", "")
+Patricia: [i]Solo fue un sueño... Un maldito sueño.[/i]
+=> END

@@ -1,0 +1,18 @@
+~ start
+do Guion.mostrar("José", "preocupado")
+José: ¿Eva...?
+do Guion.mostrar("José", "gritando")
+José: ¡EVA! ¡EVA, ESPERÁ!
+do Guion.mostrar("José", "aterrado")
+José: ¡Dios--! ¡¿Qué te pasó?! ¡Estás sangrando!
+do Guion.mostrar("Eva", "débil")
+Eva: ...
+do Guion.mostrar("José", "desesperado")
+José: ¡Tenemos que ir al hospital! ¡Vení, apoyate en mí!
+do Guion.mostrar("Eva", "débil")
+Eva: ¿Jo... José...?
+do Guion.mostrar("José", "desesperado")
+José: ¡Eva! ¡Ey, mirame! ¡Quedate conmigo!
+do Guion.mostrar("José", "llorando")
+José: ¡No...! ¡Eva, por favor...!
+=> END

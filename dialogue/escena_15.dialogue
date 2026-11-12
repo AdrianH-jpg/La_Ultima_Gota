@@ -1,0 +1,43 @@
+~ start
+do Guion.mostrar("José", "apenado")
+José: Hola, Eva... ¿No? Tu nombre... ¿Era Eva?
+do Guion.mostrar("Eva", "indiferente")
+Eva: Sí...
+do Guion.mostrar("José", "sonrisa suave")
+José: Perdón, con todo lo de ayer ni nos presentamos. Soy José.
+do Guion.mostrar("Eva", "triste")
+Eva: ... Ah, sí.
+do Guion.mostrar("Eva", "voz baja")
+Eva: Gracias... gracias por eso...
+do Guion.mostrar("José", "casual")
+José: Sí, no pasa nada, no hay nada que agradecer... ¿Me puedo sentar con vos?
+do Guion.mostrar("Eva", "confundida")
+Eva: Uh... Sí.
+do Guion.mostrar("José", "casual")
+José: Y... ¿Tenés planes para después de clases?
+do Guion.mostrar("Eva", "tímida")
+Eva: ¿Yo?
+do Guion.mostrar("José", "apenado")
+José: Sí, vos. Jajaja. Pasa que como llegué hace poco no conozco nada del pueblo.
+do Guion.mostrar("Eva", "confundida")
+Eva: ¿Y yo qué tengo que ver...?
+do Guion.mostrar("José", "apenado")
+José: No sé, digo... ¿No te gustaría mostrarme algunos lugares? ¡Claro--! Si es que no tenés nada que hacer, obvio...
+- Aceptar
+	=> aceptar
+- Negarse
+	=> negarse
+
+~ aceptar
+do Guion.mostrar("Eva", "tímida")
+Eva: Bueno… Pero solo un rato. Tengo que volver temprano a casa.
+do Guion.ir_a("escena_16a")
+=> END
+
+~ negarse
+do Guion.mostrar("Eva", "tímida")
+Eva: No... No puedo, tengo que volver a casa temprano...
+do Guion.mostrar("José", "triste")
+José: Ah... Bueno.. No pasa nada, otro día entonces.
+do Guion.ir_a("escena_16b")
+=> END

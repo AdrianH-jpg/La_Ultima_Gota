@@ -1,0 +1,4 @@
+~ start
+do Guion.mostrar("Eva", "pánico")
+Eva: Luna... Luna... No, no, no--
+=> END

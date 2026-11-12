@@ -1,0 +1,10 @@
+~ start
+do Guion.mostrar("Directora", "preocupada")
+Directora: Señorita Blanco... ¿Puedo hablar con su madre? Lo de hoy fue muy grave.
+do Guion.mostrar("Eva", "nerviosa")
+Eva: No... Eh... Digo, no está. A esta hora trabaja...
+do Guion.mostrar("Directora", "neutra")
+Directora: Entiendo... Bueno, voy a citarla para una reunión. Y usted dese una ducha caliente, así no se enferma.
+do Guion.mostrar("Eva", "voz baja")
+Eva: Sí... Gracias por traerme.
+=> END

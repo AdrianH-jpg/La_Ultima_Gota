@@ -1,0 +1,753 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_wnf6d"]
+
+[resource]
+script = ExtResource("1_wnf6d")
+using_states = PackedStringArray()
+cues = {
+"aceptar": "31",
+"negarse": "37",
+"start": "1"
+}
+character_names = PackedStringArray("José", "Eva")
+first_cue = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "cue"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "José"
+}]), Array[Dictionary]([{
+&"i": 25,
+&"type": "string",
+&"value": "apenado"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Eva",
+&"id": "10",
+&"next_id": "11",
+&"static_id": "",
+&"text": "Gracias... gracias por eso...",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "José"
+}]), Array[Dictionary]([{
+&"i": 25,
+&"type": "string",
+&"value": "casual"
+}, {
+&"i": 33,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "12",
+&"type": "mutation"
+},
+"12": {
+&"character": "José",
+&"id": "12",
+&"next_id": "13",
+&"static_id": "",
+&"text": "Sí, no pasa nada, no hay nada que agradecer... ¿Me puedo sentar con vos?",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "confundida"
+}, {
+&"i": 36,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "14",
+&"type": "mutation"
+},
+"14": {
+&"character": "Eva",
+&"id": "14",
+&"next_id": "15",
+&"static_id": "",
+&"text": "Uh... Sí.",
+&"type": "dialogue"
+},
+"15": {
+&"id": "15",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "José"
+}]), Array[Dictionary]([{
+&"i": 25,
+&"type": "string",
+&"value": "casual"
+}, {
+&"i": 33,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "16",
+&"type": "mutation"
+},
+"16": {
+&"character": "José",
+&"id": "16",
+&"next_id": "17",
+&"static_id": "",
+&"text": "Y... ¿Tenés planes para después de clases?",
+&"type": "dialogue"
+},
+"17": {
+&"id": "17",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "tímida"
+}, {
+&"i": 32,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "18",
+&"type": "mutation"
+},
+"18": {
+&"character": "Eva",
+&"id": "18",
+&"next_id": "19",
+&"static_id": "",
+&"text": "¿Yo?",
+&"type": "dialogue"
+},
+"19": {
+&"id": "19",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "José"
+}]), Array[Dictionary]([{
+&"i": 25,
+&"type": "string",
+&"value": "apenado"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "20",
+&"type": "mutation"
+},
+"2": {
+&"character": "José",
+&"id": "2",
+&"next_id": "3",
+&"static_id": "",
+&"text": "Hola, Eva... ¿No? Tu nombre... ¿Era Eva?",
+&"type": "dialogue"
+},
+"20": {
+&"character": "José",
+&"id": "20",
+&"next_id": "21",
+&"static_id": "",
+&"text": "Sí, vos. Jajaja. Pasa que como llegué hace poco no conozco nada del pueblo.",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "confundida"
+}, {
+&"i": 36,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "22",
+&"type": "mutation"
+},
+"22": {
+&"character": "Eva",
+&"id": "22",
+&"next_id": "23",
+&"static_id": "",
+&"text": "¿Y yo qué tengo que ver...?",
+&"type": "dialogue"
+},
+"23": {
+&"id": "23",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "José"
+}]), Array[Dictionary]([{
+&"i": 25,
+&"type": "string",
+&"value": "apenado"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "24",
+&"type": "mutation"
+},
+"24": {
+&"character": "José",
+&"id": "24",
+&"next_id": "25",
+&"static_id": "",
+&"text": "No sé, digo... ¿No te gustaría mostrarme algunos lugares? ¡Claro--! Si es que no tenés nada que hacer, obvio...",
+&"type": "dialogue"
+},
+"25": {
+&"id": "25",
+&"next_id": "26",
+&"responses": PackedStringArray("25", "27"),
+&"static_id": "",
+&"text": "Aceptar",
+&"type": "response"
+},
+"26": {
+&"id": "26",
+&"is_snippet": false,
+&"next_id": "31",
+&"next_id_after": "",
+&"type": "goto"
+},
+"27": {
+&"id": "27",
+&"next_id": "28",
+&"static_id": "",
+&"text": "Negarse",
+&"type": "response"
+},
+"28": {
+&"id": "28",
+&"is_snippet": false,
+&"next_id": "37",
+&"next_id_after": "",
+&"type": "goto"
+},
+"29": {
+&"id": "29",
+&"next_id": "30",
+&"type": ""
+},
+"3": {
+&"id": "3",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "indiferente"
+}, {
+&"i": 37,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "4",
+&"type": "mutation"
+},
+"30": {
+&"id": "30",
+&"next_id": "31",
+&"type": "cue"
+},
+"31": {
+&"id": "31",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "tímida"
+}, {
+&"i": 32,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "32",
+&"type": "mutation"
+},
+"32": {
+&"character": "Eva",
+&"id": "32",
+&"next_id": "33",
+&"static_id": "",
+&"text": "Bueno… Pero solo un rato. Tengo que volver temprano a casa.",
+&"type": "dialogue"
+},
+"33": {
+&"id": "33",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "ir_a",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": "string",
+&"value": "escena_16a"
+}, {
+&"i": 26,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "34",
+&"type": "mutation"
+},
+"34": {
+&"id": "34",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"35": {
+&"id": "35",
+&"next_id": "36",
+&"type": ""
+},
+"36": {
+&"id": "36",
+&"next_id": "37",
+&"type": "cue"
+},
+"37": {
+&"id": "37",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "tímida"
+}, {
+&"i": 32,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "38",
+&"type": "mutation"
+},
+"38": {
+&"character": "Eva",
+&"id": "38",
+&"next_id": "39",
+&"static_id": "",
+&"text": "No... No puedo, tengo que volver a casa temprano...",
+&"type": "dialogue"
+},
+"39": {
+&"id": "39",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "José"
+}]), Array[Dictionary]([{
+&"i": 25,
+&"type": "string",
+&"value": "triste"
+}, {
+&"i": 33,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "40",
+&"type": "mutation"
+},
+"4": {
+&"character": "Eva",
+&"id": "4",
+&"next_id": "5",
+&"static_id": "",
+&"text": "Sí...",
+&"type": "dialogue"
+},
+"40": {
+&"character": "José",
+&"id": "40",
+&"next_id": "41",
+&"static_id": "",
+&"text": "Ah... Bueno.. No pasa nada, otro día entonces.",
+&"type": "dialogue"
+},
+"41": {
+&"id": "41",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "ir_a",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": "string",
+&"value": "escena_16b"
+}, {
+&"i": 26,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "42",
+&"type": "mutation"
+},
+"42": {
+&"id": "42",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"43": {
+&"id": "43",
+&"next_id": "44",
+&"type": ""
+},
+"44": {
+&"id": "44",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "José"
+}]), Array[Dictionary]([{
+&"i": 25,
+&"type": "string",
+&"value": "sonrisa suave"
+}, {
+&"i": 40,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"6": {
+&"character": "José",
+&"id": "6",
+&"next_id": "7",
+&"static_id": "",
+&"text": "Perdón, con todo lo de ayer ni nos presentamos. Soy José.",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "triste"
+}, {
+&"i": 32,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "8",
+&"type": "mutation"
+},
+"8": {
+&"character": "Eva",
+&"id": "8",
+&"next_id": "9",
+&"static_id": "",
+&"text": "... Ah, sí.",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "voz baja"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "10",
+&"type": "mutation"
+}
+}
+metadata/dialogue_manager_version = "4.0.3"

@@ -1,0 +1,18 @@
+~ start
+do Guion.mostrar("Guillermo", "asustado")
+Guillermo: ¡LA PUTA MADRE! ¡Casi la atropello!
+do Guion.mostrar("Pilar", "aterrada")
+Pilar: Guillermo... ¡Es Eva!
+do Guion.mostrar("José", "gritando")
+José: ¡EVA! ¡Te iba a buscar!
+do Guion.mostrar("José", "desesperado")
+José: ¡Estás herida! ¡Tenemos que salir de acá!
+do Guion.mostrar("Eva", "aterrada")
+Eva: ¿José...?
+do Guion.mostrar("Eva", "desesperada")
+Eva: [b]¡¡JOSÉ!![/b]
+do Guion.mostrar("Eva", "llorando")
+Eva: No... No, por favor... Vos no...
+do Guion.mostrar("Eva", "susurrando")
+Eva: Perdón... Perdoname...
+=> END

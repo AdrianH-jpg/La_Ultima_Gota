@@ -1,0 +1,8 @@
+~ start
+do Guion.mostrar("Patricia", "grita")
+Patricia: ¡¿Dónde mierda estabas?! ¡Sabés muy bien que no me gusta que vuelvas tan tarde!
+do Guion.mostrar("Eva", "voz baja")
+Eva: Pero-- Ma... no es tan tarde...
+do Guion.mostrar("Patricia", "enojada")
+Patricia: No me importa. Andá a darle de comer a los bichos y vamos a cenar. YA.
+=> END

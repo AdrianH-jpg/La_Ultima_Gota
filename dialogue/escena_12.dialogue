@@ -1,0 +1,16 @@
+~ start
+do Guion.mostrar("Guillermo", "cruel")
+Guillermo: Mirá, anda toda chivada... ¿No tendrá mucho calor?
+do Guion.mostrar("Pilar", "sarcástica")
+Pilar: Pobrecita... Le voy a dar una mano.
+do Guion.mostrar("Pilar", "sorprendida")
+Pilar: ¡Disculpa! No te vi...
+do Guion.mostrar("Pilar", "malvada")
+Pilar: Igual un baño no te venía mal.
+do Guion.mostrar("Eva", "grito ahogado")
+Eva: No... Nad-- Ayu-- ¡Por--! ¡Por Fav--!
+do Guion.mostrar("Guillermo", "asustado")
+Guillermo: ¡Ah! Auch--! ¡Mi cara--!
+do Guion.mostrar("Helena", "asustada")
+Helena: ¡¿De dónde salió esta torment--?! ¡AH! ¡MI BRAZO!
+=> END

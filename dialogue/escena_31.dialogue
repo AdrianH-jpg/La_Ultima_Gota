@@ -1,0 +1,40 @@
+~ start
+do Guion.mostrar("Eva", "pánico")
+Eva: ¡LUNA! ¡Hey! ¡¿Qué están haciendo?!
+do Guion.mostrar("Pilar", "burlona")
+Pilar: Uh... Pero mirá quién apareció... Pensé que no ibas a venir.
+do Guion.mostrar("Guillermo", "cruel")
+Guillermo: Parece que posta le importaba este bicho, tenías razón.
+do Guion.mostrar("Eva", "llorando")
+Eva: No, no... Suéltenla...
+do Guion.mostrar("Pilar", "malvada")
+Pilar: Arrodilláte.
+do Guion.mostrar("Eva", "confundida")
+Eva: ¿Q... Qué?
+do Guion.mostrar("Pilar", "malvada")
+Pilar: Ya me escuchaste. Te arrodillás y me pedís perdón. Si querés que este bicho viva, arrodilláte y pedí perdón.
+do Guion.mostrar("Eva", "confundida")
+Eva: Pero... Pero... ¿De qué estás habl--?
+do Guion.mostrar("Pilar", "furiosa")
+Pilar: ¡ARRODILLÁTE, TE DIJE!
+do Guion.mostrar("Guillermo", "pensativo")
+Guillermo: Pili... Llueve mucho--
+do Guion.mostrar("Pilar", "furiosa")
+Pilar: ¡Vos limitate a hacer lo tuyo y no te metás!
+do Guion.mostrar("Pilar", "furiosa")
+Pilar: Por tu culpa me quedé sin corona, por tu culpa me suspendieron... ¡Por TU CULPA pasé unos días DE MIERDA!
+do Guion.mostrar("Pilar", "")
+Pilar: Ahora... Si querés que esta vaca de pedorra siga viva, te arrodillás... Y SUPLICÁS.
+do Guion.mostrar("Eva", "llorando")
+Eva: Por favor-- Por favor--
+do Guion.mostrar("Eva", "atónita")
+Eva: ¿Lu... Luna...?
+do Guion.mostrar("Pilar", "sorprendida")
+Pilar: … La mataste.
+do Guion.mostrar("Guillermo", "asustado")
+Guillermo: ¡Me asusté...!
+do Guion.mostrar("Eva", "grito desgarrador")
+Eva: ¡¡LUNAAA!!
+do Guion.mostrar("Guillermo", "asustado")
+Guillermo: ¡Pilar, rajemos! ¡Dale! ¡Corré!
+=> END

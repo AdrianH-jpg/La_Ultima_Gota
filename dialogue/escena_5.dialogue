@@ -1,0 +1,6 @@
+~ tranquera
+do Guion.mostrar("Eva", "")
+Eva: [i]¿Estará vacía la botella cuando llegue? ¿Cómo sería mi vida si... Si mamá... Se durmiera boca arriba y se ahogara en su propio vómito? Dios... En qué estoy pensando...[/i]
+do Guion.mostrar("Eva", "")
+Eva: [i]Preferiría que deje de tomar, que todo esté bien... Estoy tan cansada...[/i]
+=> END

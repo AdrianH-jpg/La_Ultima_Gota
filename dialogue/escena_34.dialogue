@@ -1,0 +1,13 @@
+~ start
+- Buscar a Pilar y Guillermo.
+	=> buscar
+- Ir al pueblo.
+	=> pueblo
+
+~ buscar
+do Guion.ir_a("escena_35a")
+=> END
+
+~ pueblo
+do Guion.ir_a("escena_35b")
+=> END

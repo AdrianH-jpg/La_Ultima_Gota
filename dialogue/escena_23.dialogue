@@ -1,0 +1,14 @@
+~ start
+do Guion.mostrar("José", "casual")
+José: Che, Eva, ¿qué vas a hacer ahora?
+do Guion.mostrar("Eva", "tímida")
+Eva: Voy a comprar algo de ropa al pueblo...
+do Guion.mostrar("José", "sonrisa suave")
+José: ¿Querés que te acompañe?
+do Guion.mostrar("Eva", "apenada")
+Eva: Es que... Me da vergüenza comprar ropa con vos mirando...
+do Guion.mostrar("José", "bromista")
+José: Jajaja, bueno, te espero afuera. Prometo no mirar.
+do Guion.mostrar("Eva", "tímida")
+Eva: Bueno... Dale.
+=> END

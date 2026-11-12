@@ -1,11 +1,9 @@
-res://scenes/escena_teo.tscn
 res://whiteOutline.gdshader
 res://scenes/menu_principal.gdshader
 res://shader/climate_post_process.gdshader
+res://personajes/pilar.tscn
+res://scenes/escena_uno.tscn
+res://guion/escena_guion.gd
+res://scenes/escena_2a.tscn
 res://scenes/escena_3.tscn
-res://scripts/escena_4.gd
 res://scenes/escena_4.tscn
-res://scenes/escena_5.tscn
-res://scripts/escena_5.gd
-res://scenes/escena_6.tscn
-res://scripts/escena_6.gd

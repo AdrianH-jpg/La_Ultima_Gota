@@ -1,0 +1,17 @@
+~ start
+do Guion.mostrar("Eva", "gritando")
+Eva: ¡EH! ¡¿QUÉ ESTÁN HACIENDO?!
+do Guion.mostrar("Guillermo", "asustado")
+Guillermo: ¡Pili, nos vio! ¡Vámonos, si mi viejo se entera me mata!
+do Guion.mostrar("Pilar", "furiosa")
+Pilar: ¡NO! ¡METÉ LA VACA AL CARRO!
+do Guion.mostrar("Guillermo", "gritando")
+Guillermo: ¡Subí o te dejo!
+do Guion.mostrar("Eva", "llorando")
+Eva: Yo solo quería ir al festival, Lunita... ¿Por qué... Por qué no me dejan en paz...?
+do Guion.pantalla("[i]La lluvia obligó a suspender las celebraciones de aquella noche.[/i]", true)
+do Guion.pantalla("[i]Pasaron las horas, pero la tormenta nunca cesó.[/i]", true)
+do Guion.pantalla("[i]Durante la madrugada del 10 de noviembre de 1985, el muro de contención cedió ante el avance del agua.[/i]", true)
+do Guion.pantalla("[i]Villa Epecuén quedó inundada.[/i]", true)
+do Guion.pantalla("[i]No se registraron víctimas fatales.[/i]", true)
+=> END
