@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://c8anf2v4eptew"]
+
+[ext_resource type="Shader" uid="uid://qj742ae0445k" path="res://whiteOutline.gdshader" id="1_srsp0"]
+[ext_resource type="Texture2D" uid="uid://ves2c1cdph6f" path="res://assets/textures/outlineTEXTURE.png" id="2_r0vn1"]
+[ext_resource type="Texture2D" uid="uid://b8ooupfl61qt2" path="res://assets/characters/Luna/Imagen de ChatGPT 12 nov 2026, 06_44_28 a.m-1.png" id="3_atc45"]
+[ext_resource type="Texture2D" uid="uid://cdgblsvuuroid" path="res://assets/characters/Luna/Imagen de ChatGPT 12 nov 2026, 06_44_29 a.m-2.png" id="4_rd6ur"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6mknx"]
+shader = ExtResource("1_srsp0")
+shader_parameter/outline_color = Color(1.1097851, 1.1042392, 1.1097851, 1)
+shader_parameter/outline_size = 3.0
+shader_parameter/paper_texture = ExtResource("2_r0vn1")
+shader_parameter/texture_strength = 0.800000038
+shader_parameter/texture_scale = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_irhhk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_atc45")
+}],
+"loop": 1,
+"name": &"de_pie",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_rd6ur")
+}],
+"loop": 1,
+"name": &"triste",
+"speed": 5.0
+}]
+
+[node name="Luna" type="Node2D" unique_id=1501475319]
+
+[node name="Animacion" type="AnimatedSprite2D" parent="." unique_id=741292194]
+material = SubResource("ShaderMaterial_6mknx")
+sprite_frames = SubResource("SpriteFrames_irhhk")
+animation = &"triste"

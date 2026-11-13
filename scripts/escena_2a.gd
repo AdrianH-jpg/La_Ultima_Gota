@@ -74,6 +74,7 @@ func _parte_2a() -> void:
 	t.tween_property(camera, "zoom", Vector2.ONE, 4.0)
 	t.tween_property(camera, "position", pos_cama, 4.0)
 	await t.finished
+	
 
 	DialogueManager.show_dialogue_balloon(dialogue_resource, "cuna")
 	await DialogueManager.dialogue_ended
@@ -89,6 +90,7 @@ func _parte_2a() -> void:
 # ---------------------------------------------------------------- guion 5: pesadilla
 func _parte_2b() -> void:
 	bgm_cuna.stop()
+	sfx_llanto.stop()
 	_mostrar_fondo(fondo_pesadilla)
 	camera.position = pos_cama
 	camera.zoom = Vector2.ONE

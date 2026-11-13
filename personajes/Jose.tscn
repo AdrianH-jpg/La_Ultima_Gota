@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://dejnxycggvqg7"]
+
+[ext_resource type="Shader" uid="uid://qj742ae0445k" path="res://whiteOutline.gdshader" id="1_k7pdy"]
+[ext_resource type="Texture2D" uid="uid://ves2c1cdph6f" path="res://assets/textures/outlineTEXTURE.png" id="2_tqbgx"]
+[ext_resource type="Texture2D" uid="uid://dgy4hwp32vy25" path="res://assets/characters/Jose/aterrado.png" id="3_qvgel"]
+[ext_resource type="Texture2D" uid="uid://dp81jfcqpt7c5" path="res://assets/characters/Jose/bromista.png" id="4_17mfr"]
+[ext_resource type="Texture2D" uid="uid://c23v1hmjt2wdu" path="res://assets/characters/Jose/casual.png" id="5_iyh02"]
+[ext_resource type="Texture2D" uid="uid://bxpc6xk32d2uo" path="res://assets/characters/Jose/desesperado.png" id="6_c120w"]
+[ext_resource type="Texture2D" uid="uid://bm3ddnj338knf" path="res://assets/characters/Jose/emocionado.png" id="7_pnubk"]
+[ext_resource type="Texture2D" uid="uid://bu3ak8mlhidxa" path="res://assets/characters/Jose/enojado.png" id="8_4aw1d"]
+[ext_resource type="Texture2D" uid="uid://bsjlub3m7w4xu" path="res://assets/characters/Jose/gritando.png" id="9_rq05r"]
+[ext_resource type="Texture2D" uid="uid://cx5msmnl0ctsi" path="res://assets/characters/Jose/llorando.png" id="10_k3bef"]
+[ext_resource type="Texture2D" uid="uid://du0utnkc8ce7w" path="res://assets/characters/Jose/nervioso.png" id="11_a1cbj"]
+[ext_resource type="Texture2D" uid="uid://bce2fori31cyq" path="res://assets/characters/Jose/01_preocupado.png" id="12_2527a"]
+[ext_resource type="Texture2D" uid="uid://dnnh5tnmucxg7" path="res://assets/characters/Jose/02_rie.png" id="13_y45ay"]
+[ext_resource type="Texture2D" uid="uid://crvbp46hed6e7" path="res://assets/characters/Jose/03_sonriendo.png" id="14_1upfv"]
+[ext_resource type="Texture2D" uid="uid://hhi05wg60667" path="res://assets/characters/Jose/04_sonrisa_suave.png" id="15_505gv"]
+[ext_resource type="Texture2D" uid="uid://cdi7h3135d8gd" path="res://assets/characters/Jose/05_sorprendido.png" id="16_e1p01"]
+[ext_resource type="Texture2D" uid="uid://3iwjtj0nu0w8" path="res://assets/characters/Jose/06_triste.png" id="17_sbn8l"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6mknx"]
+shader = ExtResource("1_k7pdy")
+shader_parameter/outline_color = Color(1.1097851, 1.1042392, 1.1097851, 1)
+shader_parameter/outline_size = 3.0
+shader_parameter/paper_texture = ExtResource("2_tqbgx")
+shader_parameter/texture_strength = 0.800000038
+shader_parameter/texture_scale = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_irhhk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_qvgel")
+}],
+"loop": 1,
+"name": &"aterrado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_17mfr")
+}],
+"loop": 1,
+"name": &"bromista",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_iyh02")
+}],
+"loop": 1,
+"name": &"casual",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_c120w")
+}],
+"loop": 1,
+"name": &"desesperado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_pnubk")
+}],
+"loop": 1,
+"name": &"emocionado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_4aw1d")
+}],
+"loop": 1,
+"name": &"enojado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_rq05r")
+}],
+"loop": 1,
+"name": &"gritando",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_k3bef")
+}],
+"loop": 1,
+"name": &"llorando",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_a1cbj")
+}],
+"loop": 1,
+"name": &"nervioso",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_2527a")
+}],
+"loop": 1,
+"name": &"preocupado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_y45ay")
+}],
+"loop": 1,
+"name": &"rie",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_1upfv")
+}],
+"loop": 1,
+"name": &"sonriendo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_505gv")
+}],
+"loop": 1,
+"name": &"sonrisa_suave",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_e1p01")
+}],
+"loop": 1,
+"name": &"sorprendido",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_sbn8l")
+}],
+"loop": 1,
+"name": &"triste",
+"speed": 5.0
+}]
+
+[node name="Jose" type="Node2D" unique_id=1501475319]
+
+[node name="Animacion" type="AnimatedSprite2D" parent="." unique_id=741292194]
+material = SubResource("ShaderMaterial_6mknx")
+sprite_frames = SubResource("SpriteFrames_irhhk")
+animation = &"nervioso"

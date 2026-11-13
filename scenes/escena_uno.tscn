@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://om5mgnyuh7c1" path="res://guion/escena_guion.gd" id="1_brm5a"]
 [ext_resource type="Texture2D" uid="uid://b1qfrpbdjca7q" path="res://assets/Image/mataderoESCENA.png" id="2_brm5a"]
+[ext_resource type="AudioStream" uid="uid://dln0yyhrjy4gw" path="res://assets/sound/ElevenLabs_Viento.mp3" id="3_cp0kr"]
+[ext_resource type="AudioStream" uid="uid://db4t1o1dcuwop" path="res://assets/sound/teros.wav" id="3_hs364"]
 
 [node name="EscenaUno" type="Node2D" unique_id=1086005845]
 script = ExtResource("1_brm5a")
@@ -28,9 +30,12 @@ position = Vector2(-200, 200)
 zoom = Vector2(2, 2)
 
 [node name="SFXViento" type="AudioStreamPlayer" parent="." unique_id=515172286]
+stream = ExtResource("3_cp0kr")
+volume_db = -12.033
 autoplay = true
 
 [node name="SFXAves" type="AudioStreamPlayer" parent="." unique_id=1441753114]
+stream = ExtResource("3_hs364")
 autoplay = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=906528600]

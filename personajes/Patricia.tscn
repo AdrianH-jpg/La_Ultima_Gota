@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://bfapnc1j8yyap"]
+
+[ext_resource type="Shader" uid="uid://qj742ae0445k" path="res://whiteOutline.gdshader" id="1_d5ft2"]
+[ext_resource type="Texture2D" uid="uid://ves2c1cdph6f" path="res://assets/textures/outlineTEXTURE.png" id="2_2m87w"]
+[ext_resource type="Texture2D" uid="uid://kb3yifns077y" path="res://assets/characters/Patricia/02_Somnolienta_Borracha.png" id="3_2g1uk"]
+[ext_resource type="Texture2D" uid="uid://pppo24oqq47o" path="res://assets/characters/Patricia/12_Arrepentida_Horrorizada.png" id="3_sirjl"]
+[ext_resource type="Texture2D" uid="uid://dfayrn58e0hb8" path="res://assets/characters/Patricia/08_Asustada.png" id="4_jccwh"]
+[ext_resource type="Texture2D" uid="uid://b2wu17tbaxpme" path="res://assets/characters/Patricia/03_Irritada.png" id="4_qvhsx"]
+[ext_resource type="Texture2D" uid="uid://bbqfygnq0xi5d" path="res://assets/characters/Patricia/10_Ausente_Disociada.png" id="5_5gmj0"]
+[ext_resource type="Texture2D" uid="uid://dslcmcoxd7hs4" path="res://assets/characters/Patricia/04_Enojada_Gritando.png" id="5_x8btg"]
+[ext_resource type="Texture2D" uid="uid://db2cp6gdnudyk" path="res://assets/characters/Patricia/07_Confundida.png" id="6_3jilc"]
+[ext_resource type="Texture2D" uid="uid://ca5afcomaqn7e" path="res://assets/characters/Patricia/05_Exaltada_Ansiosa.png" id="8_cny31"]
+[ext_resource type="Texture2D" uid="uid://c6okyxygi07pg" path="res://assets/characters/Patricia/06_Preocupada.png" id="10_xbpxs"]
+[ext_resource type="Texture2D" uid="uid://c2x2aio13olue" path="res://assets/characters/Patricia/09_Temblorosa_Aterrorizada.png" id="12_r5n3m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6mknx"]
+shader = ExtResource("1_d5ft2")
+shader_parameter/outline_color = Color(1.1097851, 1.1042392, 1.1097851, 1)
+shader_parameter/outline_size = 3.0
+shader_parameter/paper_texture = ExtResource("2_2m87w")
+shader_parameter/texture_strength = 0.800000038
+shader_parameter/texture_scale = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_irhhk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_sirjl")
+}],
+"loop": 1,
+"name": &"arrepentida_horrorizada",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_jccwh")
+}],
+"loop": 1,
+"name": &"asustada",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_5gmj0")
+}],
+"loop": 1,
+"name": &"ausente_disociada",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_3jilc")
+}],
+"loop": 1,
+"name": &"confundida",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_cny31")
+}],
+"loop": 1,
+"name": &"exaltada_ansiosa",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_x8btg")
+}],
+"loop": 1,
+"name": &"grita",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_qvhsx")
+}],
+"loop": 1,
+"name": &"irritada",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_xbpxs")
+}],
+"loop": 1,
+"name": &"preocupada",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_2g1uk")
+}],
+"loop": 1,
+"name": &"somnolienta",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_r5n3m")
+}],
+"loop": 1,
+"name": &"temblorosa_aterrorizada",
+"speed": 5.0
+}]
+
+[node name="Patricia" type="Node2D" unique_id=1501475319]
+
+[node name="Animacion" type="AnimatedSprite2D" parent="." unique_id=741292194]
+material = SubResource("ShaderMaterial_6mknx")
+sprite_frames = SubResource("SpriteFrames_irhhk")
+animation = &"confundida"

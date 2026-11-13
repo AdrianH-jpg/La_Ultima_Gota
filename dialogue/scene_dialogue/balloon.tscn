@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Texture2D" uid="uid://cm3ousw18v854" path="res://assets/UI/Menu_dialogo/DIALOGUE_BOX.png" id="2_rivqo"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/nodes/responses_menu/dialogue_responses_menu.gd" id="3_72ixx"]
+[ext_resource type="Texture2D" uid="uid://e13ixrkr2eeo" path="res://assets/UI/Menu_dialogo/OPTION_BOX~2.png" id="5_bg0xa"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 content_margin_left = 20.0
@@ -119,6 +120,23 @@ _data = {
 &"progress": SubResource("Animation_qkmqt")
 }
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bg0xa"]
+texture = ExtResource("5_bg0xa")
+texture_margin_top = 5.0
+texture_margin_bottom = 20.0
+expand_margin_left = 75.0
+expand_margin_right = 75.0
+expand_margin_bottom = 5.0
+region_rect = Rect2(50.816284, 48.19171, 601.27686, 105.03818)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r3c7d"]
+texture = ExtResource("5_bg0xa")
+expand_margin_left = 75.0
+expand_margin_top = 5.0
+expand_margin_right = 75.0
+expand_margin_bottom = 10.0
+region_rect = Rect2(60.16565, 53.40486, 581.64734, 75.86702)
+
 [node name="ExampleBalloon" type="CanvasLayer" unique_id=38036521]
 layer = 100
 script = ExtResource("1_36de5")
@@ -209,6 +227,9 @@ response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/CenterContainer/ResponsesMenu" unique_id=1446810977]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_bg0xa")
+theme_override_styles/hover = SubResource("StyleBoxTexture_bg0xa")
+theme_override_styles/focus = SubResource("StyleBoxTexture_r3c7d")
 text = "Response example"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1162558754]

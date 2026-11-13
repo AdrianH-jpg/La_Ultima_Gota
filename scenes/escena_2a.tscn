@@ -4,11 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://bofa0cijdb7t8" path="res://assets/Image/habitacion hospital.png" id="2_85krb"]
 [ext_resource type="Texture2D" uid="uid://chggmi27t3yr3" path="res://assets/Image/WIP.png" id="3_56l3q"]
 [ext_resource type="AudioStream" uid="uid://bdqr10glgbg4n" path="res://assets/sound/SFX_lluvia_bucle.mp3" id="4_85krb"]
+[ext_resource type="AudioStream" uid="uid://l5xts5evx8s4" path="res://assets/sound/211529__the_yura__crying-newborn-baby-child-1.wav" id="5_56l3q"]
 
 [node name="Escena2" type="Node2D" unique_id=170235811]
 script = ExtResource("1_85krb")
 archivo = "escena_2"
-titulos = Array[String](["titulo_fecha", "cuna", "pesadilla_1", "pesadilla_2", "despierta"])
+titulos = Array[String](["titulo_fecha", "llanto", "cuna", "pesadilla_1", "pesadilla_2", "despierta"])
 siguiente_escena = "uid://d10gsrna1ljjy"
 camara_pos_inicial = Vector2(300, -200)
 camara_zoom_inicial = 2.0
@@ -37,6 +38,9 @@ stream = ExtResource("4_85krb")
 [node name="SFXGritoMujer" type="AudioStreamPlayer" parent="." unique_id=1246067263]
 
 [node name="SFXLlantoBebe" type="AudioStreamPlayer" parent="." unique_id=268583534]
+stream = ExtResource("5_56l3q")
+volume_db = -14.612
+autoplay = true
 
 [node name="BGMCuna" type="AudioStreamPlayer" parent="." unique_id=1920065398]
 

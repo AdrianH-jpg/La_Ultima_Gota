@@ -5,8 +5,7 @@
 
 [node name="Escena5" type="Node2D" unique_id=470631550]
 script = ExtResource("1_kau0b")
-archivo = "escena_5"
-titulos = Array[String](["tranquera"])
+siguiente_escena = "uid://c1oat6lcg6c5o"
 
 [node name="FondoTranquera" type="Sprite2D" parent="." unique_id=953167303]
 position = Vector2(965, 541)

@@ -34,3 +34,5 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(1, 1, 1, 0)
+
+[node name="SFXAgua" type="AudioStreamPlayer2D" parent="." unique_id=425492238]

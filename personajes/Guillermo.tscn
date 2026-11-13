@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://cllx8atsa6old"]
+
+[ext_resource type="Shader" uid="uid://qj742ae0445k" path="res://whiteOutline.gdshader" id="1_78pmo"]
+[ext_resource type="Texture2D" uid="uid://ves2c1cdph6f" path="res://assets/textures/outlineTEXTURE.png" id="2_pmfco"]
+[ext_resource type="Texture2D" uid="uid://4l3m7xa37ja" path="res://assets/characters/Guillermo/asustado.png" id="3_wifn0"]
+[ext_resource type="Texture2D" uid="uid://clw77mexqp2o" path="res://assets/characters/Guillermo/burlon.png" id="4_0tqxv"]
+[ext_resource type="Texture2D" uid="uid://b0ss82uqoi7j3" path="res://assets/characters/Guillermo/coqueto.png" id="5_kqcrc"]
+[ext_resource type="Texture2D" uid="uid://b66iiqrdgacgs" path="res://assets/characters/Guillermo/cruel.png" id="6_djfiu"]
+[ext_resource type="Texture2D" uid="uid://csgy3b3hp82qs" path="res://assets/characters/Guillermo/desconfiado.png" id="7_552et"]
+[ext_resource type="Texture2D" uid="uid://cxis4wts7qrpy" path="res://assets/characters/Guillermo/gritando.png" id="8_pvkfj"]
+[ext_resource type="Texture2D" uid="uid://dak41oxovplo7" path="res://assets/characters/Guillermo/neutral.png" id="9_xffnk"]
+[ext_resource type="Texture2D" uid="uid://8b8heck5w2cg" path="res://assets/characters/Guillermo/pensativo.png" id="10_oecyc"]
+[ext_resource type="Texture2D" uid="uid://daphp58agog2o" path="res://assets/characters/Guillermo/sorprendido.png" id="11_fbis0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6mknx"]
+shader = ExtResource("1_78pmo")
+shader_parameter/outline_color = Color(1.1097851, 1.1042392, 1.1097851, 1)
+shader_parameter/outline_size = 3.0
+shader_parameter/paper_texture = ExtResource("2_pmfco")
+shader_parameter/texture_strength = 0.800000038
+shader_parameter/texture_scale = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_irhhk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wifn0")
+}],
+"loop": 1,
+"name": &"asustado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_0tqxv")
+}],
+"loop": 1,
+"name": &"burlon",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_kqcrc")
+}],
+"loop": 1,
+"name": &"coqueto",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_djfiu")
+}],
+"loop": 1,
+"name": &"cruel",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_552et")
+}],
+"loop": 1,
+"name": &"desconfiado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_pvkfj")
+}],
+"loop": 1,
+"name": &"gritando",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_xffnk")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_oecyc")
+}],
+"loop": 1,
+"name": &"pensativo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_fbis0")
+}],
+"loop": 1,
+"name": &"sorprendido",
+"speed": 5.0
+}]
+
+[node name="Guillermo" type="Node2D" unique_id=1501475319]
+
+[node name="Animacion" type="AnimatedSprite2D" parent="." unique_id=741292194]
+material = SubResource("ShaderMaterial_6mknx")
+sprite_frames = SubResource("SpriteFrames_irhhk")
+animation = &"sorprendido"

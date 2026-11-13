@@ -226,7 +226,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"hablando",
-"speed": 5.0
+"speed": 30.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -336,7 +336,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"mano_gesto",
-"speed": 5.0
+"speed": 30.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -446,7 +446,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"rodar_ojos",
-"speed": 5.0
+"speed": 30.0
 }]
 
 [node name="Pilar" type="Node2D" unique_id=1501475319]
@@ -454,4 +454,5 @@ animations = [{
 [node name="Animacion" type="AnimatedSprite2D" parent="." unique_id=741292194]
 material = SubResource("ShaderMaterial_6mknx")
 sprite_frames = SubResource("SpriteFrames_irhhk")
-animation = &"rodar_ojos"
+animation = &"hablando"
+frame_progress = 0.4305728

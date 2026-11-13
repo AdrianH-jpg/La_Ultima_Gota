@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://cq0okskwbtrxb"]
+
+[ext_resource type="Shader" uid="uid://qj742ae0445k" path="res://whiteOutline.gdshader" id="1_w7mwq"]
+[ext_resource type="Texture2D" uid="uid://ves2c1cdph6f" path="res://assets/textures/outlineTEXTURE.png" id="2_qafwn"]
+[ext_resource type="Texture2D" uid="uid://d1rhk6el6cs34" path="res://assets/characters/Eva/Eva_Blanco_01_neutra.png" id="3_utv3o"]
+[ext_resource type="Texture2D" uid="uid://bj5mhob8vu8tj" path="res://assets/characters/Eva/Eva_Blanco_02_cansada_somnolienta.png" id="4_1qdei"]
+[ext_resource type="Texture2D" uid="uid://ofhh6k73lndb" path="res://assets/characters/Eva/Eva_Blanco_05_confundida - copia.png" id="5_yaw7q"]
+[ext_resource type="Texture2D" uid="uid://bbysl745jn88e" path="res://assets/characters/Eva/Eva_Blanco_03_indiferente_cerrada - copia.png" id="6_4uf36"]
+[ext_resource type="Texture2D" uid="uid://dpngh6gav46d5" path="res://assets/characters/Eva/Eva_Blanco_06_nerviosa_desconfiada.png" id="7_6hkqv"]
+[ext_resource type="Texture2D" uid="uid://by3cm0kw2xbme" path="res://assets/characters/Eva/Eva_Blanco_04_timida.png" id="8_n0emj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6mknx"]
+shader = ExtResource("1_w7mwq")
+shader_parameter/outline_color = Color(1.1097851, 1.1042392, 1.1097851, 1)
+shader_parameter/outline_size = 3.0
+shader_parameter/paper_texture = ExtResource("2_qafwn")
+shader_parameter/texture_strength = 0.800000038
+shader_parameter/texture_scale = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_irhhk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_utv3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1qdei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_utv3o")
+}],
+"loop": 0,
+"name": &"cansada",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_yaw7q")
+}],
+"loop": 1,
+"name": &"confundida",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_4uf36")
+}],
+"loop": 1,
+"name": &"indiferente",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_6hkqv")
+}],
+"loop": 1,
+"name": &"nerviosa",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_utv3o")
+}],
+"loop": 1,
+"name": &"neutra",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_n0emj")
+}],
+"loop": 1,
+"name": &"timida",
+"speed": 5.0
+}]
+
+[node name="Eva" type="Node2D" unique_id=1501475319]
+
+[node name="Animacion" type="AnimatedSprite2D" parent="." unique_id=741292194]
+material = SubResource("ShaderMaterial_6mknx")
+sprite_frames = SubResource("SpriteFrames_irhhk")
+animation = &"nerviosa"
