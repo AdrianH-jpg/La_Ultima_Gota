@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bfapnc1j8yyap"]
+
+[ext_resource type="Shader" uid="uid://qj742ae0445k" path="res://whiteOutline.gdshader" id="1_d5ft2"]
+[ext_resource type="Texture2D" uid="uid://ves2c1cdph6f" path="res://assets/textures/outlineTEXTURE.png" id="2_2m87w"]
+[ext_resource type="Texture2D" uid="uid://kb3yifns077y" path="res://assets/characters/Patricia/02_Somnolienta_Borracha.png" id="3_2g1uk"]
+[ext_resource type="Texture2D" uid="uid://b2wu17tbaxpme" path="res://assets/characters/Patricia/03_Irritada.png" id="4_qvhsx"]
+[ext_resource type="Texture2D" uid="uid://dslcmcoxd7hs4" path="res://assets/characters/Patricia/04_Enojada_Gritando.png" id="5_x8btg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6mknx"]
+shader = ExtResource("1_d5ft2")
+shader_parameter/outline_color = Color(1.1097851, 1.1042392, 1.1097851, 1)
+shader_parameter/outline_size = 3.0
+shader_parameter/paper_texture = ExtResource("2_2m87w")
+shader_parameter/texture_strength = 0.800000038
+shader_parameter/texture_scale = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_irhhk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_2g1uk")
+}],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_qvhsx")
+}],
+"loop": 1,
+"name": &"new_animation_1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_x8btg")
+}],
+"loop": 1,
+"name": &"new_animation_2",
+"speed": 5.0
+}]
+
+[node name="Pilar" type="Node2D" unique_id=1501475319]
+
+[node name="Animacion" type="AnimatedSprite2D" parent="." unique_id=741292194]
+material = SubResource("ShaderMaterial_6mknx")
+sprite_frames = SubResource("SpriteFrames_irhhk")
+animation = &"new_animation_2"
