@@ -1,0 +1,98 @@
+{
+	"FondoBalneario": {
+		"imagen": "res://assets/Image/FondoBalneario.png"
+	},
+	"FondoBifurcacion": {
+		"imagen": "res://assets/Image/FondoBifurcacion.png"
+	},
+	"FondoCalle": {
+		"imagen": "res://assets/Image/FondoCalle.png"
+	},
+	"FondoCaminoPueblo": {
+		"imagen": "res://assets/Image/FondoCaminoPueblo.png"
+	},
+	"FondoCamioneta": {
+		"imagen": "res://assets/Image/FondoCamioneta.png"
+	},
+	"FondoCocina": {
+		"imagen": "res://assets/Image/FondoCocina.png"
+	},
+	"FondoCocinaAtardecer": {
+		"imagen": "res://assets/Image/FondoCocinaAtardecer.png"
+	},
+	"FondoCocinaDia": {
+		"imagen": "res://assets/Image/FondoCocinaDia.png"
+	},
+	"FondoCocinaNoche": {
+		"imagen": "res://assets/Image/FondoCocinaNoche.png"
+	},
+	"FondoConfiteria": {
+		"imagen": "res://assets/Image/FondoConfiteria.png"
+	},
+	"FondoCorral": {
+		"imagen": "res://assets/Image/FondoCorral.png"
+	},
+	"FondoCorralNoche": {
+		"imagen": "res://assets/Image/FondoCorralNoche.png"
+	},
+	"FondoCruceCaminos": {
+		"imagen": "res://assets/Image/FondoCruceCaminos.png"
+	},
+	"FondoEntradaRural": {
+		"imagen": "res://assets/Image/FondoEntradaRural.png"
+	},
+	"FondoFestival": {
+		"imagen": "res://assets/Image/FondoFestival.png"
+	},
+	"FondoHabitacionEva": {
+		"imagen": "res://assets/Image/FondoHabitacionEva.png"
+	},
+	"FondoHospital": {
+		"cam_x": 300.0,
+		"cam_y": -200.0,
+		"cam_zoom": 2.0,
+		"imagen": "res://assets/Image/FondoHospital.png"
+	},
+	"FondoHospitalCalma": {
+		"imagen": "res://assets/Image/FondoHospitalCalma.png"
+	},
+	"FondoMatadero": {
+		"cam_x": -200.0,
+		"cam_y": 200.0,
+		"cam_zoom": 2.0,
+		"imagen": "res://assets/Image/FondoMatadero.png"
+	},
+	"FondoMataderoInterior": {
+		"imagen": "res://assets/Image/FondoMataderoInterior.png"
+	},
+	"FondoMataderoLuna": {
+		"imagen": "res://assets/Image/FondoMataderoLuna.png"
+	},
+	"FondoMataderoNoche": {
+		"imagen": "res://assets/Image/FondoMataderoNoche.png"
+	},
+	"FondoPesadilla": {
+		"imagen": "res://assets/Image/FondoPesadilla.png"
+	},
+	"FondoPilarA": {
+		"imagen": "res://assets/Image/FondoPilarA.png"
+	},
+	"FondoPilarB": {
+		"imagen": "res://assets/Image/FondoPilarB.png"
+	},
+	"FondoPileta": {
+		"imagen": "res://assets/Image/FondoPileta.png"
+	},
+	"FondoPiletaGranizo": {
+		"imagen": "res://assets/Image/FondoPiletaGranizo.png"
+	},
+	"FondoSalon": {
+		"imagen": "res://assets/Image/FondoSalon.png"
+	},
+	"FondoTranquera": {
+		"imagen": "res://assets/Image/FondoTranquera.png"
+	},
+	"FondoTraqueraAtardecer": {
+		"imagen": "res://assets/Image/FondoTraqueraAtardecer.png"
+	}
+}

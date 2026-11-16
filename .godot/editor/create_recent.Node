@@ -1,0 +1,14 @@
+AudioStreamPlayer
+Camera2D
+ColorRect
+CanvasLayer
+Sprite2D
+AudioStreamPlayer2D
+PanelContainer
+AnimatedSprite2D
+GPUParticles2D
+Timer
+VideoStreamPlayer
+TextureRect
+Label
+Control

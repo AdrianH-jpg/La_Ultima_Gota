@@ -1,0 +1,7 @@
+~ tranquera
+do fondo("FondoTranquera")
+do Guion.mostrar("Eva", "indiferente")
+Eva: [i]¿Cómo sería mi vida si... Si mamá... Se durmiera boca arriba y--? Dios... En qué estoy pensando...[/i]
+do Guion.mostrar("Eva", "confundida")
+Eva: [i]Estoy tan cansada...[/i]
+=> END

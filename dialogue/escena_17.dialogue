@@ -1,0 +1,5 @@
+~ start
+do fondo("FondoCocina")
+do Guion.mostrar("Eva", "nerviosa")
+Eva: [i]Todavía duerme... No-- No es robar... Yo hago todo en esta casa... También es mío.[/i]
+=> END

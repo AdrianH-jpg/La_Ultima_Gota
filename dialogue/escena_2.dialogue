@@ -1,0 +1,34 @@
+~ titulo_fecha
+do fondo("FondoHospital")
+do rayo()
+do Guion.sfx("llanto_bebe")
+do Guion.pantalla("Domingo - 28 de abril de 1968", false)
+do camara(0,0,1,4)
+=> END
+
+~ cuna
+do Guion.mostrar("Patricia", "canta")
+Patricia: Arrorró, mi niña, arrorró, mi sol, arrorró, pedazo de mi corazón...
+=> END
+
+~ pesadilla_1
+do Guion.sfx_stop("llanto_bebe")
+do parpadeo(3)
+do fondo("FondoPesadilla")
+do Guion.sfx("SFX_lluvia")
+do rayo()
+do Guion.mostrar("Patricia", "grita")
+Patricia: ¡¿Dónde está mi hija?! ¿Dónde está mi bebé? Eva, ¡¿dónde estás?!
+=> END
+
+~ pesadilla_2
+do rayo()
+do Guion.mostrar("Patricia", "grita")
+Patricia: ¡¿Quién sos?!
+=> END
+
+~ despierta
+do fondo("FondoHospitalCalma")
+do Guion.mostrar("Patricia", "confundida")
+Patricia: [i]Solo fue un sueño... Un maldito sueño.[/i]
+=> END

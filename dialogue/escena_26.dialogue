@@ -1,0 +1,5 @@
+~ start
+do fondo("FondoMataderoNoche")
+do Guion.mostrar("Eva", "pánico")
+Eva: Luna... Luna... No, no, no--
+=> END

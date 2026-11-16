@@ -1,0 +1,8 @@
+~ start
+do Guion.mostrar("Eva", "llorando")
+Eva: Soy una estúpida, Luna... Una estúpida.
+do Guion.mostrar("Eva", "llorando")
+Eva: Me invitó a salir... Y le dije que no. ¡Ni siquiera puedo decir que sí como una persona normal!
+do Guion.mostrar("Eva", "voz baja")
+Eva: Ahora va a pensar que no quiero verlo más...
+=> END

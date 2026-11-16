@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://gr8qsyc7r0nb"]
+
+[ext_resource type="VideoStream" uid="uid://cp1wnmvunfo5i" path="res://assets/video/logito.ogv" id="1_7e0sv"]
+[ext_resource type="AudioStream" uid="uid://c4ewmo7mvqn0k" path="res://assets/sound/logo.wav" id="2_exwf2"]
+[ext_resource type="Script" uid="uid://uaclntjttox1" path="res://scripts/opening_sequence.gd" id="2_vrguo"]
+[ext_resource type="AudioStream" uid="uid://cg5tfew2oeocl" path="res://assets/sound/SFX_lluvia.wav" id="4_vrguo"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" unique_id=1166612246]
+offset_right = 763.0
+offset_bottom = 382.0
+stream = ExtResource("1_7e0sv")
+autoplay = true
+script = ExtResource("2_vrguo")
+
+[node name="FondoNegro" type="ColorRect" parent="." unique_id=1032432631]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1392346467]
+stream = ExtResource("2_exwf2")
+volume_db = 7.953
+autoplay = true
+
+[node name="TextoPresenta" type="Label" parent="." unique_id=1572781324]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_font_sizes/font_size = 40
+text = "Outer Space Games INC presenta..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFXLluvia" type="AudioStreamPlayer" parent="." unique_id=1924422086]
+stream = ExtResource("4_vrguo")

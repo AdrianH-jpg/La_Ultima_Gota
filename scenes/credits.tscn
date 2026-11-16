@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://njdhvielc7v6"]
+
+[ext_resource type="Script" uid="uid://ceqjocsn1yx11" path="res://scripts/menu_principal.gd" id="1_pjc1l"]
+[ext_resource type="Texture2D" uid="uid://uhuwe4x2uv20" path="res://assets/menu/img/EVA.png" id="2_2fbfq"]
+[ext_resource type="FontFile" uid="uid://dwfncfar0s4c3" path="res://assets/menu/fonts/zai_OlivettiLettera22Typewriter.ttf" id="4_5em78"]
+[ext_resource type="AudioStream" uid="uid://76y8qofitnt8" path="res://assets/menu/audio/SFX/maquina de escribir.WAV" id="5_8gwij"]
+
+[node name="Credits" type="Control" unique_id=922573290]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pjc1l")
+
+[node name="Vaca" type="TextureRect" parent="." unique_id=1445926923]
+light_mask = 2
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 651.0
+texture = ExtResource("2_2fbfq")
+stretch_mode = 4
+
+[node name="Titlebox" type="VBoxContainer" parent="." unique_id=1455151414]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 97.0
+grow_horizontal = 2
+
+[node name="Title" type="Label" parent="Titlebox" unique_id=1900437678]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_5em78")
+theme_override_font_sizes/font_size = 105
+text = "Créditos"
+horizontal_alignment = 1
+
+[node name="MenuBox" type="VBoxContainer" parent="." unique_id=862967658]
+propagate_maximum_size = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 3.0
+offset_top = -195.0
+offset_right = -3.0
+offset_bottom = 187.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="Creditos" type="Label" parent="MenuBox" unique_id=178443749]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_5em78")
+theme_override_font_sizes/font_size = 70
+text = "Créditos"
+horizontal_alignment = 1
+
+[node name="Arte" type="Button" parent="MenuBox" unique_id=938540043]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
+theme_override_fonts/font = ExtResource("4_5em78")
+theme_override_font_sizes/font_size = 48
+text = "Video"
+flat = true
+
+[node name="Guion" type="Button" parent="MenuBox" unique_id=44411773]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.28118658, 0.2811869, 0.28118753, 1)
+theme_override_fonts/font = ExtResource("4_5em78")
+theme_override_font_sizes/font_size = 48
+text = "Volumen"
+flat = true
+
+[node name="Lang" type="Button" parent="MenuBox" unique_id=2044197519]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
+theme_override_fonts/font = ExtResource("4_5em78")
+theme_override_font_sizes/font_size = 48
+text = "Idioma"
+flat = true
+
+[node name="Back" type="Button" parent="MenuBox" unique_id=1941246181]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
+theme_override_fonts/font = ExtResource("4_5em78")
+theme_override_font_sizes/font_size = 48
+text = "Atras"
+flat = true
+
+[node name="HoverSFX" type="AudioStreamPlayer" parent="." unique_id=545271985]
+stream = ExtResource("5_8gwij")

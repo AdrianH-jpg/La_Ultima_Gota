@@ -1,0 +1,18 @@
+~ start
+do fondo("FondoFestival")
+do Guion.mostrar("José", "nervioso")
+José: Che, Eva... Te compré algo.
+do Guion.mostrar("José", "sonrisa suave")
+José: Dicen que es contra la envidia... No sé si funciona, jajaja.
+do Guion.mostrar("Eva", "sorprendida")
+Eva: ¿Es... para mí?
+do Guion.mostrar("José", "bromista")
+José: No, para mí. ¿No ves lo linda que me quedaría?
+do Guion.mostrar("Eva", "emocionada")
+Eva: Gracias, José... Me encanta.
+do Guion.mostrar("José", "sorprendido")
+José: Qué onda... ¿Siempre cambia tanto el clima acá?
+do Guion.mostrar("Eva", "inquieta")
+Eva: Últimamente... sí.
+do Guion.ir_a("escena_25")
+=> END
