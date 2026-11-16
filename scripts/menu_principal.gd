@@ -104,7 +104,7 @@ func _on_back_pressed() -> void:
 func _on_play_pressed() -> void:
 	 # aca a la primer escena del juego
 	$PlaySFX.play()
-	get_tree().change_scene_to_file("res://scenes/opening_sequence.gd.tscn")
+	get_tree().change_scene_to_file("res://scenes/juego.tscn")
 
 
 func _on_credits_pressed() -> void:

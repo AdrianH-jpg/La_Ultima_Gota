@@ -1,12 +1,5 @@
-res://personajes/Patricia.tscn
+res://scenes/escena_2a.tscn
 res://whiteOutline.gdshader
 res://scenes/menu_principal.gdshader
 res://shader/climate_post_process.gdshader
-res://personajes/Eva.tscn
-res://dialogue/scene_dialogue/balloon.tscn
-res://scenes/escena_6.tscn
-res://personajes/Guillermo.tscn
-res://scenes/escena_12.tscn
-res://personajes/Luna.tscn
-res://personajes/Jose.tscn
-res://guion/escena_guion.gd
+res://scripts/escena_2a.gd

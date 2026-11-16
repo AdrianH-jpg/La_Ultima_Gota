@@ -1,3 +1,5 @@
 ~ start
-do Guion.pantalla("Sábado 9 de noviembre de 1985", false)
+do fondo("FondoMataderoNoche")
+do Guion.mostrar("Eva", "pánico")
+Eva: Luna... Luna... No, no, no--
 => END

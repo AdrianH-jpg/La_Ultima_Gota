@@ -1,0 +1,21 @@
+~ start
+do fondo("FondoPileta")
+do Guion.mostrar("Eva", "nerviosa")
+do Guion.mostrar("Guillermo", "cruel")
+Guillermo: Mirá, anda toda chivada... ¿No tendrá mucho calor?
+do Guion.mostrar("Pilar", "sarcástica")
+Pilar: Pobrecita... Le voy a dar una mano.
+do sonido("SFXAgua")
+do sonido("SFXAgua", false)
+do Guion.mostrar("Pilar", "sorprendida")
+Pilar: ¡Disculpa! No te vi...
+do Guion.mostrar("Pilar", "malvada")
+Pilar: Igual un baño no te venía mal.
+do sonido("SFXRisas")
+do sonido("SFXRisas", false)
+do Guion.mostrar("Eva", "grito ahogado")
+Eva: No... Nad-- Ayu-- ¡Por--! ¡Por Fav--!
+do fondo("FondoPiletaGranizo")
+do Guion.mostrar("Guillermo", "asustado")
+Guillermo: ¡Ah! Auch--! ¡Mi cara--!
+=> END

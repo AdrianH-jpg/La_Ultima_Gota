@@ -1,36 +1,19 @@
 ~ start
-do Guion.mostrar("Patricia", "preocupada")
-Patricia: Eva... ¿Dónde estabas? ¿Qué-- Qué te pasó...? ¡Estás empapada!
-do Guion.mostrar("Eva", "desolada")
-Eva: La mataron, ma... La... La mataron...
-do Guion.mostrar("Patricia", "confundida")
-Patricia: ¿Qué? ¿A quién? ¿De qué hablás?
+do fondo("FondoCaminoPueblo")
+do Guion.mostrar("Guillermo", "asustado")
+Guillermo: ¡LA PUTA MADRE! ¡Casi la atropello!
+do Guion.mostrar("Pilar", "aterrada")
+Pilar: Guillermo... ¡Es Eva!
+do Guion.mostrar("José", "gritando")
+José: ¡EVA! ¡Te iba a buscar!
+do Guion.mostrar("José", "desesperado")
+José: ¡Estás herida! ¡Tenemos que salir de acá!
+do Guion.mostrar("Eva", "aterrada")
+Eva: ¿José...?
+do Guion.mostrar("Eva", "desesperada")
+Eva: [b]¡¡JOSÉ!![/b]
 do Guion.mostrar("Eva", "llorando")
-Eva: Luna...
-do Guion.mostrar("Patricia", "asustada")
-Patricia: No... No puede ser...
-do Guion.mostrar("Eva", "llorando")
-Eva: Pilar y Guillermo... se la llevaron... y la mataron...
-do Guion.mostrar("Patricia", "temblorosa")
-Patricia: Sos vos...
-do Guion.mostrar("Eva", "confundida")
-Eva: ¿Qué...?
-do Guion.mostrar("Patricia", "voz baja")
-Patricia: ¿Dónde está mi hija...?
-do Guion.mostrar("Eva", "desconcertada")
-Eva: ¿Me estás escuchando...?
-do Guion.mostrar("Patricia", "ausente")
-Patricia: ¿Qué hiciste con mi bebé...?
-do Guion.mostrar("Eva", "gritando")
-Eva: ¡MAMÁ, SOY YO!
-do Guion.mostrar("Patricia", "ausente")
-Patricia: Tenés razón... Perdoname...
-do Guion.mostrar("Patricia", "sonrisa suave")
-Patricia: Vení, hija... Vení con mamá...
-do Guion.mostrar("Patricia", "susurrando")
-Patricia: Voy a salvarte, mi amor...
-do Guion.mostrar("Eva", "atónita")
-Eva: ¿M... Mamá?
-do Guion.mostrar("Patricia", "temblorosa")
-Patricia: ¿E... Eva...?
+Eva: No... No, por favor... Vos no...
+do Guion.mostrar("Eva", "susurrando")
+Eva: Perdón... Perdoname...
 => END

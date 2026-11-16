@@ -3,6 +3,7 @@ do Guion.pantalla("Miércoles - 6 de Noviembre de 1985", false)
 => END
 
 ~ cocina
-do Guion.mostrar("Eva", "")
+do fondo("FondoCocina")
+do Guion.mostrar("Eva", "neutra")
 Eva: [i]Esa botella seguramente esté vacía en unas horas... Agh, bueno... Dos mates más y arranco.[/i]
 => END

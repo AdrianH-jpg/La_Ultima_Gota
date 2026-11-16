@@ -1,0 +1,144 @@
+{
+	"orden": [
+		"escena_1",
+		"escena_2",
+		"escena_3",
+		"escena_4",
+		"escena_5",
+		"escena_6",
+		"escena_7",
+		"escena_8",
+		"escena_9",
+		"escena_10",
+		"escena_11",
+		"escena_12",
+		"escena_13",
+		"escena_14",
+		"escena_15",
+		"escena_16",
+		"escena_17",
+		"escena_18",
+		"escena_19",
+		"escena_20",
+		"escena_21",
+		"escena_22",
+		"escena_23",
+		"escena_24",
+		"escena_25",
+		"escena_26",
+		"escena_27",
+		"escena_28",
+		"escena_29",
+		"escena_30",
+		"escena_31",
+		"escena_32",
+		"escena_33"
+	],
+	"titulos": {
+		"escena_1": [
+			"intro",
+			"matadero"
+		],
+		"escena_10": [
+			"start"
+		],
+		"escena_11": [
+			"start"
+		],
+		"escena_12": [
+			"start"
+		],
+		"escena_13": [
+			"start"
+		],
+		"escena_14": [
+			"start"
+		],
+		"escena_15": [
+			"start"
+		],
+		"escena_16": [
+			"start"
+		],
+		"escena_17": [
+			"start"
+		],
+		"escena_18": [
+			"start"
+		],
+		"escena_19": [
+			"start"
+		],
+		"escena_2": [
+			"titulo_fecha",
+			"cuna",
+			"pesadilla_1",
+			"pesadilla_2",
+			"despierta"
+		],
+		"escena_20": [
+			"start"
+		],
+		"escena_21": [
+			"start"
+		],
+		"escena_22": [
+			"start"
+		],
+		"escena_23": [
+			"start"
+		],
+		"escena_24": [
+			"start"
+		],
+		"escena_25": [
+			"start"
+		],
+		"escena_26": [
+			"start"
+		],
+		"escena_27": [
+			"start"
+		],
+		"escena_28": [
+			"start"
+		],
+		"escena_29": [
+			"start"
+		],
+		"escena_3": [
+			"fecha",
+			"cocina"
+		],
+		"escena_30": [
+			"start"
+		],
+		"escena_31": [
+			"start"
+		],
+		"escena_32": [
+			"start"
+		],
+		"escena_33": [
+			"start"
+		],
+		"escena_4": [
+			"corral"
+		],
+		"escena_5": [
+			"tranquera"
+		],
+		"escena_6": [
+			"pizarron"
+		],
+		"escena_7": [
+			"start"
+		],
+		"escena_8": [
+			"start"
+		],
+		"escena_9": [
+			"start"
+		]
+	}
+}

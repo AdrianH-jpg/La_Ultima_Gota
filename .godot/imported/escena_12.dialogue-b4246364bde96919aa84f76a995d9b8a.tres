@@ -33,13 +33,13 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 17,
 &"type": "string",
-&"value": "Eva"
+&"value": "Guillermo"
 }]), Array[Dictionary]([{
-&"i": 24,
+&"i": 30,
 &"type": "string",
-&"value": "nerviosa"
+&"value": "cruel"
 }, {
-&"i": 34,
+&"i": 37,
 &"type": "parens_close"
 }])])
 }]),
@@ -49,55 +49,15 @@ lines = {
 &"type": "mutation"
 },
 "10": {
-&"character": "Pilar",
+&"character": "Eva",
 &"id": "10",
 &"next_id": "11",
-&"static_id": "",
-&"text": "Igual un baño no te venía mal.",
-&"type": "dialogue"
-},
-"11": {
-&"id": "11",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Eva"
-}]), Array[Dictionary]([{
-&"i": 24,
-&"type": "string",
-&"value": "grito ahogado"
-}, {
-&"i": 39,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "12",
-&"type": "mutation"
-},
-"12": {
-&"character": "Eva",
-&"id": "12",
-&"next_id": "13",
 &"static_id": "",
 &"text": "No... Nad-- Ayu-- ¡Por--! ¡Por Fav--!",
 &"type": "dialogue"
 },
-"13": {
-&"id": "13",
+"11": {
+&"id": "11",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -125,19 +85,19 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "14",
+&"next_id": "12",
 &"type": "mutation"
 },
-"14": {
+"12": {
 &"character": "Guillermo",
-&"id": "14",
-&"next_id": "15",
+&"id": "12",
+&"next_id": "13",
 &"static_id": "",
 &"text": "¡Ah! Auch--! ¡Mi cara--!",
 &"type": "dialogue"
 },
-"15": {
-&"id": "15",
+"13": {
+&"id": "13",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -165,16 +125,28 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "16",
+&"next_id": "14",
 &"type": "mutation"
 },
-"16": {
+"14": {
 &"character": "Helena",
-&"id": "16",
-&"next_id": "17",
+&"id": "14",
+&"next_id": "15",
 &"static_id": "",
 &"text": "¡¿De dónde salió esta torment--?! ¡AH! ¡MI BRAZO!",
 &"type": "dialogue"
+},
+"15": {
+&"id": "15",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"16": {
+&"id": "16",
+&"next_id": "17",
+&"type": ""
 },
 "17": {
 &"id": "17",
@@ -183,60 +155,16 @@ lines = {
 &"next_id_after": "",
 &"type": "goto"
 },
-"18": {
-&"id": "18",
-&"next_id": "19",
-&"type": ""
-},
-"19": {
-&"id": "19",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
 "2": {
-&"id": "2",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Guillermo"
-}]), Array[Dictionary]([{
-&"i": 30,
-&"type": "string",
-&"value": "cruel"
-}, {
-&"i": 37,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "3",
-&"type": "mutation"
-},
-"3": {
 &"character": "Guillermo",
-&"id": "3",
-&"next_id": "4",
+&"id": "2",
+&"next_id": "3",
 &"static_id": "",
 &"text": "Mirá, anda toda chivada... ¿No tendrá mucho calor?",
 &"type": "dialogue"
 },
-"4": {
-&"id": "4",
+"3": {
+&"id": "3",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -264,47 +192,19 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "5",
+&"next_id": "4",
 &"type": "mutation"
 },
-"5": {
+"4": {
 &"character": "Pilar",
-&"id": "5",
-&"next_id": "6",
+&"id": "4",
+&"next_id": "5",
 &"static_id": "",
 &"text": "Pobrecita... Le voy a dar una mano.",
 &"type": "dialogue"
 },
-"6": {
-&"id": "6",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "ocultar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Guillermo"
-}, {
-&"i": 28,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "7",
-&"type": "mutation"
-},
-"7": {
-&"id": "7",
+"5": {
+&"id": "5",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -332,19 +232,19 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "8",
+&"next_id": "6",
 &"type": "mutation"
 },
-"8": {
+"6": {
 &"character": "Pilar",
-&"id": "8",
-&"next_id": "9",
+&"id": "6",
+&"next_id": "7",
 &"static_id": "",
 &"text": "¡Disculpa! No te vi...",
 &"type": "dialogue"
 },
-"9": {
-&"id": "9",
+"7": {
+&"id": "7",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -367,6 +267,46 @@ lines = {
 &"value": "malvada"
 }, {
 &"i": 35,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "8",
+&"type": "mutation"
+},
+"8": {
+&"character": "Pilar",
+&"id": "8",
+&"next_id": "9",
+&"static_id": "",
+&"text": "Igual un baño no te venía mal.",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "grito ahogado"
+}, {
+&"i": 39,
 &"type": "parens_close"
 }])])
 }]),

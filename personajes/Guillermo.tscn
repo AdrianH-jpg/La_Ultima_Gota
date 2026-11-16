@@ -99,5 +99,6 @@ animations = [{
 
 [node name="Animacion" type="AnimatedSprite2D" parent="." unique_id=741292194]
 material = SubResource("ShaderMaterial_6mknx")
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_irhhk")
 animation = &"sorprendido"

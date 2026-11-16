@@ -3,7 +3,10 @@ do Guion.pantalla("La historia oficial cuenta que el 10 de noviembre de 1985, el
 => END
 
 ~ matadero
+do Guion.sfx("viento")
+do fondo("FondoMatadero")
 do camara(0,0,1,4)
+do Guion.sfx("teros")
 Narrador: [i]Esa noche todo cambió.[/i]
 Narrador: [i]Nadie murió… Es lo que dicen, eso piensan todos.[/i]
 Narrador: [i]Pero hay algo que nunca nadie contó sobre aquel 10 de noviembre de 1985...[/i]
