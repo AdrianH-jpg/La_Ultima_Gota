@@ -1,8 +1,14 @@
+res://scripts/
+res://assets/fonts/
 res://
+res://assets/animaciones/boton/
+res://assets/animaciones/PALANCA/IZQUIERDA/
+res://assets/animaciones/PALANCA/DERECHA/
+res://assets/animaciones/PALANCA/ATRAS/
+res://assets/animaciones/PALANCA/ADELANTE/
 res://scenes/
 res://guion/
 res://personajes/
-res://scripts/
 res://assets/characters/RODAR_OJOS/
 res://assets/characters/MANO_GESTO/
 res://assets/characters/HABLANDO/

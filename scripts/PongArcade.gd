@@ -16,7 +16,7 @@ var puntos_jugador: int = 0
 var puntos_cpu: int = 0
 var jugando: bool = false
 var ganador: String = ""
-var mensaje: String = "ESPACIO O CLIC PARA JUGAR"
+var mensaje: String = "ESPACIO PARA JUGAR"
 var saque_hacia: int = 1
 var fuente: Font
 
@@ -47,17 +47,6 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.keycode == KEY_SPACE:
 			_empezar_o_continuar()
-
-
-func _gui_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		jugador_y = event.position.y
-		_limitar_paletas()
-		queue_redraw()
-	elif event is InputEventMouseButton:
-		if event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-			_empezar_o_continuar()
-
 
 func _empezar_o_continuar() -> void:
 	if jugando:

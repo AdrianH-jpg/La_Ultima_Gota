@@ -1,10 +1,11 @@
+Control
+AnimatedSprite2D
 Container
 Sprite2D
 ColorRect
 CanvasLayer
 Camera2D
 PanelContainer
-AnimatedSprite2D
 AudioStreamPlayer
 GPUParticles2D
 Timer
@@ -12,4 +13,3 @@ VideoStreamPlayer
 AudioStreamPlayer2D
 TextureRect
 Label
-Control

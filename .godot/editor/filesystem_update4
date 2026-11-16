@@ -2,3 +2,8 @@ res://arcade_maq.tscn
 res://whiteOutline.gdshader
 res://scenes/menu_principal.gdshader
 res://shader/climate_post_process.gdshader
+res://menu_arcade.tscn
+res://animacionesBotones.gd
+res://scripts/MenuArcade.gd
+res://VacaPong.tscn
+res://scripts/VacaPong.gd

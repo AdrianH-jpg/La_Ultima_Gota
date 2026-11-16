@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://7co5h3irxwt4"]
+
+[ext_resource type="Script" uid="uid://ppxmwaw0y3s5" path="res://scripts/MenuArcade.gd" id="1_7wa1a"]
+[ext_resource type="FontFile" uid="uid://bt51l0gxaqe27" path="res://assets/fonts/PressStart2P-Regular.ttf" id="2_v8cwi"]
+
+[node name="MenuArcade" type="Control" unique_id=151733476]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_7wa1a")
+fuente_arcade = ExtResource("2_v8cwi")
