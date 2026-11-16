@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cbw1u33wvh7id"]
+
+[ext_resource type="Script" uid="uid://51a72n8fjwaa" path="res://scripts/acto_uno.gd" id="1_k0hcd"]
+[ext_resource type="Texture2D" uid="uid://dfrs5iaecl0k6" path="res://assets/Image/telegrama.png" id="1_ke2oi"]
+[ext_resource type="Script" uid="uid://byrnpr7d0vprj" path="res://scenes/click_telegrama.gd" id="2_ajo6w"]
+[ext_resource type="Resource" uid="uid://b2ok1v4d8kqoq" path="res://dialogue/actoUno.dialogue" id="3_purjb"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_84aid"]
+load_path = "res://.godot/imported/Oficina.jpg-8f945c9d6569ef1f2e69ccb9e47bb511.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_my7rw"]
+size = Vector2(613, 376)
+
+[node name="ActoUno" type="Node2D" unique_id=2042921785]
+script = ExtResource("1_k0hcd")
+
+[node name="Control" type="Control" parent="." unique_id=1669210697]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=652035242]
+layout_mode = 0
+offset_right = 1934.0
+offset_bottom = 1077.0
+texture = SubResource("CompressedTexture2D_84aid")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1641431772]
+position = Vector2(405, 642)
+script = ExtResource("2_ajo6w")
+dialogue_resource = ExtResource("3_purjb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1320239731]
+position = Vector2(2, 5)
+shape = SubResource("RectangleShape2D_my7rw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1135078947]
+position = Vector2(405, 642)
+texture = ExtResource("1_ke2oi")

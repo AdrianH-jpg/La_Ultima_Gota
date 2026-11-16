@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cf574bvuwhbms"
+path="res://.godot/imported/escena_05_tranquera.dialogue-a303918605144a4ccdb6238f4d3f0b17.tres"
+
+[deps]
+
+source_file="res://dialogue/scenes_0/escena_05_tranquera.dialogue"
+dest_files=["res://.godot/imported/escena_05_tranquera.dialogue-a303918605144a4ccdb6238f4d3f0b17.tres"]
+
+[params]
+
+defaults=true

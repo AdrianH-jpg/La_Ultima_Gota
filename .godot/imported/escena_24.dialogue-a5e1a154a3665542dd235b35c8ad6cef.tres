@@ -8,7 +8,7 @@ using_states = PackedStringArray()
 cues = {
 "start": "1"
 }
-character_names = PackedStringArray("Eva", "José")
+character_names = PackedStringArray("Eva", "Guillermo", "Pilar")
 first_cue = "0"
 lines = {
 "0": {
@@ -20,26 +20,15 @@ lines = {
 &"id": "1",
 &"mutation": {
 &"expression": Array[Dictionary]([{
+&"function": "fondo",
 &"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
+&"i": 9,
 &"type": "string",
-&"value": "Eva"
-}]), Array[Dictionary]([{
-&"i": 24,
-&"type": "string",
-&"value": "nerviosa"
+&"value": "FondoCorralNoche"
 }, {
-&"i": 34,
+&"i": 27,
 &"type": "parens_close"
 }])])
 }]),
@@ -49,82 +38,7 @@ lines = {
 &"type": "mutation"
 },
 "10": {
-&"character": "José",
 &"id": "10",
-&"next_id": "11",
-&"static_id": "",
-&"text": "Entonces nos vemos mañana.",
-&"type": "dialogue"
-},
-"11": {
-&"id": "11",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"12": {
-&"id": "12",
-&"next_id": "13",
-&"type": ""
-},
-"13": {
-&"id": "13",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"2": {
-&"character": "Eva",
-&"id": "2",
-&"next_id": "3",
-&"static_id": "",
-&"text": "Che, José... ¿Mañana vas a ir al festival?",
-&"type": "dialogue"
-},
-"3": {
-&"id": "3",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "José"
-}]), Array[Dictionary]([{
-&"i": 25,
-&"type": "string",
-&"value": "casual"
-}, {
-&"i": 33,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "4",
-&"type": "mutation"
-},
-"4": {
-&"character": "José",
-&"id": "4",
-&"next_id": "5",
-&"static_id": "",
-&"text": "¡Sí! ¿Por?",
-&"type": "dialogue"
-},
-"5": {
-&"id": "5",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -144,7 +58,330 @@ lines = {
 }]), Array[Dictionary]([{
 &"i": 24,
 &"type": "string",
-&"value": "sonrojada"
+&"value": "llorando"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "11",
+&"type": "mutation"
+},
+"11": {
+&"character": "Eva",
+&"id": "11",
+&"next_id": "12",
+&"static_id": "",
+&"text": "Yo solo quería ir al festival, Lunita... ¿Por qué... Por qué no me dejan en paz...?",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "pantalla",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": "string",
+&"value": "La lluvia obligó a suspender las celebraciones de aquella noche."
+}]), Array[Dictionary]([{
+&"i": 86,
+&"type": "variable",
+&"value": "true"
+}, {
+&"i": 90,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "13",
+&"type": "mutation"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "pantalla",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": "string",
+&"value": "Pasaron las horas, pero la tormenta nunca cesó."
+}]), Array[Dictionary]([{
+&"i": 69,
+&"type": "variable",
+&"value": "true"
+}, {
+&"i": 73,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "14",
+&"type": "mutation"
+},
+"14": {
+&"id": "14",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "pantalla",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": "string",
+&"value": "Durante la madrugada del 10 de noviembre de 1985, el muro de contención cedió ante el avance del agua."
+}]), Array[Dictionary]([{
+&"i": 124,
+&"type": "variable",
+&"value": "true"
+}, {
+&"i": 128,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "15",
+&"type": "mutation"
+},
+"15": {
+&"id": "15",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "pantalla",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": "string",
+&"value": "Villa Epecuén quedó inundada."
+}]), Array[Dictionary]([{
+&"i": 51,
+&"type": "variable",
+&"value": "true"
+}, {
+&"i": 55,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "16",
+&"type": "mutation"
+},
+"16": {
+&"id": "16",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "pantalla",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": "string",
+&"value": "No se registraron víctimas fatales."
+}]), Array[Dictionary]([{
+&"i": 57,
+&"type": "variable",
+&"value": "true"
+}, {
+&"i": 61,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "17",
+&"type": "mutation"
+},
+"17": {
+&"id": "17",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "fin",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "18",
+&"type": "mutation"
+},
+"18": {
+&"id": "18",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"19": {
+&"id": "19",
+&"next_id": "20",
+&"type": ""
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "gritando"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"id": "20",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"character": "Eva",
+&"id": "3",
+&"next_id": "4",
+&"static_id": "",
+&"text": "¡EH! ¡¿QUÉ ESTÁN HACIENDO?!",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Guillermo"
+}]), Array[Dictionary]([{
+&"i": 30,
+&"type": "string",
+&"value": "asustado"
+}, {
+&"i": 40,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "5",
+&"type": "mutation"
+},
+"5": {
+&"character": "Guillermo",
+&"id": "5",
+&"next_id": "6",
+&"static_id": "",
+&"text": "¡Pili, nos vio! ¡Vámonos, si mi viejo se entera me mata!",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Pilar"
+}]), Array[Dictionary]([{
+&"i": 26,
+&"type": "string",
+&"value": "furiosa"
 }, {
 &"i": 35,
 &"type": "parens_close"
@@ -152,59 +389,19 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "6",
-&"type": "mutation"
-},
-"6": {
-&"character": "Eva",
-&"id": "6",
 &"next_id": "7",
-&"static_id": "",
-&"text": "No sé... Pensaba que... ¿Querés ir conmigo?",
-&"type": "dialogue"
+&"type": "mutation"
 },
 "7": {
+&"character": "Pilar",
 &"id": "7",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "José"
-}]), Array[Dictionary]([{
-&"i": 25,
-&"type": "string",
-&"value": "sonriendo"
-}, {
-&"i": 36,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
 &"next_id": "8",
-&"type": "mutation"
-},
-"8": {
-&"character": "José",
-&"id": "8",
-&"next_id": "9",
 &"static_id": "",
-&"text": "¡Me ganaste! Justo te iba a preguntar lo mismo.",
+&"text": "¡NO! ¡METÉ LA VACA AL CARRO!",
 &"type": "dialogue"
 },
-"9": {
-&"id": "9",
+"8": {
+&"id": "8",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -220,20 +417,28 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 17,
 &"type": "string",
-&"value": "José"
+&"value": "Guillermo"
 }]), Array[Dictionary]([{
-&"i": 25,
+&"i": 30,
 &"type": "string",
-&"value": ""
+&"value": "gritando"
 }, {
-&"i": 27,
+&"i": 40,
 &"type": "parens_close"
 }])])
 }]),
 &"is_blocking": true
 },
-&"next_id": "10",
+&"next_id": "9",
 &"type": "mutation"
+},
+"9": {
+&"character": "Guillermo",
+&"id": "9",
+&"next_id": "10",
+&"static_id": "",
+&"text": "¡Subí o te dejo!",
+&"type": "dialogue"
 }
 }
 metadata/dialogue_manager_version = "4.0.3"

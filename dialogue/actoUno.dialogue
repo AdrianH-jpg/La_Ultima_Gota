@@ -1,0 +1,73 @@
+~ intro_oficina
+Noviembre de 1978. Provincia de La Pampa
+
+El ventilador del techo gira lentamente, arrastrando el aire caliente de una oficina que conoce días mejores. Afuera el sol ya empieza a descender, el clima igual no muestra clemencia.
+
+Sobre el escritorio se acumulan carpetas, formularios y estudios clínicos. Algunas facturas esperan ser pagadas. Otras ya deberían haberlo sido hace semanas.
+
+Entre todo ese desorden hay un telegrama que todavía está sin abrir.
+=> END
+
+
+~ examinar_telegrama
+El sobre está arrugado por el viaje.
+
+Remitente: Osvaldo Corvalán Iraola. \nLa Armonía, La Pampa.
+
+El apellido te resulta familiar. \nLos Corvalán Iraola llevan generaciones enteras acumulando tierras y ganado.
+
+- Abrir telegrama
+	=> abrir_telegrama
+- Dejar sobre la mesa
+	=> dejar_telegrama
+
+
+~ dejar_telegrama
+Decides dejar el telegrama sobre la mesa, sin abrir.
+
+Tal vez más tarde.
+=> END
+
+
+~ abrir_telegrama
+Despliegas el papel cuidadosamente.
+
+La tinta está algo corrida.
+
+"Dr. Felipe Macedonio Ramírez. \nSolicito con carácter urgente sus servicios profesionales para investigar una serie de muertes inusuales de ganado ocurridas en mi establecimiento.
+
+La situación requiere absoluta discreción.\nLos honorarios serán abonados en dólares estadounidenses, el monto será discutido con usted al momento de su visita.
+
+Le solicito a su favor, una pronta respuesta.
+
+Atentamente, \nOsvaldo Corvalán Iraola."
+
+Terminas de leer.\nY lo vuelves a leer.\nDespués una tercera vez…
+
+Dólares.\nNo pesos…\nDólares.
+
+Te reclinas en la silla. Algo no encaja.
+
+Las vacas siempre se enferman.\nLas vacas siempre se mueren.
+
+Eso es parte del negocio.\nNadie paga semejante suma para investigar un puñado de animales muertos.
+
+A menos que esos animales estén ocultando algo más.\nO que alguien necesite una respuesta urgente.
+
+La foto de tu hija descansa sobre el escritorio.
+
+Buenos Aires.\nAlquiler.\nLibros.\nCuotas.\nComida.
+
+La universidad no se paga sola.\nSuspiras.\nNo te gusta el asunto.
+
+Pero tampoco estás en posición de rechazar el dinero.\nY, después de todo, probablemente la explicación es mucho más simple de lo que parece.\nSiempre lo es...
+
+- Aceptar el trabajo
+	=> aceptar_trabajo
+
+
+~ aceptar_trabajo
+Guardas el telegrama dentro del maletín.
+
+Mañana partirás hacia La Armonía.
+=> END

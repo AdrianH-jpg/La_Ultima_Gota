@@ -33,13 +33,13 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 18,
 &"type": "string",
-&"value": "Viernes - 8 de Noviembre de 1985"
+&"value": "Sábado 9 de noviembre de 1985"
 }]), Array[Dictionary]([{
-&"i": 54,
+&"i": 51,
 &"type": "variable",
 &"value": "false"
 }, {
-&"i": 59,
+&"i": 56,
 &"type": "parens_close"
 }])])
 }]),

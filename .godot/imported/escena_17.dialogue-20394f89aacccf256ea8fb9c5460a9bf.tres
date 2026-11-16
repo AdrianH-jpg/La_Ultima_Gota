@@ -20,26 +20,15 @@ lines = {
 &"id": "1",
 &"mutation": {
 &"expression": Array[Dictionary]([{
+&"function": "fondo",
 &"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "pantalla",
-&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 18,
+&"i": 9,
 &"type": "string",
-&"value": "José acompaña a Eva a su casa, en el camino, José habla entusiasmado sobre videojuegos. Eva escucha pero va distraída con un pensamiento incómodo."
-}]), Array[Dictionary]([{
-&"i": 168,
-&"type": "variable",
-&"value": "false"
+&"value": "FondoCocina"
 }, {
-&"i": 173,
+&"i": 22,
 &"type": "parens_close"
 }])])
 }]),
@@ -69,9 +58,9 @@ lines = {
 }]), Array[Dictionary]([{
 &"i": 24,
 &"type": "string",
-&"value": ""
+&"value": "nerviosa"
 }, {
-&"i": 26,
+&"i": 34,
 &"type": "parens_close"
 }])])
 }]),
@@ -85,7 +74,7 @@ lines = {
 &"id": "3",
 &"next_id": "4",
 &"static_id": "",
-&"text": "[i]Ayer granizó mientras me ahogaba... Ahora hay sol... Será... No. No puede ser.[/i]",
+&"text": "[i]Todavía duerme... No-- No es robar... Yo hago todo en esta casa... También es mío.[/i]",
 &"type": "dialogue"
 },
 "4": {

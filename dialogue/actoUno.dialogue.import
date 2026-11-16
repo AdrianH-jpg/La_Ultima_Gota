@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b2ok1v4d8kqoq"
+path="res://.godot/imported/actoUno.dialogue-958f7874c64d13e6190ca0feb9b19f5b.tres"
+
+[deps]
+
+source_file="res://dialogue/actoUno.dialogue"
+dest_files=["res://.godot/imported/actoUno.dialogue-958f7874c64d13e6190ca0feb9b19f5b.tres"]
+
+[params]
+
+defaults=true

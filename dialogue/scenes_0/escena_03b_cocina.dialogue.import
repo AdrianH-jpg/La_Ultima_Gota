@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bnlfyag3io4i"
+path="res://.godot/imported/escena_03b_cocina.dialogue-dd1eecc59b1e4c3bdc039f022487f02b.tres"
+
+[deps]
+
+source_file="res://dialogue/scenes_0/escena_03b_cocina.dialogue"
+dest_files=["res://.godot/imported/escena_03b_cocina.dialogue-dd1eecc59b1e4c3bdc039f022487f02b.tres"]
+
+[params]
+
+defaults=true

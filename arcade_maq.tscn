@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://buyuauy1d5sku"]
+
+[ext_resource type="Script" uid="uid://b7hr5clhjgb8m" path="res://scripts/ArcadeMaquina.gd" id="1_6cudw"]
+[ext_resource type="Texture2D" uid="uid://d1thy4i4dw2xw" path="res://assets/backgrounds/MAQUINAPNG.png" id="1_bycp6"]
+[ext_resource type="PackedScene" uid="uid://7co5h3irxwt4" path="res://menu_arcade.tscn" id="2_4lbd6"]
+[ext_resource type="PackedScene" uid="uid://kaj7vuc8x3kc" path="res://VacaPong.tscn" id="3_5dygc"]
+[ext_resource type="Texture2D" uid="uid://bhcraun22xnte" path="res://assets/animaciones/PALANCA/ADELANTE/base.png" id="4_65vqf"]
+[ext_resource type="Texture2D" uid="uid://co0gqbkdql6lt" path="res://assets/animaciones/PALANCA/ADELANTE/adelante_1.png" id="5_4lbd6"]
+[ext_resource type="Texture2D" uid="uid://bhqjme70jv046" path="res://assets/animaciones/PALANCA/ATRAS/base.png" id="6_5dygc"]
+[ext_resource type="Texture2D" uid="uid://dp116en8rac7w" path="res://assets/animaciones/PALANCA/ATRAS/atras_1.png" id="7_wrpj7"]
+[ext_resource type="Texture2D" uid="uid://b2gtcfrc0au6j" path="res://assets/animaciones/PALANCA/DERECHA/base.png" id="8_blo4k"]
+[ext_resource type="Texture2D" uid="uid://p3hpvaocbbc0" path="res://assets/animaciones/PALANCA/DERECHA/der_1.png" id="9_vpife"]
+[ext_resource type="Texture2D" uid="uid://mpdaygka32tb" path="res://assets/animaciones/PALANCA/IZQUIERDA/base.png" id="10_mv71u"]
+[ext_resource type="Texture2D" uid="uid://blmcs8hhdh2t2" path="res://assets/animaciones/PALANCA/IZQUIERDA/izq_1.png" id="11_slnbc"]
+[ext_resource type="Texture2D" uid="uid://ckcm0145x4b2h" path="res://assets/animaciones/BOTON/skeleton-BOTON_0.png" id="12_mv71u"]
+[ext_resource type="Texture2D" uid="uid://15kcuu14kovk" path="res://assets/animaciones/BOTON/skeleton-BOTON_7.png" id="19_ch8sy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qg2vh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_65vqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4lbd6")
+}],
+"loop": 0,
+"name": &"adelante",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_5dygc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wrpj7")
+}],
+"loop": 0,
+"name": &"atras",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_blo4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vpife")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_mv71u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_slnbc")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m751u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_mv71u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ch8sy")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ARCADE_MAQ" type="Node2D" unique_id=1625071399]
+position = Vector2(949, 532)
+script = ExtResource("1_6cudw")
+escena_menu = ExtResource("2_4lbd6")
+escena_pong = ExtResource("3_5dygc")
+
+[node name="Container" type="Container" parent="." unique_id=678650847]
+offset_left = -733.0
+offset_top = -394.0
+offset_right = 755.0
+offset_bottom = 283.0
+
+[node name="marco_arcade" type="Sprite2D" parent="." unique_id=1759988227]
+position = Vector2(11, 9.5)
+scale = Vector2(1.0114584, 1.0175925)
+texture = ExtResource("1_bycp6")
+
+[node name="PALANCA" type="AnimatedSprite2D" parent="." unique_id=835601467]
+position = Vector2(-523, 266)
+sprite_frames = SubResource("SpriteFrames_qg2vh")
+animation = &"izquierda"
+centered = false
+
+[node name="BOTON" type="AnimatedSprite2D" parent="." unique_id=252323723]
+position = Vector2(-218, 427)
+sprite_frames = SubResource("SpriteFrames_m751u")
+frame = 1
+frame_progress = 1.0

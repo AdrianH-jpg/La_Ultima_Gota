@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dpdnixa52v50u"
+path="res://.godot/imported/escena_01_matadero.dialogue-f76d5dcecc8d0368e5aa337e758670d4.tres"
+
+[deps]
+
+source_file="res://dialogue/scenes_0/escena_01_matadero.dialogue"
+dest_files=["res://.godot/imported/escena_01_matadero.dialogue-f76d5dcecc8d0368e5aa337e758670d4.tres"]
+
+[params]
+
+defaults=true

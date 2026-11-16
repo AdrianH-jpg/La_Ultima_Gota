@@ -1,5 +1,3 @@
-res://scenes/escena_2a.tscn
 res://whiteOutline.gdshader
 res://scenes/menu_principal.gdshader
 res://shader/climate_post_process.gdshader
-res://scripts/escena_2a.gd

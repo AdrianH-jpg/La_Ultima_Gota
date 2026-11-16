@@ -8,7 +8,7 @@ using_states = PackedStringArray()
 cues = {
 "start": "1"
 }
-character_names = PackedStringArray("Eva", "Pilar", "Guillermo")
+character_names = PackedStringArray("Pilar", "Guillermo", "Pilar y Guillermo")
 first_cue = "0"
 lines = {
 "0": {
@@ -20,26 +20,15 @@ lines = {
 &"id": "1",
 &"mutation": {
 &"expression": Array[Dictionary]([{
+&"function": "fondo",
 &"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
+&"i": 9,
 &"type": "string",
-&"value": "Eva"
-}]), Array[Dictionary]([{
-&"i": 24,
-&"type": "string",
-&"value": "pánico"
+&"value": "FondoCruceCaminos"
 }, {
-&"i": 32,
+&"i": 28,
 &"type": "parens_close"
 }])])
 }]),
@@ -49,455 +38,7 @@ lines = {
 &"type": "mutation"
 },
 "10": {
-&"character": "Pilar",
 &"id": "10",
-&"next_id": "11",
-&"static_id": "",
-&"text": "Arrodilláte.",
-&"type": "dialogue"
-},
-"11": {
-&"id": "11",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Eva"
-}]), Array[Dictionary]([{
-&"i": 24,
-&"type": "string",
-&"value": "confundida"
-}, {
-&"i": 36,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "12",
-&"type": "mutation"
-},
-"12": {
-&"character": "Eva",
-&"id": "12",
-&"next_id": "13",
-&"static_id": "",
-&"text": "¿Q... Qué?",
-&"type": "dialogue"
-},
-"13": {
-&"id": "13",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Pilar"
-}]), Array[Dictionary]([{
-&"i": 26,
-&"type": "string",
-&"value": "malvada"
-}, {
-&"i": 35,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "14",
-&"type": "mutation"
-},
-"14": {
-&"character": "Pilar",
-&"id": "14",
-&"next_id": "15",
-&"static_id": "",
-&"text": "Ya me escuchaste. Te arrodillás y me pedís perdón. Si querés que este bicho viva, arrodilláte y pedí perdón.",
-&"type": "dialogue"
-},
-"15": {
-&"id": "15",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Eva"
-}]), Array[Dictionary]([{
-&"i": 24,
-&"type": "string",
-&"value": "confundida"
-}, {
-&"i": 36,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "16",
-&"type": "mutation"
-},
-"16": {
-&"character": "Eva",
-&"id": "16",
-&"next_id": "17",
-&"static_id": "",
-&"text": "Pero... Pero... ¿De qué estás habl--?",
-&"type": "dialogue"
-},
-"17": {
-&"id": "17",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Pilar"
-}]), Array[Dictionary]([{
-&"i": 26,
-&"type": "string",
-&"value": "furiosa"
-}, {
-&"i": 35,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "18",
-&"type": "mutation"
-},
-"18": {
-&"character": "Pilar",
-&"id": "18",
-&"next_id": "19",
-&"static_id": "",
-&"text": "¡ARRODILLÁTE, TE DIJE!",
-&"type": "dialogue"
-},
-"19": {
-&"id": "19",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Guillermo"
-}]), Array[Dictionary]([{
-&"i": 30,
-&"type": "string",
-&"value": "pensativo"
-}, {
-&"i": 41,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "20",
-&"type": "mutation"
-},
-"2": {
-&"character": "Eva",
-&"id": "2",
-&"next_id": "3",
-&"static_id": "",
-&"text": "¡LUNA! ¡Hey! ¡¿Qué están haciendo?!",
-&"type": "dialogue"
-},
-"20": {
-&"character": "Guillermo",
-&"id": "20",
-&"next_id": "21",
-&"static_id": "",
-&"text": "Pili... Llueve mucho--",
-&"type": "dialogue"
-},
-"21": {
-&"id": "21",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Pilar"
-}]), Array[Dictionary]([{
-&"i": 26,
-&"type": "string",
-&"value": "furiosa"
-}, {
-&"i": 35,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "22",
-&"type": "mutation"
-},
-"22": {
-&"character": "Pilar",
-&"id": "22",
-&"next_id": "23",
-&"static_id": "",
-&"text": "¡Vos limitate a hacer lo tuyo y no te metás!",
-&"type": "dialogue"
-},
-"23": {
-&"id": "23",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Pilar"
-}]), Array[Dictionary]([{
-&"i": 26,
-&"type": "string",
-&"value": "furiosa"
-}, {
-&"i": 35,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "24",
-&"type": "mutation"
-},
-"24": {
-&"character": "Pilar",
-&"id": "24",
-&"next_id": "25",
-&"static_id": "",
-&"text": "Por tu culpa me quedé sin corona, por tu culpa me suspendieron... ¡Por TU CULPA pasé unos días DE MIERDA!",
-&"type": "dialogue"
-},
-"25": {
-&"id": "25",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Pilar"
-}]), Array[Dictionary]([{
-&"i": 26,
-&"type": "string",
-&"value": ""
-}, {
-&"i": 28,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "26",
-&"type": "mutation"
-},
-"26": {
-&"character": "Pilar",
-&"id": "26",
-&"next_id": "27",
-&"static_id": "",
-&"text": "Ahora... Si querés que esta vaca de pedorra siga viva, te arrodillás... Y SUPLICÁS.",
-&"type": "dialogue"
-},
-"27": {
-&"id": "27",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Eva"
-}]), Array[Dictionary]([{
-&"i": 24,
-&"type": "string",
-&"value": "llorando"
-}, {
-&"i": 34,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "28",
-&"type": "mutation"
-},
-"28": {
-&"character": "Eva",
-&"id": "28",
-&"next_id": "29",
-&"static_id": "",
-&"text": "Por favor-- Por favor--",
-&"type": "dialogue"
-},
-"29": {
-&"id": "29",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Eva"
-}]), Array[Dictionary]([{
-&"i": 24,
-&"type": "string",
-&"value": "atónita"
-}, {
-&"i": 33,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "30",
-&"type": "mutation"
-},
-"3": {
-&"id": "3",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Pilar"
-}]), Array[Dictionary]([{
-&"i": 26,
-&"type": "string",
-&"value": "burlona"
-}, {
-&"i": 35,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "4",
-&"type": "mutation"
-},
-"30": {
-&"character": "Eva",
-&"id": "30",
-&"next_id": "31",
-&"static_id": "",
-&"text": "¿Lu... Luna...?",
-&"type": "dialogue"
-},
-"31": {
-&"id": "31",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -525,19 +66,19 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "32",
+&"next_id": "11",
 &"type": "mutation"
 },
-"32": {
+"11": {
 &"character": "Pilar",
-&"id": "32",
-&"next_id": "33",
+&"id": "11",
+&"next_id": "12",
 &"static_id": "",
-&"text": "… La mataste.",
+&"text": "Eva.",
 &"type": "dialogue"
 },
-"33": {
-&"id": "33",
+"12": {
+&"id": "12",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -565,206 +106,19 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "34",
+&"next_id": "13",
 &"type": "mutation"
 },
-"34": {
+"13": {
 &"character": "Guillermo",
-&"id": "34",
-&"next_id": "35",
+&"id": "13",
+&"next_id": "14",
 &"static_id": "",
-&"text": "¡Me asusté...!",
+&"text": "¡¿Qué mierda hacés vos acá?! ¡No para de llover!",
 &"type": "dialogue"
 },
-"35": {
-&"id": "35",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Eva"
-}]), Array[Dictionary]([{
-&"i": 24,
-&"type": "string",
-&"value": "grito desgarrador"
-}, {
-&"i": 43,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "36",
-&"type": "mutation"
-},
-"36": {
-&"character": "Eva",
-&"id": "36",
-&"next_id": "37",
-&"static_id": "",
-&"text": "¡¡LUNAAA!!",
-&"type": "dialogue"
-},
-"37": {
-&"id": "37",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Guillermo"
-}]), Array[Dictionary]([{
-&"i": 30,
-&"type": "string",
-&"value": "asustado"
-}, {
-&"i": 40,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "38",
-&"type": "mutation"
-},
-"38": {
-&"character": "Guillermo",
-&"id": "38",
-&"next_id": "39",
-&"static_id": "",
-&"text": "¡Pilar, rajemos! ¡Dale! ¡Corré!",
-&"type": "dialogue"
-},
-"39": {
-&"id": "39",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"4": {
-&"character": "Pilar",
-&"id": "4",
-&"next_id": "5",
-&"static_id": "",
-&"text": "Uh... Pero mirá quién apareció... Pensé que no ibas a venir.",
-&"type": "dialogue"
-},
-"40": {
-&"id": "40",
-&"next_id": "41",
-&"type": ""
-},
-"41": {
-&"id": "41",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"5": {
-&"id": "5",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Guillermo"
-}]), Array[Dictionary]([{
-&"i": 30,
-&"type": "string",
-&"value": "cruel"
-}, {
-&"i": 37,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "6",
-&"type": "mutation"
-},
-"6": {
-&"character": "Guillermo",
-&"id": "6",
-&"next_id": "7",
-&"static_id": "",
-&"text": "Parece que posta le importaba este bicho, tenías razón.",
-&"type": "dialogue"
-},
-"7": {
-&"id": "7",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Eva"
-}]), Array[Dictionary]([{
-&"i": 24,
-&"type": "string",
-&"value": "llorando"
-}, {
-&"i": 34,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
-&"next_id": "8",
-&"type": "mutation"
-},
-"8": {
-&"character": "Eva",
-&"id": "8",
-&"next_id": "9",
-&"static_id": "",
-&"text": "No, no... Suéltenla...",
-&"type": "dialogue"
-},
-"9": {
-&"id": "9",
+"14": {
+&"id": "14",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -784,16 +138,323 @@ lines = {
 }]), Array[Dictionary]([{
 &"i": 26,
 &"type": "string",
-&"value": "malvada"
+&"value": "sorprendida"
 }, {
-&"i": 35,
+&"i": 39,
 &"type": "parens_close"
 }])])
 }]),
 &"is_blocking": true
 },
-&"next_id": "10",
+&"next_id": "15",
 &"type": "mutation"
+},
+"15": {
+&"character": "Pilar",
+&"id": "15",
+&"next_id": "16",
+&"static_id": "",
+&"text": "¿Qué le pasó...?",
+&"type": "dialogue"
+},
+"16": {
+&"id": "16",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Guillermo"
+}]), Array[Dictionary]([{
+&"i": 30,
+&"type": "string",
+&"value": "asustado"
+}, {
+&"i": 40,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "17",
+&"type": "mutation"
+},
+"17": {
+&"character": "Guillermo",
+&"id": "17",
+&"next_id": "18",
+&"static_id": "",
+&"text": "Pili... ¿Qué... Qué hace?",
+&"type": "dialogue"
+},
+"18": {
+&"id": "18",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Pilar y Guillermo"
+}]), Array[Dictionary]([{
+&"i": 38,
+&"type": "string",
+&"value": "pánico"
+}, {
+&"i": 46,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "19",
+&"type": "mutation"
+},
+"19": {
+&"character": "Pilar y Guillermo",
+&"id": "19",
+&"next_id": "20",
+&"static_id": "",
+&"text": "¡¡AHH!!",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Pilar"
+}]), Array[Dictionary]([{
+&"i": 26,
+&"type": "string",
+&"value": "desesperada"
+}, {
+&"i": 39,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"id": "20",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Pilar y Guillermo"
+}]), Array[Dictionary]([{
+&"i": 38,
+&"type": "string",
+&"value": "pánico"
+}, {
+&"i": 46,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "21",
+&"type": "mutation"
+},
+"21": {
+&"character": "Pilar y Guillermo",
+&"id": "21",
+&"next_id": "22",
+&"static_id": "",
+&"text": "¡¡NO!! ¡¡PERDÓN!! ¡¡PERDONÁNOS!!",
+&"type": "dialogue"
+},
+"22": {
+&"id": "22",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"23": {
+&"id": "23",
+&"next_id": "24",
+&"type": ""
+},
+"24": {
+&"id": "24",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"character": "Pilar",
+&"id": "3",
+&"next_id": "4",
+&"static_id": "",
+&"text": "¡¿No podés manejar más rápido?! ¡La tormenta no para!",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Guillermo"
+}]), Array[Dictionary]([{
+&"i": 30,
+&"type": "string",
+&"value": "asustado"
+}, {
+&"i": 40,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "5",
+&"type": "mutation"
+},
+"5": {
+&"character": "Guillermo",
+&"id": "5",
+&"next_id": "6",
+&"static_id": "",
+&"text": "¡No! ¡No puedo! El camino está hecho sopa y ando con el carro atrás, ¡Nos vamos a matar!",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Pilar"
+}]), Array[Dictionary]([{
+&"i": 26,
+&"type": "string",
+&"value": "desesperada"
+}, {
+&"i": 39,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "7",
+&"type": "mutation"
+},
+"7": {
+&"character": "Pilar",
+&"id": "7",
+&"next_id": "8",
+&"static_id": "",
+&"text": "¡La puta madre! ¡Media hora tardaste en arrancar y ahora te cagás todo!",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Guillermo"
+}]), Array[Dictionary]([{
+&"i": 30,
+&"type": "string",
+&"value": "sorprendido"
+}, {
+&"i": 43,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "9",
+&"type": "mutation"
+},
+"9": {
+&"character": "Guillermo",
+&"id": "9",
+&"next_id": "10",
+&"static_id": "",
+&"text": "¿Esa es--?",
+&"type": "dialogue"
 }
 }
 metadata/dialogue_manager_version = "4.0.3"

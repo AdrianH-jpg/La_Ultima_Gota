@@ -20,6 +20,27 @@ lines = {
 &"id": "1",
 &"mutation": {
 &"expression": Array[Dictionary]([{
+&"function": "fondo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": "string",
+&"value": "FondoCorral"
+}, {
+&"i": 22,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
 &"i": 3,
 &"type": "variable",
 &"value": "Guion"
@@ -33,28 +54,20 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 17,
 &"type": "string",
-&"value": "Eva"
+&"value": "Luna"
 }]), Array[Dictionary]([{
-&"i": 24,
+&"i": 25,
 &"type": "string",
-&"value": "neutro"
+&"value": "de_pie"
 }, {
-&"i": 32,
+&"i": 33,
 &"type": "parens_close"
 }])])
 }]),
 &"is_blocking": true
 },
-&"next_id": "2",
-&"type": "mutation"
-},
-"2": {
-&"character": "Eva",
-&"id": "2",
 &"next_id": "3",
-&"static_id": "",
-&"text": "Lunita, ya le di de comer a las gallinas, ahí tenés agua y comida.",
-&"type": "dialogue"
+&"type": "mutation"
 },
 "3": {
 &"id": "3",
@@ -77,9 +90,9 @@ lines = {
 }]), Array[Dictionary]([{
 &"i": 24,
 &"type": "string",
-&"value": ""
+&"value": "neutra"
 }, {
-&"i": 26,
+&"i": 32,
 &"type": "parens_close"
 }])])
 }]),
@@ -93,23 +106,63 @@ lines = {
 &"id": "4",
 &"next_id": "5",
 &"static_id": "",
-&"text": "Con el curso vamos a limpiar el balneario para la apertura de temporada, como todos los años, viste. Te amo, no me extrañes mucho.",
+&"text": "Lunita, ya le di de comer a las gallinas, ahí tenés agua y comida.",
 &"type": "dialogue"
 },
 "5": {
 &"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "neutra"
+}, {
+&"i": 32,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"6": {
+&"character": "Eva",
+&"id": "6",
+&"next_id": "7",
+&"static_id": "",
+&"text": "Con el curso vamos a limpiar el balneario para la apertura de temporada, como todos los años, viste. Te amo, no me extrañes mucho.",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
-"6": {
-&"id": "6",
-&"next_id": "7",
+"8": {
+&"id": "8",
+&"next_id": "9",
 &"type": ""
 },
-"7": {
-&"id": "7",
+"9": {
+&"id": "9",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",

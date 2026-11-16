@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://kaj7vuc8x3kc"]
+
+[ext_resource type="Script" uid="uid://cqn8y0fk6512d" path="res://scripts/VacaPong.gd" id="1_uuksi"]
+[ext_resource type="FontFile" uid="uid://bt51l0gxaqe27" path="res://assets/fonts/PressStart2P-Regular.ttf" id="2_xigtn"]
+
+[node name="Container" type="Container" unique_id=678650847]
+offset_left = -733.0
+offset_top = -394.0
+offset_right = 755.0
+offset_bottom = 283.0
+mouse_filter = 2
+script = ExtResource("1_uuksi")
+fuente_arcade = ExtResource("2_xigtn")
