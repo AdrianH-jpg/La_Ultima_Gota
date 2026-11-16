@@ -1,7 +1,8 @@
+Container
+Sprite2D
 ColorRect
 CanvasLayer
 Camera2D
-Sprite2D
 PanelContainer
 AnimatedSprite2D
 AudioStreamPlayer

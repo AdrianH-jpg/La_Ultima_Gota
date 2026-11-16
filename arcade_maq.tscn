@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://buyuauy1d5sku"]
+
+[ext_resource type="Texture2D" uid="uid://d1thy4i4dw2xw" path="res://assets/backgrounds/MAQUINAPNG.png" id="1_bycp6"]
+[ext_resource type="Script" uid="uid://c3wulimytaa4r" path="res://scripts/PongArcade.gd" id="2_7jaqq"]
+
+[node name="ARCADE_MAQ" type="Node2D" unique_id=1625071399]
+position = Vector2(949, 532)
+
+[node name="marco_arcade" type="Sprite2D" parent="." unique_id=1759988227]
+position = Vector2(10.999996, 9.5)
+scale = Vector2(1.0114584, 1.0175925)
+texture = ExtResource("1_bycp6")
+
+[node name="Container" type="Container" parent="." unique_id=100395030]
+offset_left = -733.0
+offset_top = -394.0
+offset_right = 755.0
+offset_bottom = 283.0
+script = ExtResource("2_7jaqq")
