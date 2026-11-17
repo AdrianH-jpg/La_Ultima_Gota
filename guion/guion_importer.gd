@@ -2,9 +2,9 @@
 class_name GuionImporter
 extends RefCounted
 ## Lee guion.xlsx y genera res://dialogue/<archivo>.dialogue + res://guion/personajes.json
-# Con este script generamos todos los archivos necesarios para los dialogos, con animaciones y sonidos
-# Todo se controla desde los dialogue incluidos fondos, sonidos y camara
+
 const COLS := ["escena","archivo","titulo","tipo","personaje","animacion","modo","texto","comando","clima","destino"]
+
 
 
 static func importar(xlsx_path: String = "res://guion/guion.xlsx", out_dialogue_dir: String = "res://dialogue", out_json: String = "res://guion/personajes.json", out_escenas: String = "res://guion/escenas.json", out_fondos: String = "res://guion/fondos.json") -> Array:
@@ -24,7 +24,7 @@ static func importar(xlsx_path: String = "res://guion/guion.xlsx", out_dialogue_
 	if guion.size() < 2:
 		return ["La hoja Guion está vacía o no existe"]
 
-	# personajes.json
+	# ---- personajes.json ----
 	var data := {"personajes": {}, "animaciones": {}}
 	for i in range(1, pers.size()):
 		var r: Array = pers[i]
@@ -41,7 +41,7 @@ static func importar(xlsx_path: String = "res://guion/guion.xlsx", out_dialogue_
 	fj.store_string(JSON.stringify(data, "\t"))
 	fj.close()
 
-	# fondos.json (hoja Fondos: id, imagen, cam_x, cam_y, cam_zoom, escala)
+	# ---- fondos.json (hoja Fondos: id, imagen, cam_x, cam_y, cam_zoom, escala) ----
 	var fondos := {}
 	for i in range(1, fondos_h.size()):
 		var r: Array = fondos_h[i]
@@ -57,7 +57,7 @@ static func importar(xlsx_path: String = "res://guion/guion.xlsx", out_dialogue_
 	ff.store_string(JSON.stringify(fondos, "\t"))
 	ff.close()
 
-	# generamos .dialogue por archivo 
+	# ---- .dialogue por archivo ----
 	var por_archivo := {}      # archivo -> Array[String] líneas
 	var titulo_actual := {}    # archivo -> título abierto
 	var cierra_pendiente := {} # archivo -> bool (el bloque abierto necesita => END)
@@ -70,7 +70,7 @@ static func importar(xlsx_path: String = "res://guion/guion.xlsx", out_dialogue_
 		for c in COLS.size(): d[COLS[c]] = str(r[c]) if c < r.size() else ""
 		var arch: String = d["archivo"]
 		var tipo: String = d["tipo"]
-		# las notas y encabezados son solo para leer
+		# las notas y encabezados son solo para leer, no van al juego
 		if arch == "" or tipo in ["", "nota", "encabezado"]: continue
 		if not por_archivo.has(arch):
 			por_archivo[arch] = []
@@ -102,6 +102,13 @@ static func importar(xlsx_path: String = "res://guion/guion.xlsx", out_dialogue_
 				L.append('do Guion.pantalla("%s", %s)' % [_esc(d["texto"]), "true" if d["modo"] == "cursiva" else "false"])
 			"comando":
 				if d["comando"] == "": errores.append("Fila %d: comando vacío" % (i + 1)); continue
+				# ir_titulo("final") salta a otro título del mismo archivo (no se puede escribir => en Excel porque lo toma como fórmula)
+				if d["comando"].begins_with("ir_titulo("):
+					var destino_t: String = d["comando"].get_slice('"', 1)
+					L.append("=> " + destino_t)
+					cierra_pendiente[arch] = false
+					destinos[arch].append(destino_t)   # es una rama, no se juega en secuencia
+					continue
 				# los comandos se escriben tal cual, con 'do' adelante
 				L.append("do " + d["comando"])
 				# después de saltar o terminar no puede seguir más diálogo
@@ -133,7 +140,7 @@ static func importar(xlsx_path: String = "res://guion/guion.xlsx", out_dialogue_
 	return errores
 
 
-# la cursiva pensamientos se marca con [i]
+# la cursiva (pensamientos) se marca con [i]
 static func _fmt(texto: String, modo: String) -> String:
 	return "[i]%s[/i]" % texto if modo == "cursiva" else texto
 
@@ -143,9 +150,9 @@ static func _esc(s: String) -> String:
 	return s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ")
 
 
-# lectura mínima de xlsx
+# ---------------- lectura mínima de xlsx ----------------
 static func _hojas(zip: ZIPReader) -> Dictionary:
-	# nombre de hoja, ruta dentro del zip
+	# nombre de hoja -> ruta dentro del zip
 	var res := {}
 	var rels := {}
 	var p := XMLParser.new()
@@ -164,7 +171,7 @@ static func _hojas(zip: ZIPReader) -> Dictionary:
 	return res
 
 
-# el xlsx guarda los textos aparte, acá los juntamos en una lista
+# el xlsx guarda los textos aparte; acá los juntamos en una lista
 static func _shared_strings(bytes: PackedByteArray) -> Array:
 	var out: Array = []
 	if bytes.is_empty(): return out
@@ -197,7 +204,7 @@ static func _col_idx(ref: String) -> int:
 	return n - 1
 
 
-# devuelve la hoja como lista de filas, cada fila es una lista de celdas
+# devuelve la hoja como lista de filas; cada fila es una lista de celdas
 static func _leer_hoja(zip: ZIPReader, path: String, shared: Array) -> Array:
 	var filas: Array = []
 	if path == "" or not zip.file_exists(path): return filas

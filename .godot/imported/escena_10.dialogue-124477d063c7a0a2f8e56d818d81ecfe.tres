@@ -6,6 +6,8 @@
 script = ExtResource("1_8mlho")
 using_states = PackedStringArray()
 cues = {
+"final": "34",
+"jugar": "22",
 "start": "1"
 }
 character_names = PackedStringArray("José", "Eva")
@@ -134,13 +136,13 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 17,
 &"type": "string",
-&"value": "Eva"
+&"value": "José"
 }]), Array[Dictionary]([{
-&"i": 24,
+&"i": 25,
 &"type": "string",
-&"value": "confundida"
+&"value": "emocionado"
 }, {
-&"i": 36,
+&"i": 37,
 &"type": "parens_close"
 }])])
 }]),
@@ -150,92 +152,41 @@ lines = {
 &"type": "mutation"
 },
 "15": {
-&"character": "Eva",
+&"character": "José",
 &"id": "15",
 &"next_id": "16",
 &"static_id": "",
-&"text": "No pasa nada...",
+&"text": "¿Queres jugar?",
 &"type": "dialogue"
 },
 "16": {
 &"id": "16",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "José"
-}]), Array[Dictionary]([{
-&"i": 25,
-&"type": "string",
-&"value": "ríe"
-}, {
-&"i": 30,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
 &"next_id": "17",
-&"type": "mutation"
+&"responses": PackedStringArray("16", "18"),
+&"static_id": "",
+&"text": "Si",
+&"type": "response"
 },
 "17": {
-&"character": "José",
 &"id": "17",
-&"next_id": "18",
-&"static_id": "",
-&"text": "Hay que ponerle fichas para jugar",
-&"type": "dialogue"
+&"is_snippet": false,
+&"next_id": "22",
+&"next_id_after": "",
+&"type": "goto"
 },
 "18": {
 &"id": "18",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 3,
-&"type": "variable",
-&"value": "Guion"
-}, {
-&"i": 8,
-&"type": "dot"
-}, {
-&"function": "mostrar",
-&"i": 9,
-&"type": &"function",
-&"value": Array[Array]([Array[Dictionary]([{
-&"i": 17,
-&"type": "string",
-&"value": "Eva"
-}]), Array[Dictionary]([{
-&"i": 24,
-&"type": "string",
-&"value": "sonriendo"
-}, {
-&"i": 35,
-&"type": "parens_close"
-}])])
-}]),
-&"is_blocking": true
-},
 &"next_id": "19",
-&"type": "mutation"
+&"static_id": "",
+&"text": "No",
+&"type": "response"
 },
 "19": {
-&"character": "Eva",
 &"id": "19",
-&"next_id": "20",
-&"static_id": "",
-&"text": "Es... Es más divertido de lo que esperaba... Gracias.",
-&"type": "dialogue"
+&"is_snippet": false,
+&"next_id": "34",
+&"next_id_after": "",
+&"type": "goto"
 },
 "2": {
 &"id": "2",
@@ -271,6 +222,157 @@ lines = {
 },
 "20": {
 &"id": "20",
+&"next_id": "21",
+&"type": ""
+},
+"21": {
+&"id": "21",
+&"next_id": "22",
+&"type": "cue"
+},
+"22": {
+&"id": "22",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "confundida"
+}, {
+&"i": 36,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "23",
+&"type": "mutation"
+},
+"23": {
+&"character": "Eva",
+&"id": "23",
+&"next_id": "24",
+&"static_id": "",
+&"text": "No pasa nada...",
+&"type": "dialogue"
+},
+"24": {
+&"id": "24",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "José"
+}]), Array[Dictionary]([{
+&"i": 25,
+&"type": "string",
+&"value": "ríe"
+}, {
+&"i": 30,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "25",
+&"type": "mutation"
+},
+"25": {
+&"character": "José",
+&"id": "25",
+&"next_id": "26",
+&"static_id": "",
+&"text": "Hay que ponerle fichas para jugar",
+&"type": "dialogue"
+},
+"26": {
+&"id": "26",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "minijuego",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": "string",
+&"value": "res://arcade_maq.tscn"
+}, {
+&"i": 36,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "27",
+&"type": "mutation"
+},
+"27": {
+&"id": "27",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "sonriendo"
+}, {
+&"i": 35,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "28",
+&"type": "mutation"
+},
+"28": {
+&"character": "Eva",
+&"id": "28",
+&"next_id": "29",
+&"static_id": "",
+&"text": "Es... Es más divertido de lo que esperaba... Gracias.",
+&"type": "dialogue"
+},
+"29": {
+&"id": "29",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -298,19 +400,44 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "21",
+&"next_id": "30",
 &"type": "mutation"
 },
-"21": {
+"3": {
 &"character": "José",
-&"id": "21",
-&"next_id": "22",
+&"id": "3",
+&"next_id": "4",
+&"static_id": "",
+&"text": "Qué rico está esto, me hace acordar a uno de mis lugares favoritos en City Bell-- Ah, perdón, estoy hablando de mí otra vez... ¿Venís siempre acá?",
+&"type": "dialogue"
+},
+"30": {
+&"character": "José",
+&"id": "30",
+&"next_id": "31",
 &"static_id": "",
 &"text": "Sí, ya sé, es uno de mis favoritos. Qué genial que lo tengan acá...",
 &"type": "dialogue"
 },
-"22": {
-&"id": "22",
+"31": {
+&"id": "31",
+&"is_snippet": false,
+&"next_id": "34",
+&"next_id_after": "",
+&"type": "goto"
+},
+"32": {
+&"id": "32",
+&"next_id": "33",
+&"type": ""
+},
+"33": {
+&"id": "33",
+&"next_id": "34",
+&"type": "cue"
+},
+"34": {
+&"id": "34",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -338,19 +465,19 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "23",
+&"next_id": "35",
 &"type": "mutation"
 },
-"23": {
+"35": {
 &"character": "José",
-&"id": "23",
-&"next_id": "24",
+&"id": "35",
+&"next_id": "36",
 &"static_id": "",
 &"text": "Perdón... Me dijiste un rato y ya pasaron como dos horas... Vamos, te acompaño a tu casa.",
 &"type": "dialogue"
 },
-"24": {
-&"id": "24",
+"36": {
+&"id": "36",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -378,19 +505,19 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "25",
+&"next_id": "37",
 &"type": "mutation"
 },
-"25": {
+"37": {
 &"character": "Eva",
-&"id": "25",
-&"next_id": "26",
+&"id": "37",
+&"next_id": "38",
 &"static_id": "",
 &"text": "¿Ya? Wow... No me di ni cuenta. Sí, vamos.",
 &"type": "dialogue"
 },
-"26": {
-&"id": "26",
+"38": {
+&"id": "38",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
@@ -414,35 +541,15 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "27",
+&"next_id": "39",
 &"type": "mutation"
 },
-"27": {
-&"id": "27",
+"39": {
+&"id": "39",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
-},
-"28": {
-&"id": "28",
-&"next_id": "29",
-&"type": ""
-},
-"29": {
-&"id": "29",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
-},
-"3": {
-&"character": "José",
-&"id": "3",
-&"next_id": "4",
-&"static_id": "",
-&"text": "Qué rico está esto, me hace acordar a uno de mis lugares favoritos en City Bell-- Ah, perdón, estoy hablando de mí otra vez... ¿Venís siempre acá?",
-&"type": "dialogue"
 },
 "4": {
 &"id": "4",
@@ -475,6 +582,18 @@ lines = {
 },
 &"next_id": "5",
 &"type": "mutation"
+},
+"40": {
+&"id": "40",
+&"next_id": "41",
+&"type": ""
+},
+"41": {
+&"id": "41",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
 },
 "5": {
 &"character": "Eva",
