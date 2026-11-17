@@ -7,7 +7,7 @@ Eva: [i]Guillermo, seguro. Es el único imbécil capaz de escribir tan mal.[/i]
 - Borrar el insulto y un par de líneas del conteo para los votos
 	=> opcion_b
 - Ignorar y sentarse
-	do Climate.add(-5.0)
+	do Climate.add(-5)
 	=> END
 
 ~ opcion_a
@@ -20,7 +20,7 @@ Pilar: Vamos a hacer una colecta para comprarte desodorantes, inversión a futur
 do Guion.sfx("SFXRisas", true)
 do Guion.mostrar("Eva", "indiferente")
 Eva: ...
-do Climate.add(1.0)
+do Climate.add(1)
 => END
 
 ~ opcion_b
@@ -29,5 +29,5 @@ do Guion.mostrar("Pilar", "mano_gesto")
 Pilar: ¡Qué hacés, pendeja sucia! ¡Lo hiciste a propósito! ¡Volvé a escribir los votos que borraste!
 do Guion.mostrar("Pilar", "malvada")
 Pilar: Este año voy a ganar la corona de Reina del Lago por tercera vez consecutiva… Y eso no te gusta, ¿verdad? Pendeja envidiosa.
-do Climate.add(3.0)
+do Climate.add(3)
 => END

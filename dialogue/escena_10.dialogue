@@ -12,14 +12,26 @@ do Guion.mostrar("Eva", "sorprendida")
 Eva: No, nunca...
 do Guion.mostrar("José", "emocionado")
 José: ¡Vení! Dale, yo invito.
+do Guion.mostrar("José", "emocionado")
+José: ¿Queres jugar?
+- Si
+	=> jugar
+- No
+	=> final
+
+~ jugar
 do Guion.mostrar("Eva", "confundida")
 Eva: No pasa nada...
 do Guion.mostrar("José", "ríe")
 José: Hay que ponerle fichas para jugar
+do minijuego("res://arcade_maq.tscn")
 do Guion.mostrar("Eva", "sonriendo")
 Eva: Es... Es más divertido de lo que esperaba... Gracias.
 do Guion.mostrar("José", "sonrisa suave")
 José: Sí, ya sé, es uno de mis favoritos. Qué genial que lo tengan acá...
+=> final
+
+~ final
 do Guion.mostrar("José", "casual")
 José: Perdón... Me dijiste un rato y ya pasaron como dos horas... Vamos, te acompaño a tu casa.
 do Guion.mostrar("Eva", "tímida")

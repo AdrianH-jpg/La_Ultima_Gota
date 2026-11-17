@@ -306,9 +306,9 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 15,
 &"type": "number",
-&"value": 1.0
+&"value": 1
 }, {
-&"i": 18,
+&"i": 16,
 &"type": "parens_close"
 }])])
 }]),
@@ -460,9 +460,9 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 15,
 &"type": "number",
-&"value": 3.0
+&"value": 3
 }, {
-&"i": 18,
+&"i": 16,
 &"type": "parens_close"
 }])])
 }]),
@@ -543,9 +543,9 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 15,
 &"type": "number",
-&"value": -5.0
+&"value": -5
 }, {
-&"i": 19,
+&"i": 17,
 &"type": "parens_close"
 }])])
 }]),
