@@ -1,7 +1,0 @@
-res://scenes/juego.tscn
-res://whiteOutline.gdshader
-res://scenes/menu_principal.gdshader
-res://shader/climate_post_process.gdshader
-res://guion/fondos.json
-res://guion/juego.gd
-res://guion/guion_importer.gd
