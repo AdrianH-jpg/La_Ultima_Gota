@@ -1,3 +1,4 @@
+Sprite2D
 Button
 SubViewport
 SubViewportContainer
@@ -6,10 +7,8 @@ Control
 ColorRect
 CanvasLayer
 Camera2D
-Sprite2D
 PanelContainer
 AnimatedSprite2D
 AudioStreamPlayer
 GPUParticles2D
 Timer
-VideoStreamPlayer

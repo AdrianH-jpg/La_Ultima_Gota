@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dnj8d2n7gmqtg" path="res://scenes/InvadersArcade.tscn" id="4_5dygc"]
 [ext_resource type="Texture2D" uid="uid://bhcraun22xnte" path="res://assets/animaciones/PALANCA/ADELANTE/base.png" id="4_65vqf"]
 [ext_resource type="Texture2D" uid="uid://co0gqbkdql6lt" path="res://assets/animaciones/PALANCA/ADELANTE/adelante_1.png" id="5_4lbd6"]
+[ext_resource type="Texture2D" uid="uid://bhcl2fjxguivl" path="res://scenes/ESCUELABG.png" id="5_wrpj7"]
 [ext_resource type="Texture2D" uid="uid://bhqjme70jv046" path="res://assets/animaciones/PALANCA/ATRAS/base.png" id="6_5dygc"]
 [ext_resource type="Texture2D" uid="uid://dp116en8rac7w" path="res://assets/animaciones/PALANCA/ATRAS/atras_1.png" id="7_wrpj7"]
 [ext_resource type="Texture2D" uid="uid://b2gtcfrc0au6j" path="res://assets/animaciones/PALANCA/DERECHA/base.png" id="8_blo4k"]
@@ -83,6 +84,10 @@ script = ExtResource("1_6cudw")
 escena_menu = ExtResource("2_4lbd6")
 escena_pong = ExtResource("3_5dygc")
 escena_invaders = ExtResource("4_5dygc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=960357413]
+modulate = Color(1.1488971e-05, 1.1488971e-05, 1.1488971e-05, 1)
+texture = ExtResource("5_wrpj7")
 
 [node name="Container" type="Container" parent="." unique_id=678650847]
 offset_left = -733.0
