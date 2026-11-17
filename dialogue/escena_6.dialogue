@@ -14,10 +14,10 @@ Eva: [i]Guillermo, seguro. Es el único imbécil capaz de escribir tan mal.[/i]
 do fondo("FondoPilarA")
 do Guion.mostrar("Pilar", "hablando")
 Pilar: Borrar el pizarrón no te borra el olor a mierda, ¿sabías?
-do sonido("SFXRisas")
+do Guion.sfx("SFXRisas")
 do Guion.mostrar("Pilar", "mano_gesto")
 Pilar: Vamos a hacer una colecta para comprarte desodorantes, inversión a futuro para nuestras narices, ¿no, chicos?
-do sonido("SFXRisas", true)
+do Guion.sfx("SFXRisas", true)
 do Guion.mostrar("Eva", "indiferente")
 Eva: ...
 do Climate.add(1.0)
