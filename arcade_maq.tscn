@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d1thy4i4dw2xw" path="res://assets/backgrounds/MAQUINAPNG.png" id="1_bycp6"]
 [ext_resource type="PackedScene" uid="uid://7co5h3irxwt4" path="res://menu_arcade.tscn" id="2_4lbd6"]
 [ext_resource type="PackedScene" uid="uid://kaj7vuc8x3kc" path="res://VacaPong.tscn" id="3_5dygc"]
+[ext_resource type="PackedScene" uid="uid://dnj8d2n7gmqtg" path="res://scenes/InvadersArcade.tscn" id="4_5dygc"]
 [ext_resource type="Texture2D" uid="uid://bhcraun22xnte" path="res://assets/animaciones/PALANCA/ADELANTE/base.png" id="4_65vqf"]
 [ext_resource type="Texture2D" uid="uid://co0gqbkdql6lt" path="res://assets/animaciones/PALANCA/ADELANTE/adelante_1.png" id="5_4lbd6"]
 [ext_resource type="Texture2D" uid="uid://bhqjme70jv046" path="res://assets/animaciones/PALANCA/ATRAS/base.png" id="6_5dygc"]
@@ -81,6 +82,7 @@ position = Vector2(949, 532)
 script = ExtResource("1_6cudw")
 escena_menu = ExtResource("2_4lbd6")
 escena_pong = ExtResource("3_5dygc")
+escena_invaders = ExtResource("4_5dygc")
 
 [node name="Container" type="Container" parent="." unique_id=678650847]
 offset_left = -733.0

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://uomvl0iuacoa"]
+
+[ext_resource type="Script" uid="uid://olg418qen4q6" path="res://scripts/enemigo.gd" id="1_0u78k"]
+[ext_resource type="Texture2D" uid="uid://cabkxtyrrjnpj" path="res://assets/sprites/boss.png" id="2_i0hv0"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_r1p8t"]
+frame_0/texture = ExtResource("2_i0hv0")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3maa"]
+size = Vector2(55, 40)
+
+[node name="Enemigo" type="Area2D" unique_id=385950622 groups=["Enemigos"]]
+script = ExtResource("1_0u78k")
+valor_puntos = 35
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=487978824]
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = SubResource("AnimatedTexture_r1p8t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=522679820]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_v3maa")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

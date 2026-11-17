@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://115csmom0p7e"]
+
+[ext_resource type="Script" uid="uid://bvexa5ng5s2w0" path="res://scripts/enjambre.gd" id="1_kvvo3"]
+
+[node name="Enjambre" type="Node2D" unique_id=403657436]
+script = ExtResource("1_kvvo3")
+
+[node name="Timer" type="Timer" parent="." unique_id=909505785]
+autostart = true
+
+[node name="AudioPaso" type="AudioStreamPlayer" parent="." unique_id=1499987597]
+volume_db = -1.25
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c8ftsptv1w8sx"]
+
+[ext_resource type="Script" uid="uid://bbl8pvwk2o6it" path="res://scripts/ovni.gd" id="1_xtsbc"]
+[ext_resource type="PackedScene" uid="uid://clvxh20jbfi3l" path="res://scenes/explosion.tscn" id="2_6euvv"]
+[ext_resource type="Texture2D" uid="uid://7uom1mtwtwb7" path="res://assets/sprites/OSGlogo.png" id="2_lj42c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3maa"]
+size = Vector2(93, 24)
+
+[node name="ovni" type="Area2D" unique_id=202009752 groups=["Enemigos"]]
+script = ExtResource("1_xtsbc")
+escena_explosion = ExtResource("2_6euvv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1059116462]
+position = Vector2(5.9604645e-08, -4.7683716e-07)
+scale = Vector2(0.21215881, 0.19649805)
+texture = ExtResource("2_lj42c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=342955595]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_v3maa")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=835461776]

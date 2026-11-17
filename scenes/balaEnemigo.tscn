@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cmsrpxb0mieno"]
+
+[ext_resource type="Script" uid="uid://b4deml4qlxfwy" path="res://scripts/bala_enemigo.gd" id="1_kvefl"]
+[ext_resource type="Texture2D" uid="uid://dffilxlnf8ovj" path="res://assets/sprites/Bala.png" id="2_ua6n5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3maa"]
+size = Vector2(3, 6)
+
+[node name="BalaEnemigo" type="Area2D" unique_id=596909622]
+script = ExtResource("1_kvefl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=350727303]
+modulate = Color(0.9764706, 0.7137255, 0.043137256, 1)
+texture_filter = 1
+position = Vector2(-0.31249976, -2.2351742e-08)
+scale = Vector2(0.155, 0.1875)
+texture = ExtResource("2_ua6n5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=894443646]
+shape = SubResource("RectangleShape2D_v3maa")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1090772655]
+position = Vector2(9, 7)
+rect = Rect2(-11, -11, 4, 7)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
