@@ -1,3 +1,12 @@
+res://scripts/MenuArcade.gd
+res://scripts/VacaPong.gd
+res://guion/fondos.json
+res://VacaPong.tscn
 res://whiteOutline.gdshader
 res://scenes/menu_principal.gdshader
 res://shader/climate_post_process.gdshader
+res://scripts/PaletaBase.gd
+res://scripts/PaletaCPU.gd
+res://scripts/PaletaJugador.gd
+res://arcade_maq.tscn
+res://menu_arcade.tscn
