@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dqmi1cwlonejh"]
+
+[ext_resource type="Script" uid="uid://olg418qen4q6" path="res://scripts/enemigo.gd" id="1_im5wn"]
+[ext_resource type="Texture2D" uid="uid://c7x38dwy3wsdq" path="res://assets/sprites/hash1.png" id="2_im5wn"]
+[ext_resource type="Texture2D" uid="uid://bvrnxp56ltpbo" path="res://assets/sprites/hash2.png" id="3_s765l"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_v3maa"]
+frames = 2
+frame_0/texture = ExtResource("2_im5wn")
+frame_1/texture = ExtResource("3_s765l")
+frame_1/duration = 1.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3maa"]
+size = Vector2(55, 40)
+
+[node name="Enemigo" type="Area2D" unique_id=385950622 groups=["Enemigos"]]
+script = ExtResource("1_im5wn")
+valor_puntos = 20
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=487978824]
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = SubResource("AnimatedTexture_v3maa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=522679820]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_v3maa")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,255 @@
+[gd_scene format=3 uid="uid://jc5jb15jksw5"]
+
+[ext_resource type="Script" uid="uid://dfw7yxvgdfupc" path="res://scripts/main_menu.gd" id="1_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://c7x38dwy3wsdq" path="res://assets/sprites/hash1.png" id="2_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://bvrnxp56ltpbo" path="res://assets/sprites/hash2.png" id="3_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://to63uaqefsbr" path="res://assets/sprites/carpincho1.png" id="4_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://cs83cq5vpscgg" path="res://assets/sprites/carpincho2.png" id="5_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://cabkxtyrrjnpj" path="res://assets/sprites/boss.png" id="6_flqon"]
+[ext_resource type="FontFile" uid="uid://bp5478tv1imj1" path="res://assets/fonts/fonts/upheavtt.ttf" id="7_tbmy8"]
+[ext_resource type="FontFile" uid="uid://culwesy6rnics" path="res://assets/fonts/fonts/VCR_OSD_MONO_1.001-usar en 21px.ttf" id="8_jk1qb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bar6y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tbmy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jk1qb")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v3maa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_5dd4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lgwnu")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_joigo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_flqon")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_v3maa"]
+frames = 2
+frame_0/texture = ExtResource("4_5dd4i")
+frame_1/texture = ExtResource("5_lgwnu")
+frame_1/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_bar6y"]
+frames = 2
+frame_0/texture = ExtResource("2_tbmy8")
+frame_1/texture = ExtResource("3_jk1qb")
+frame_1/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_joigo"]
+frame_0/texture = ExtResource("6_flqon")
+
+[node name="MainMenu" type="Control" unique_id=90037504]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tbmy8")
+
+[node name="Hashi" type="AnimatedSprite2D" parent="." unique_id=392522946]
+texture_filter = 1
+position = Vector2(435.99997, 490)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_bar6y")
+autoplay = "default"
+
+[node name="Carpincho" type="AnimatedSprite2D" parent="." unique_id=2142212693]
+texture_filter = 1
+position = Vector2(422, 413)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_v3maa")
+autoplay = "default"
+
+[node name="Boss" type="AnimatedSprite2D" parent="." unique_id=1793364047]
+position = Vector2(422, 560)
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_joigo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=819103425]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MenuButton" type="MenuButton" parent="." unique_id=256645384]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -188.0
+offset_top = -33.0
+offset_right = 188.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_tbmy8")
+theme_override_font_sizes/font_size = 64
+text = "START GAME"
+
+[node name="Label" type="Label" parent="." unique_id=699494453]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -364.5
+offset_top = 71.0
+offset_right = 364.5
+offset_bottom = 129.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("7_tbmy8")
+theme_override_font_sizes/font_size = 64
+text = "Outer Space Invaders"
+
+[node name="Timer" type="Timer" parent="." unique_id=56227674]
+wait_time = 0.5
+autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=526927842]
+
+[node name="Score" type="Label" parent="." unique_id=1664746851]
+layout_mode = 1
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 98.0
+offset_bottom = 39.0
+theme_override_fonts/font = ExtResource("7_tbmy8")
+theme_override_font_sizes/font_size = 24
+text = "Score : "
+
+[node name="HiScore" type="Label" parent="." unique_id=1018628129]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -65.5
+offset_top = 5.0
+offset_right = 65.5
+offset_bottom = 39.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("7_tbmy8")
+theme_override_font_sizes/font_size = 24
+text = "HI - Score :"
+
+[node name="TablaPosiciones" type="Label" parent="." unique_id=59635691]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.66800004
+anchor_right = 0.5
+anchor_bottom = 0.68700004
+offset_left = -444.0
+offset_top = -481.44006
+offset_right = 477.0
+offset_bottom = -325.75208
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = -1
+theme_override_fonts/font = ExtResource("8_jk1qb")
+theme_override_font_sizes/font_size = 21
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TablaPuntos" type="Control" parent="." unique_id=877432743]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TablaPuntos" unique_id=1227566619]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 815.0
+offset_top = 600.0
+offset_right = 1069.5
+offset_bottom = 736.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 11
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TablaPuntos/VBoxContainer" unique_id=97195967]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TablaPuntos/VBoxContainer/HBoxContainer" unique_id=811096090]
+texture_filter = 1
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = SubResource("AnimatedTexture_v3maa")
+
+[node name="Label" type="Label" parent="TablaPuntos/VBoxContainer/HBoxContainer" unique_id=1595660375]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_tbmy8")
+theme_override_font_sizes/font_size = 26
+text = "    10 POINTS	"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TablaPuntos/VBoxContainer" unique_id=758702254]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TablaPuntos/VBoxContainer/HBoxContainer2" unique_id=907711277]
+texture_filter = 1
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = SubResource("AnimatedTexture_bar6y")
+
+[node name="Label" type="Label" parent="TablaPuntos/VBoxContainer/HBoxContainer2" unique_id=825522965]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_tbmy8")
+theme_override_font_sizes/font_size = 26
+text = "    20 POINTS	"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="TablaPuntos/VBoxContainer" unique_id=751629648]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TablaPuntos/VBoxContainer/HBoxContainer3" unique_id=1022855638]
+texture_filter = 1
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = SubResource("AnimatedTexture_joigo")
+
+[node name="Label" type="Label" parent="TablaPuntos/VBoxContainer/HBoxContainer3" unique_id=1874038648]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_tbmy8")
+theme_override_font_sizes/font_size = 26
+text = "    35 POINTS	"
+
+[node name="Timer2" type="Timer" parent="." unique_id=61931349]
+wait_time = 5.0
+autostart = true
+
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
