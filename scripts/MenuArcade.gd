@@ -1,6 +1,6 @@
 extends Control
 
-# Menú visible dentro de la pantalla de la máquina arcade.
+# El menu todo fachero que lindo me quedó
 signal juego_elegido(nombre: String)
 @export var fuente_arcade: Font
 
@@ -14,14 +14,14 @@ var etiqueta_pong: Label
 
 
 func _ready() -> void:
-	# Fondo verde oscuro.
+	# Fondo
 	var fondo := ColorRect.new()
 	fondo.color = COLOR_FONDO
 	fondo.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(fondo)
 	fondo.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 
-	# Columna centrada en el área de la pantalla.
+	# esto es para que todo quede en el medio de la pantalla
 	var columna := VBoxContainer.new()
 	columna.alignment = BoxContainer.ALIGNMENT_CENTER
 	columna.add_theme_constant_override("separation", 24)
@@ -47,7 +47,8 @@ func _crear_etiqueta(texto: String, tamano: int, color: Color) -> Label:
 	etiqueta.text = texto
 	etiqueta.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
-	# Aplicar la tipografía personalizada.
+	# esto es para la tipografia retro (en realidad para cualquiera, justamente
+	# es para poder aplicar la fuente que se te antoje)
 	if fuente_arcade != null:
 		etiqueta.add_theme_font_override("font", fuente_arcade)
 

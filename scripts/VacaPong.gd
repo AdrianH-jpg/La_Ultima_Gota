@@ -1,6 +1,8 @@
 
 extends Container
 
+# VACAPONG
+
 @export var fuente_arcade: Font
 
 const PUNTOS_PARA_GANAR: int = 5
@@ -8,10 +10,11 @@ const FONDO: Color = Color("#000000")
 const BLANCO: Color = Color("#FFFFFF")
 const LINEAS: Color = Color("#888888")
 
+# Estado de la pelotita
 var pelota: Vector2 = Vector2.ZERO
 var velocidad: Vector2 = Vector2.ZERO
-var jugador_y: float = 0.0
-var cpu_y: float = 0.0
+
+# Estado de la partida
 var puntos_jugador: int = 0
 var puntos_cpu: int = 0
 var jugando: bool = false
@@ -21,17 +24,38 @@ var saque_hacia: int = 1
 var fuente: Font
 
 
+var _paleta_jugador: PaletaJugador
+var _paleta_cpu: PaletaCPU
+
+# Ambas paletas se tratan mediante su clase base para que se mantengan iguales
+var _paletas: Array[PaletaBase] = []
+
+
 func _ready() -> void:
 	clip_contents = true
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
+
 	fuente = fuente_arcade if fuente_arcade != null else ThemeDB.fallback_font
+
+	# Crear las instancias de las clasess
+	_paleta_jugador = PaletaJugador.new()
+	_paleta_cpu = PaletaCPU.new()
+
+	# con esot guarda los objetos como tiupo PaletaBase
+	_paletas.append(_paleta_jugador)
+	_paletas.append(_paleta_cpu)
+
 	resized.connect(_al_cambiar_tamano)
 	_al_cambiar_tamano()
 
 
+# INICIALIZACION Y REINICIO
+
 func _al_cambiar_tamano() -> void:
-	jugador_y = size.y * 0.5
-	cpu_y = size.y * 0.5
+	# velocidades orishinales
+	_paleta_jugador.inicializar(size.y, 1.5)
+	_paleta_cpu.inicializar(size.y, 0.78)
+
 	_reiniciar_pelota()
 	jugando = false
 	queue_redraw()
@@ -39,12 +63,17 @@ func _al_cambiar_tamano() -> void:
 
 func _reiniciar_pelota() -> void:
 	pelota = size * 0.5
+
 	var inclinacion: float = randf_range(-0.48, 0.48)
-	velocidad = Vector2(float(saque_hacia), inclinacion).normalized() * size.x * 0.58
+
+	velocidad = Vector2(
+		float(saque_hacia),
+		inclinacion
+	).normalized() * size.x * 0.58
 
 
-# CONTROL EXCLUSIVO POR TECLADO
-# Espacio inicia, continúa o reinicia la partida.
+# CONTROLES DE LA PARTIDA
+
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.keycode == KEY_SPACE:
@@ -66,43 +95,31 @@ func _empezar_o_continuar() -> void:
 	queue_redraw()
 
 
+# ACTUALIZACION DEL JUEGO
+
 func _physics_process(delta: float) -> void:
 	if size.x <= 0.0 or size.y <= 0.0:
 		return
 
-	# La paleta izquierda responde solamente a W/S y flechas.
-	var movimiento: float = 0.0
+	# 
+	# 
+	for paleta in _paletas:
+		paleta.actualizar_movimiento(
+			delta,
+			size.y,
+			pelota.y,
+			jugando,
+			velocidad.x
+		)
 
-	if Input.is_key_pressed(KEY_W) or Input.is_key_pressed(KEY_UP):
-		movimiento -= 1.0
-
-	if Input.is_key_pressed(KEY_S) or Input.is_key_pressed(KEY_DOWN):
-		movimiento += 1.0
-
-	jugador_y += movimiento * size.y * 1.5 * delta
-
-	# La CPU persigue la pelota, pero tiene velocidad limitada.
-	var objetivo_cpu: float = size.y * 0.5
-
-	if jugando and velocidad.x > 0.0:
-		objetivo_cpu = pelota.y
-
-	cpu_y = move_toward(cpu_y, objetivo_cpu, size.y * 0.78 * delta)
-
-	_limitar_paletas()
-
+	# La pelota se mueve cuando la partida esta en marcha
 	if jugando:
 		_mover_pelota(delta)
 
 	queue_redraw()
 
 
-func _limitar_paletas() -> void:
-	var mitad: float = size.y * 0.24 * 0.5
-
-	jugador_y = clampf(jugador_y, mitad, size.y - mitad)
-	cpu_y = clampf(cpu_y, mitad, size.y - mitad)
-
+# MOVIMIENTO Y COLISIONES DE LA PELOTA
 
 func _mover_pelota(delta: float) -> void:
 	var radio: float = size.y * 0.021
@@ -110,9 +127,13 @@ func _mover_pelota(delta: float) -> void:
 	var ancho: float = size.x * 0.017
 	var mitad_alto: float = size.y * 0.12
 
+	# Obtener las posiciones mediante metodos
+	var jugador_y: float = _paleta_jugador.obtener_posicion_y()
+	var cpu_y: float = _paleta_cpu.obtener_posicion_y()
+
 	pelota += velocidad * delta
 
-	# Rebotes contra techo y piso.
+	# Rebote contra techo y piso
 	if pelota.y - radio <= 0.0:
 		pelota.y = radio
 		velocidad.y = absf(velocidad.y)
@@ -121,14 +142,14 @@ func _mover_pelota(delta: float) -> void:
 		pelota.y = size.y - radio
 		velocidad.y = -absf(velocidad.y)
 
-	# Rebote en la paleta del jugador.
+	# Rebote contra la paleta del jugador
 	if velocidad.x < 0.0:
 		if pelota.x - radio <= margen + ancho and pelota.x + radio >= margen:
 			if absf(pelota.y - jugador_y) <= mitad_alto + radio:
 				pelota.x = margen + ancho + radio
 				_rebotar(1.0, jugador_y, mitad_alto)
 
-	# Rebote en la paleta de la CPU.
+	# Rebote contra la paleta de la CPU
 	elif velocidad.x > 0.0:
 		var cara_cpu: float = size.x - margen - ancho
 
@@ -137,7 +158,8 @@ func _mover_pelota(delta: float) -> void:
 				pelota.x = cara_cpu - radio
 				_rebotar(-1.0, cpu_y, mitad_alto)
 
-	# Puntos cuando la pelota sale de la pantalla.
+	# Detecta los puntos
+	
 	if pelota.x + radio < 0.0:
 		_anotar(false)
 
@@ -145,7 +167,11 @@ func _mover_pelota(delta: float) -> void:
 		_anotar(true)
 
 
-func _rebotar(sentido: float, centro_paleta: float, mitad_alto: float) -> void:
+func _rebotar(
+	sentido: float,
+	centro_paleta: float,
+	mitad_alto: float
+) -> void:
 	var impacto: float = clampf(
 		(pelota.y - centro_paleta) / mitad_alto,
 		-1.0,
@@ -162,6 +188,8 @@ func _rebotar(sentido: float, centro_paleta: float, mitad_alto: float) -> void:
 		impacto * 0.85
 	).normalized() * rapidez
 
+
+# SISTEMA DE PUNTUACION
 
 func _anotar(punto_del_jugador: bool) -> void:
 	jugando = false
@@ -187,6 +215,8 @@ func _anotar(punto_del_jugador: bool) -> void:
 	_reiniciar_pelota()
 
 
+# todo esto es para hacer los dibujitos del juego en pantalla
+
 func _draw() -> void:
 	if size.x <= 0.0 or size.y <= 0.0:
 		return
@@ -196,32 +226,54 @@ func _draw() -> void:
 	var alto: float = size.y * 0.24
 	var radio: float = size.y * 0.021
 
-	# Fondo negro, igual que el menú principal.
+	# Consultar la posicion de cada paletita
+	var jugador_y: float = _paleta_jugador.obtener_posicion_y()
+	var cpu_y: float = _paleta_cpu.obtener_posicion_y()
+
+	# Fondo negro
 	draw_rect(Rect2(Vector2.ZERO, size), FONDO)
 
-	# Línea central gris, formada por segmentos rectangulares.
+	# Linea central
 	var largo_segmento: float = size.y * 0.046
 	var paso_segmento: float = size.y * 0.082
 	var y: float = size.y * 0.11
 
 	while y < size.y * 0.94:
 		draw_rect(
-			Rect2(size.x * 0.5 - 2.0, y, 4.0, largo_segmento),
+			Rect2(
+				size.x * 0.5 - 2.0,
+				y,
+				4.0,
+				largo_segmento
+			),
 			LINEAS
 		)
+
 		y += paso_segmento
 
-	# Paletas y pelota blancas.
+	# Paleta del jugador
 	draw_rect(
-		Rect2(margen, jugador_y - alto * 0.5, ancho, alto),
+		Rect2(
+			margen,
+			jugador_y - alto * 0.5,
+			ancho,
+			alto
+		),
 		BLANCO
 	)
 
+	# Paleta de la CPU
 	draw_rect(
-		Rect2(size.x - margen - ancho, cpu_y - alto * 0.5, ancho, alto),
+		Rect2(
+			size.x - margen - ancho,
+			cpu_y - alto * 0.5,
+			ancho,
+			alto
+		),
 		BLANCO
 	)
 
+	# Pelota cuadrada
 	draw_rect(
 		Rect2(
 			pelota - Vector2(radio, radio),
@@ -230,7 +282,7 @@ func _draw() -> void:
 		BLANCO
 	)
 
-	# Marcador y título con estética arcade.
+	# Tipografia y marcador
 	var tam_titulo: int = maxi(12, int(size.y * 0.031))
 	var tam_puntos: int = maxi(24, int(size.y * 0.105))
 
@@ -270,6 +322,8 @@ func _draw() -> void:
 		)
 
 
+# esto es para los textos en el centro
+
 func _texto_centrado(
 	contenido: String,
 	centro_x: float,
@@ -280,7 +334,7 @@ func _texto_centrado(
 	if fuente == null:
 		return
 
-	# Reducir tamaño si el texto no entra en pantalla.
+	# Reducir el tamano si el texto no entra
 	var tam_ajustado: int = tam
 
 	var ancho_texto: float = fuente.get_string_size(
