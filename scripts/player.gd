@@ -45,9 +45,9 @@ func recibir_dano(_cantidad: int = 1) -> void:
 func disparar() -> void:
 	if get_tree().get_node_count_in_group("balas_jugador") == 0 and escena_bala != null:
 		var nueva_bala: Node2D = escena_bala.instantiate()
+		Eventos.instanciar_en_nivel(self, nueva_bala)
 		nueva_bala.global_position = global_position
 		_sonido_disparo.play()
-		get_parent().add_child(nueva_bala)
 
 ## Gestiona la destrucción temporal de la nave y notifica al sistema de eventos.
 func morir() -> void:
@@ -106,7 +106,7 @@ func _instanciar_explosion_grave() -> void:
 		return
 		
 	var boom: Node2D = escena_explosion.instantiate()
-	boom.global_position = global_position
+	var pos_muerte: Vector2 = global_position
 	
 	var audio: Node = boom.get_node_or_null("AudioStreamPlayer2D")
 	if audio == null:
@@ -114,7 +114,8 @@ func _instanciar_explosion_grave() -> void:
 	if audio != null:
 		audio.pitch_scale = 0.2
 		
-	get_parent().add_child(boom)
+	Eventos.instanciar_en_nivel(self, boom)
+	boom.global_position = pos_muerte
 
 func _input(event: InputEvent) -> void:
 	if not _vivo:

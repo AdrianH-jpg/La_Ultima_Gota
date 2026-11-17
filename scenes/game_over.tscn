@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b5deh6vea0tby"]
 
 [ext_resource type="Script" uid="uid://bpa65a1svjhjq" path="res://scripts/game_over.gd" id="1_tbwuq"]
-[ext_resource type="FontFile" uid="uid://bp5478tv1imj1" path="res://assets/fonts/fonts/upheavtt.ttf" id="2_racf3"]
-[ext_resource type="FontFile" uid="uid://culwesy6rnics" path="res://assets/fonts/fonts/VCR_OSD_MONO_1.001-usar en 21px.ttf" id="3_7m3ot"]
+[ext_resource type="FontFile" uid="uid://bp5478tv1imj1" path="res://assets/fonts/upheavtt.ttf" id="2_racf3"]
+[ext_resource type="FontFile" uid="uid://culwesy6rnics" path="res://assets/fonts/VCR_OSD_MONO_1.001-usar en 21px.ttf" id="3_7m3ot"]
 [ext_resource type="AudioStream" uid="uid://dca3v12t617v5" path="res://assets/audio/explosion.wav" id="4_racf3"]
-[ext_resource type="FontFile" uid="uid://dmyr6w0b2ja2x" path="res://assets/fonts/fonts/ka1.ttf" id="5_7m3ot"]
+[ext_resource type="FontFile" uid="uid://dmyr6w0b2ja2x" path="res://assets/fonts/ka1.ttf" id="5_7m3ot"]
 
 [node name="GameOver" type="Control" unique_id=995976490]
 layout_mode = 3
@@ -76,9 +76,8 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -298.5
-offset_top = 58.0
 offset_right = 298.5
-offset_bottom = 202.0
+offset_bottom = 144.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("5_7m3ot")
 theme_override_font_sizes/font_size = 24
@@ -88,10 +87,10 @@ flat = true
 
 [node name="BtnGuardarRecord" type="Button" parent="." unique_id=878617430]
 layout_mode = 0
-offset_left = 831.0
-offset_top = 347.0
-offset_right = 1109.0
-offset_bottom = 392.0
+offset_left = 432.0
+offset_top = 155.0
+offset_right = 710.0
+offset_bottom = 200.0
 theme_override_fonts/font = ExtResource("3_7m3ot")
 theme_override_font_sizes/font_size = 42
 text = "SAVE RECORD"

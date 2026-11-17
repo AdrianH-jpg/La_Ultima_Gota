@@ -36,4 +36,4 @@ func _instanciar_explosion() -> void:
 		var posicion_muerte: Vector2 = global_position
 		var nueva_explosion: Node2D = escena_explosion.instantiate()
 		nueva_explosion.global_position = posicion_muerte
-		get_tree().current_scene.call_deferred("add_child", nueva_explosion)
+		Eventos.instanciar_en_nivel(self, nueva_explosion, true)

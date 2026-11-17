@@ -25,8 +25,8 @@ func _ready() -> void:
 func _on_timer_ovni_timeout() -> void:
 	if escena_ovni != null:
 		var nuevo_ovni: Node2D = escena_ovni.instantiate()
+		Eventos.instanciar_en_nivel(self, nuevo_ovni)
 		nuevo_ovni.global_position = Vector2(0, 40)
-		add_child(nuevo_ovni)
 	
 	_timer_ovni.wait_time = randf_range(15.0, 30.0)
 	_timer_ovni.start()
@@ -36,7 +36,7 @@ func _on_nivel_superado() -> void:
 	_nivel_actual += 1
 	Eventos.actualizar_nivel_hud.emit(_nivel_actual)
 
-# al morir descuenta una vida, espera 1.5 segundos y revive al jugador, si no manda al Game Over
+# Al morir descuenta una vida, espera 1.5 segundos y revive al jugador, si no manda al Game Over
 func _on_jugador_destruido() -> void:
 	_vidas_actuales -= 1
 	if _vidas_actuales > 0:
@@ -45,4 +45,4 @@ func _on_jugador_destruido() -> void:
 			_player.reaparecer()
 	else:
 		# Eventos.puntaje_actual ya contiene el puntaje actualizado
-		get_tree().call_deferred("change_scene_to_file", "res://scenes/game_over.tscn")
+		Eventos.call_deferred("cambiar_escena_minijuego", self, "res://scenes/game_over.tscn")

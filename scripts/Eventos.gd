@@ -62,3 +62,31 @@ func _actualizar_primer_puesto() -> void:
 	if not _tabla_top_10.is_empty():
 		mejor_puntaje_local = _tabla_top_10[0]["puntos"]
 		nombre_record_local = _tabla_top_10[0]["nombre"]
+
+## Instancia balas, explosiones u objetos dentro del SubViewport del minijuego (y no en 1920x1080).
+func instanciar_en_nivel(nodo_referencia: Node, instancia: Node, diferido: bool = false) -> void:
+	var contenedor_nivel: Node = nodo_referencia.get_viewport()
+	if contenedor_nivel == null:
+		contenedor_nivel = nodo_referencia.get_tree().current_scene
+	if diferido:
+		contenedor_nivel.call_deferred("add_child", instancia)
+	else:
+		contenedor_nivel.add_child(instancia)
+
+## Cambia de escena dentro del SubViewport del arcade sin destruir la máquina arcade.
+func cambiar_escena_minijuego(nodo_actual: Node, ruta_escena: String) -> void:
+	var escena_empaquetada := load(ruta_escena) as PackedScene
+	if escena_empaquetada == null:
+		push_error("No se pudo cargar la escena: " + ruta_escena)
+		return
+	var nueva_escena: Node = escena_empaquetada.instantiate()
+	var padre: Node = nodo_actual.get_viewport()
+	if padre == null:
+		padre = nodo_actual.get_tree().root
+	padre.add_child(nueva_escena)
+	
+	# Elimina la escena raíz actual del minijuego (la hija directa del SubViewport)
+	var raiz_minijuego: Node = nodo_actual
+	while raiz_minijuego.get_parent() != null and raiz_minijuego.get_parent() != padre:
+		raiz_minijuego = raiz_minijuego.get_parent()
+	raiz_minijuego.queue_free()

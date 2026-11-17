@@ -34,17 +34,17 @@ func _on_btn_guardar_record_pressed() -> void:
 		
 	Eventos.guardar_record_local(Eventos.puntaje_actual, nombre)
 	Eventos.puntaje_actual = 0
-	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+	Eventos.cambiar_escena_minijuego(self, "res://scenes/main_menu.tscn")
 
 # Reinicia el puntaje y arranca una nueva partida
 func _on_btn_jugar_pressed() -> void:
 	Eventos.puntaje_actual = 0
-	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	Eventos.cambiar_escena_minijuego(self, "res://scenes/main.tscn")
 
 # Reinicia el puntaje y vuelve a la pantalla principal
 func _on_btn_menu_pressed() -> void:
 	Eventos.puntaje_actual = 0
-	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+	Eventos.cambiar_escena_minijuego(self, "res://scenes/main_menu.tscn")
 
 # Fuerza mayúsculas mientras el jugador escribe sus iniciales 
 func _on_ingreso_nombre_text_changed(new_text: String) -> void:

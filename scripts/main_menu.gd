@@ -10,7 +10,6 @@ var _historial_teclas: Array[String] = []
 @onready var _sonido_start: AudioStreamPlayer2D = $AudioStreamPlayer2D
 @onready var _texto_high_score: Label = $HiScore
 @onready var _tabla_posiciones: Label = $TablaPosiciones
-#@onready var _tabla_puntos: Control = $TablaPuntos
 
 func _ready() -> void:
 	actualizar_textos_pantalla(Eventos.obtener_top_10())
@@ -37,7 +36,7 @@ func _on_menu_button_pressed() -> void:
 	Eventos.puntaje_actual = 0
 	if _sonido_start != null and _sonido_start.stream != null:
 		_sonido_start.play()
-	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	Eventos.cambiar_escena_minijuego(self, "res://scenes/main.tscn")
 
 func _on_timer_timeout() -> void:
 	_boton_start.visible = not _boton_start.visible
@@ -58,7 +57,7 @@ func _verificar_combinacion() -> void:
 		_activar_nivel_secreto()
 
 func _activar_nivel_secreto() -> void:
-	get_tree().change_scene_to_file("res://scenes/Game Over.tscn")
+	Eventos.cambiar_escena_minijuego(self, "res://scenes/Game Over.tscn")
 
 func _on_timer_2_timeout() -> void:
 	_tabla_posiciones.visible = not _tabla_posiciones.visible

@@ -1,12 +1,19 @@
-res://scripts/MenuArcade.gd
-res://scripts/VacaPong.gd
-res://guion/fondos.json
-res://VacaPong.tscn
+res://scenes/main_menu.tscn
 res://whiteOutline.gdshader
 res://scenes/menu_principal.gdshader
 res://shader/climate_post_process.gdshader
-res://scripts/PaletaBase.gd
-res://scripts/PaletaCPU.gd
-res://scripts/PaletaJugador.gd
+res://scripts/main_menu.gd
+res://scenes/game_over.tscn
+res://scenes/main.tscn
+res://scripts/MenuArcade.gd
+res://scripts/VacaPong.gd
 res://arcade_maq.tscn
-res://menu_arcade.tscn
+res://scenes/InvadersArcade.tscn
+res://guion/fondos.json
+res://scripts/Eventos.gd
+res://scripts/enjambre.gd
+res://scripts/entidad_espacial.gd
+res://scripts/game_over.gd
+res://scripts/main.gd
+res://scripts/player.gd
+res://scenes/Game Over.tscn

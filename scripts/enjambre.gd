@@ -77,7 +77,8 @@ func _physics_process(delta: float) -> void:
 		
 	var altura_pantalla: float = get_viewport_rect().size.y
 	if global_position.y > altura_pantalla - 100.0:
-		get_tree().change_scene_to_file("res://scenes/Game Over.tscn")
+		_activo = false
+		Eventos.cambiar_escena_minijuego(self, "res://scenes/Game Over.tscn")
 
 # Cada vez que salta el Timer, elige un alien vivo al azar y dispara hacia abajo
 func _on_timer_timeout() -> void:
@@ -92,10 +93,10 @@ func _on_timer_timeout() -> void:
 	if not aliens_vivos.is_empty() and escena_bala_enemiga != null:
 		var tirador: Enemigo = aliens_vivos.pick_random()
 		var nueva_bala: Node2D = escena_bala_enemiga.instantiate()
+		Eventos.instanciar_en_nivel(self, nueva_bala)
 		nueva_bala.global_position = tirador.global_position
-		get_tree().current_scene.add_child(nueva_bala)
 
-# Espera al final del frame cuando muere un enemigo para contar cunatos nemiogos quedan
+# Espera al final del frame cuando muere un enemigo para contar cuantos enemigos quedan
 func _al_morir_enemigo(_puntos: int) -> void:
 	call_deferred("_verificar_nivel_completado")
 
@@ -126,7 +127,7 @@ func _pasar_de_nivel() -> void:
 	_temporizador_paso = 0.0
 	_activo = true
 
-# trata de acelerar el audio para parecer al original
+# Trata de acelerar el audio para parecer al original
 func _reproducir_paso() -> void:
 	if _notas_paso.is_empty() or _audio_paso == null:
 		return
