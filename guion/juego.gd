@@ -1,31 +1,35 @@
 extends Node2D
-## Escena maestra: reproduce todo el juego leyendo escenas.json
+## ESCENA MAESTRA: reproduce TODO el juego leyendo el Excel (vía res://guion/escenas.json).
 ## Para qué sirve cada nodo hijo:
-##   Fondo         -> imagen de fondo actual, se cambia con el comando fondo("id"))
+##   Fondo (Sprite2D)         -> imagen de fondo actual (la cambia el comando fondo("id"))
 ##   Camera2D                 -> zoom / movimiento (comando camara(...))
 ##   CanvasLayer/FadeRect     -> negro para fades y parpadeos
 ##   CanvasLayer/FlashRect    -> blanco para rayos
-##   AudioStreamPlayer        -> reproduce los sonidos por el comando Guion.sfx("nombrearchivo")
+## Los comandos que podés escribir en la columna "comando" del Excel están al final.
 
 @export var escena_inicial: String = "escena_1"
-## Escena a cargar cuando termina el juego ej el menú principal, vacío = queda en negro.
+## Escena a cargar cuando termina el juego (p. ej. el menú principal). Vacío = queda en negro.
 @export_file("*.tscn") var al_terminar: String = ""
 @export var fade_seg: float = 1.0
 
 const ESCENAS_JSON := "res://guion/escenas.json"
 const FONDOS_JSON := "res://guion/fondos.json"
-const FONDOS_DIR := "res://assets/Image/"
+const FONDOS_DIR := "res://fondos/"
 
 @onready var fondo_sprite: Sprite2D = $Fondo
 @onready var camara_nodo: Camera2D = $Camera2D
 @onready var fade_rect: ColorRect = $CanvasLayer/FadeRect
 @onready var flash_rect: ColorRect = $CanvasLayer/FlashRect
 
-# se emite cuando termina o se corta el diálogo de un título
+# se emite cuando termina (o se corta) el diálogo de un título
 signal _terminado
+# se emite cuando el minijuego termina (o lo cortan)
+signal _mini_fin
 
-# escena archivo que se está jugando ahora
+# escena (archivo) que se está jugando ahora
 var _actual := ""
+# capa del minijuego que está abierto (null si no hay ninguno)
+var _mini: Node = null
 # true si el jugador usó Volver o Saltar
 var _interrumpido := false
 # datos de escenas.json: el orden y los títulos de cada escena
@@ -68,6 +72,7 @@ func _leer_json(ruta: String, defecto) -> Variant:
 	return j if j != null else defecto
 
 
+# ------------------------------------------------------------------ flujo
 # va encadenando escenas hasta que no queda ninguna
 func _jugar(archivo: String) -> void:
 	while archivo != "":
@@ -118,6 +123,11 @@ func saltar(archivo: String) -> void:   # lo llama Guion.ir_a()
 
 ## Corta la escena actual ya (botones Volver / Saltar) y pasa a 'destino'.
 func interrumpir(destino: String, terminar_juego: bool = false) -> void:
+	# si había un minijuego abierto, lo cerramos
+	if _mini:
+		_mini.queue_free()
+		_mini = null
+		_mini_fin.emit()
 	_interrumpido = true
 	_salto = destino
 	_fin = terminar_juego
@@ -126,7 +136,7 @@ func interrumpir(destino: String, terminar_juego: bool = false) -> void:
 	_terminado.emit()
 
 
-## Botón "Saltar escena" va al primer Guion.ir_a de la escena, o a la siguiente; si es un final, termina.
+## Botón "Saltar escena": va al primer Guion.ir_a de la escena, o a la siguiente; si es un final, termina.
 func saltar_escena() -> void:
 	var dest := ""
 	var ruta := "res://dialogue/%s.dialogue" % _actual
@@ -152,7 +162,7 @@ func terminar() -> void:                # lo llama Guion.fin()
 	_fin = true
 
 
-## Si la pantalla está en negro la descubre.
+## Si la pantalla está en negro la descubre (lo usa Guion al mostrar personajes).
 func revelar() -> void:
 	# solo hace algo si la pantalla está en negro
 	if fade_rect.modulate.a > 0.99:
@@ -167,15 +177,15 @@ func _fade(a: float) -> void:
 	await t.finished
 
 
-
+# ------------------------------------------------------------------ comandos para el Excel
 ## fondo("pileta")        -> cambia la imagen y, si la pantalla está en negro, la descubre
 ## fondo("pileta", false) -> cambia la imagen sin descubrir
 ## fondo("negro")         -> sin imagen
 func fondo(id: String, mostrar: bool = true) -> void:
-	# configuración del fondo en fondos.json puede estar vacía
+	# configuración del fondo en fondos.json (puede estar vacía)
 	var cfg: Dictionary = _fondos.get(id, {})
 	var ruta: String = cfg.get("imagen", "")
-	# si el Excel no tiene ruta, busco res://assets/Image/<id>.png (o jpg, webp)
+	# si el Excel no tiene ruta, busco res://fondos/<id>.png (o jpg, webp)
 	if ruta == "" and id != "negro":
 		for ext in ["png", "jpg", "jpeg", "webp"]:
 			if ResourceLoader.exists("%s%s.%s" % [FONDOS_DIR, id, ext]):
@@ -232,3 +242,38 @@ func camara(x: float, y: float, zoom: float, seg: float) -> void:
 	t.tween_property(camara_nodo, "position", Vector2(x, y), seg).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	t.tween_property(camara_nodo, "zoom", Vector2.ONE * zoom, seg).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	await t.finished
+
+
+## minijuego("res://minijuegos/arcade.tscn")
+## Abre esa escena encima de todo y el diálogo espera hasta que el minijuego termine.
+## La escena del minijuego tiene que tener "signal terminado" y emitirlo cuando se acaba.
+func minijuego(ruta: String) -> void:
+	if not ResourceLoader.exists(ruta):
+		push_warning("Juego: no existe el minijuego " + ruta)
+		return
+	# escondemos el globo de diálogo mientras se juega
+	_ocultar_globos(true)
+	# lo metemos en su propia capa, arriba del fade pero debajo de los botones
+	var capa := CanvasLayer.new()
+	capa.layer = 60
+	add_child(capa)
+	_mini = capa
+	var nodo: Node = (load(ruta) as PackedScene).instantiate()
+	capa.add_child(nodo)
+	if nodo.has_signal("terminado"):
+		nodo.connect("terminado", func(_a = null): _mini_fin.emit())
+	else:
+		push_warning("Juego: el minijuego no tiene 'signal terminado'; espero a que se cierre solo")
+		nodo.tree_exited.connect(func(): _mini_fin.emit())
+	await _mini_fin
+	if is_instance_valid(capa):
+		capa.queue_free()
+	_mini = null
+	_ocultar_globos(false)
+
+
+# esconde o muestra el globo de diálogo (cuelga de esta escena)
+func _ocultar_globos(ocultar: bool) -> void:
+	for c in get_children():
+		if "Balloon" in c.name or c.is_in_group("dialogue_balloon"):
+			c.set("visible", not ocultar)

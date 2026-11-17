@@ -1,5 +1,8 @@
-~ start
+~ final
 do fondo("FondoCorral")
+=> END
+
+~ start
 do Guion.mostrar("Luna", "comiendo")
 do Guion.mostrar("Eva", "llorando")
 Eva: Soy una estúpida, Luna... Una estúpida.

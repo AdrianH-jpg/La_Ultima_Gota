@@ -121,15 +121,22 @@ lines = {
 &"id": "16",
 &"mutation": {
 &"expression": Array[Dictionary]([{
-&"function": "sonido",
 &"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "sfx",
+&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 10,
+&"i": 13,
 &"type": "string",
 &"value": "SFXRisas"
 }, {
-&"i": 20,
+&"i": 23,
 &"type": "parens_close"
 }])])
 }]),
@@ -182,19 +189,26 @@ lines = {
 &"id": "19",
 &"mutation": {
 &"expression": Array[Dictionary]([{
-&"function": "sonido",
 &"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "sfx",
+&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 10,
+&"i": 13,
 &"type": "string",
 &"value": "SFXRisas"
 }]), Array[Dictionary]([{
-&"i": 22,
+&"i": 25,
 &"type": "variable",
 &"value": "true"
 }, {
-&"i": 26,
+&"i": 29,
 &"type": "parens_close"
 }])])
 }]),
@@ -292,9 +306,9 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 15,
 &"type": "number",
-&"value": 1.0
+&"value": 1
 }, {
-&"i": 18,
+&"i": 16,
 &"type": "parens_close"
 }])])
 }]),
@@ -446,9 +460,9 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 15,
 &"type": "number",
-&"value": 3.0
+&"value": 3
 }, {
-&"i": 18,
+&"i": 16,
 &"type": "parens_close"
 }])])
 }]),
@@ -529,9 +543,9 @@ lines = {
 &"value": Array[Array]([Array[Dictionary]([{
 &"i": 15,
 &"type": "number",
-&"value": -5.0
+&"value": -5
 }, {
-&"i": 19,
+&"i": 17,
 &"type": "parens_close"
 }])])
 }]),

@@ -89,15 +89,22 @@ lines = {
 &"id": "13",
 &"mutation": {
 &"expression": Array[Dictionary]([{
-&"function": "sonido",
 &"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "sfx",
+&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 10,
+&"i": 13,
 &"type": "string",
 &"value": "SFXRisas"
 }, {
-&"i": 20,
+&"i": 23,
 &"type": "parens_close"
 }])])
 }]),
@@ -110,19 +117,26 @@ lines = {
 &"id": "14",
 &"mutation": {
 &"expression": Array[Dictionary]([{
-&"function": "sonido",
 &"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "sfx",
+&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 10,
+&"i": 13,
 &"type": "string",
 &"value": "SFXRisas"
 }]), Array[Dictionary]([{
-&"i": 22,
+&"i": 25,
 &"type": "variable",
 &"value": "false"
 }, {
-&"i": 27,
+&"i": 30,
 &"type": "parens_close"
 }])])
 }]),
@@ -367,15 +381,22 @@ lines = {
 &"id": "7",
 &"mutation": {
 &"expression": Array[Dictionary]([{
-&"function": "sonido",
 &"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "sfx",
+&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 10,
+&"i": 13,
 &"type": "string",
 &"value": "SFXAgua"
 }, {
-&"i": 19,
+&"i": 22,
 &"type": "parens_close"
 }])])
 }]),
@@ -388,19 +409,26 @@ lines = {
 &"id": "8",
 &"mutation": {
 &"expression": Array[Dictionary]([{
-&"function": "sonido",
 &"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "sfx",
+&"i": 9,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 10,
+&"i": 13,
 &"type": "string",
 &"value": "SFXAgua"
 }]), Array[Dictionary]([{
-&"i": 21,
+&"i": 24,
 &"type": "variable",
 &"value": "false"
 }, {
-&"i": 26,
+&"i": 29,
 &"type": "parens_close"
 }])])
 }]),
