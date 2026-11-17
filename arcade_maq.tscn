@@ -94,13 +94,13 @@ scale = Vector2(1.0114584, 1.0175925)
 texture = ExtResource("1_bycp6")
 
 [node name="PALANCA" type="AnimatedSprite2D" parent="." unique_id=835601467]
-position = Vector2(-523, 266)
+position = Vector2(-589, 271)
 sprite_frames = SubResource("SpriteFrames_qg2vh")
 animation = &"izquierda"
 centered = false
 
 [node name="BOTON" type="AnimatedSprite2D" parent="." unique_id=252323723]
-position = Vector2(-218, 427)
+position = Vector2(532, 435)
 sprite_frames = SubResource("SpriteFrames_m751u")
 frame = 1
 frame_progress = 1.0

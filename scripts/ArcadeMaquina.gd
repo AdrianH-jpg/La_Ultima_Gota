@@ -1,6 +1,9 @@
 extends Node2D
 
-# Controla el marco, los controles físicos y las escenas de la pantalla.
+signal salir_de_arcade
+@export var escena_anterior: PackedScene
+
+# Controla el marco, los controles físicos y las escenas de la pantalla
 @export var escena_menu: PackedScene
 @export var escena_pong: PackedScene
 @export var escena_invaders: PackedScene
@@ -13,7 +16,7 @@ var direccion_actual: StringName = &""
 var boton_presionado: bool = false
 var contenido_actual: Control
 var en_menu: bool = true
-
+var _salida_pendiente: bool = false
 
 func _ready() -> void:
 	palanca.stop()
@@ -68,6 +71,7 @@ func _actualizar_boton() -> void:
 
 func mostrar_menu() -> void:
 	en_menu = true
+	_salida_pendiente = false
 	_mostrar_escena(escena_menu)
 
 
@@ -133,11 +137,68 @@ func _mostrar_proximamente() -> void:
 	aviso.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 
 
-func _unhandled_input(event: InputEvent) -> void:
-	if en_menu or not (event is InputEventKey):
+
+
+func _input(event: InputEvent) -> void:
+	if not event is InputEventKey:
 		return
 
-	var tecla := event as InputEventKey
-	if tecla.pressed and not tecla.echo and tecla.keycode == KEY_ESCAPE:
+	if not event.pressed or event.echo:
+		return
+
+	if event.keycode != KEY_ESCAPE:
+		return
+
+	# Confirmar que detectamos ESC.
+	print("ESC detectado en la arcade")
+
+	get_viewport().set_input_as_handled()
+
+	if en_menu:
+		if _salida_pendiente:
+			mostrar_menu()
+		else:
+			volver_a_escena_anterior()
+	else:
 		mostrar_menu()
-		get_viewport().set_input_as_handled()
+
+
+func volver_a_escena_anterior() -> void:
+	# Cuando exista la confiteria, cargarla.
+	if escena_anterior != null:
+		get_tree().change_scene_to_packed(escena_anterior)
+		return
+
+	# Si otra escena controla la arcade, avisarle.
+	if salir_de_arcade.has_connections():
+		salir_de_arcade.emit()
+		return
+
+	# Mientras no exista la confiteria,
+	# mostrar una pantalla provisional.
+	_mostrar_salida_pendiente()
+
+
+func _mostrar_salida_pendiente() -> void:
+	_salida_pendiente = true
+	_quitar_contenido_actual()
+
+	var fondo := ColorRect.new()
+	fondo.color = Color.BLACK
+	pantalla.add_child(fondo)
+	fondo.set_anchors_and_offsets_preset(
+		Control.PRESET_FULL_RECT
+	)
+	contenido_actual = fondo
+
+	var texto := Label.new()
+	texto.text = "RETURN TO PREVIOUS SCENE\n\nCOMING SOON\n\nESC - BACK"
+	texto.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	texto.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	texto.add_theme_font_size_override("font_size", 18)
+	texto.add_theme_color_override("font_color", Color.WHITE)
+
+	fondo.add_child(texto)
+	texto.set_anchors_and_offsets_preset(
+		Control.PRESET_FULL_RECT
+	)
