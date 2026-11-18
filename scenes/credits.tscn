@@ -44,10 +44,10 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 3.0
-offset_top = -195.0
-offset_right = -3.0
-offset_bottom = 187.0
+offset_left = -131.0
+offset_top = -445.0
+offset_right = -137.0
+offset_bottom = 88.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 30
@@ -57,44 +57,49 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_5em78")
 theme_override_font_sizes/font_size = 70
-text = "Créditos"
+text = "Programadores :
+Adrian Hahn
+Luciana Heredia ( Teobaldo )
+Marcelo Cuculicchio"
 horizontal_alignment = 1
 
-[node name="Arte" type="Button" parent="MenuBox" unique_id=938540043]
+[node name="Creditos2" type="Label" parent="MenuBox" unique_id=1766508410]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
 theme_override_fonts/font = ExtResource("4_5em78")
-theme_override_font_sizes/font_size = 48
-text = "Video"
-flat = true
+theme_override_font_sizes/font_size = 70
+text = "Arte : Teobaldo"
+horizontal_alignment = 1
 
-[node name="Guion" type="Button" parent="MenuBox" unique_id=44411773]
+[node name="Creditos3" type="Label" parent="MenuBox" unique_id=1058001959]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.28118658, 0.2811869, 0.28118753, 1)
 theme_override_fonts/font = ExtResource("4_5em78")
-theme_override_font_sizes/font_size = 48
-text = "Volumen"
-flat = true
+theme_override_font_sizes/font_size = 70
+text = "Guión : Marcelo Cuculicchio - Teo"
+horizontal_alignment = 1
 
-[node name="Lang" type="Button" parent="MenuBox" unique_id=2044197519]
+[node name="Creditos4" type="Label" parent="MenuBox" unique_id=669717457]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
 theme_override_fonts/font = ExtResource("4_5em78")
-theme_override_font_sizes/font_size = 48
-text = "Idioma"
-flat = true
-
-[node name="Back" type="Button" parent="MenuBox" unique_id=1941246181]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
-theme_override_fonts/font = ExtResource("4_5em78")
-theme_override_font_sizes/font_size = 48
-text = "Atras"
-flat = true
+theme_override_font_sizes/font_size = 70
+horizontal_alignment = 1
 
 [node name="HoverSFX" type="AudioStreamPlayer" parent="." unique_id=545271985]
 stream = ExtResource("5_8gwij")
+
+[node name="Back" type="Button" parent="." unique_id=1561795339]
+layout_mode = 0
+offset_left = 866.0
+offset_top = 894.0
+offset_right = 1096.0
+offset_bottom = 982.0
+theme_override_colors/font_color = Color(0.8346143, 0.8346143, 0.8346143, 1)
+theme_override_colors/font_hover_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
+theme_override_fonts/font = ExtResource("4_5em78")
+theme_override_font_sizes/font_size = 91
+text = "Atras"
+flat = true
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

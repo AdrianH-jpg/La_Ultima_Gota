@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dc6s7iadq4x6p"
+path="res://.godot/imported/escena_02a_hospital.dialogue-f1e0478dd49d8d65fd06711144eb8f11.tres"
+
+[deps]
+
+source_file="res://dialogue/scenes_0/escena_02a_hospital.dialogue"
+dest_files=["res://.godot/imported/escena_02a_hospital.dialogue-f1e0478dd49d8d65fd06711144eb8f11.tres"]
+
+[params]
+
+defaults=true

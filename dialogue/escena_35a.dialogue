@@ -1,0 +1,22 @@
+~ start
+do Guion.mostrar("Pilar", "desesperada")
+Pilar: ¡¿No podés manejar más rápido?! ¡La tormenta no para!
+do Guion.mostrar("Guillermo", "asustado")
+Guillermo: ¡No! ¡No puedo! El camino está hecho sopa y ando con el carro atrás, ¡Nos vamos a matar!
+do Guion.mostrar("Pilar", "desesperada")
+Pilar: ¡La puta madre! ¡Media hora tardaste en arrancar y ahora te cagás todo!
+do Guion.mostrar("Guillermo", "sorprendido")
+Guillermo: ¿Esa es--?
+do Guion.mostrar("Pilar", "sorprendida")
+Pilar: Eva.
+do Guion.mostrar("Guillermo", "asustado")
+Guillermo: ¡¿Qué mierda hacés vos acá?! ¡No para de llover!
+do Guion.mostrar("Pilar", "sorprendida")
+Pilar: ¿Qué le pasó...?
+do Guion.mostrar("Guillermo", "asustado")
+Guillermo: Pili... ¿Qué... Qué hace?
+do Guion.mostrar("Pilar y Guillermo", "pánico")
+Pilar y Guillermo: ¡¡AHH!!
+do Guion.mostrar("Pilar y Guillermo", "pánico")
+Pilar y Guillermo: ¡¡NO!! ¡¡PERDÓN!! ¡¡PERDONÁNOS!!
+=> END

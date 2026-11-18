@@ -1,0 +1,159 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_x3jh0"]
+
+[resource]
+script = ExtResource("1_x3jh0")
+using_states = PackedStringArray()
+cues = {
+"start": "1"
+}
+character_names = PackedStringArray("Eva")
+first_cue = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "cue"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "llorando"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"2": {
+&"character": "Eva",
+&"id": "2",
+&"next_id": "3",
+&"static_id": "",
+&"text": "Soy una estúpida, Luna... Una estúpida.",
+&"type": "dialogue"
+},
+"3": {
+&"id": "3",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "llorando"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "4",
+&"type": "mutation"
+},
+"4": {
+&"character": "Eva",
+&"id": "4",
+&"next_id": "5",
+&"static_id": "",
+&"text": "Me invitó a salir... Y le dije que no. ¡Ni siquiera puedo decir que sí como una persona normal!",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "voz baja"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"6": {
+&"character": "Eva",
+&"id": "6",
+&"next_id": "7",
+&"static_id": "",
+&"text": "Ahora va a pensar que no quiero verlo más...",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"id": "8",
+&"next_id": "9",
+&"type": ""
+},
+"9": {
+&"id": "9",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+metadata/dialogue_manager_version = "4.0.3"

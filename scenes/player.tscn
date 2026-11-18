@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://ddgyf2u1xo8i0"]
+
+[ext_resource type="Texture2D" uid="uid://txos3qh7gdql" path="res://assets/sprites/navecita.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://rbiyb54v73lj" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="PackedScene" uid="uid://b1hlw03337ncu" path="res://scenes/bala.tscn" id="2_qhqgy"]
+[ext_resource type="AudioStream" uid="uid://gwu7bb8d4ana" path="res://assets/audio/piu.wav" id="4_dqkch"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3maa"]
+size = Vector2(55, 40)
+
+[node name="Player" type="CharacterBody2D" unique_id=1836187843 groups=["Jugador"]]
+texture_filter = 1
+position = Vector2(262, 294)
+script = ExtResource("1_g2els")
+escena_bala = ExtResource("2_qhqgy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2014246028]
+scale = Vector2(5, 5)
+texture = ExtResource("1_3vyb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=691774521]
+shape = SubResource("RectangleShape2D_v3maa")
+
+[node name="SonidoDisparo" type="AudioStreamPlayer2D" parent="." unique_id=1496397426]
+stream = ExtResource("4_dqkch")

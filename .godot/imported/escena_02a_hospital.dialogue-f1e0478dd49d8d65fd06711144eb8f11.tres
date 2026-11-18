@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_bnos0"]
+
+[resource]
+script = ExtResource("1_bnos0")
+using_states = PackedStringArray()
+cues = {
+"cuna": "1",
+"despierta": "10",
+"pesadilla_1": "5"
+}
+character_names = PackedStringArray("Patricia")
+first_cue = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "cue"
+},
+"1": {
+&"character": "Patricia",
+&"id": "1",
+&"next_id": "2",
+&"static_id": "",
+&"text": "Arrorró, mi niña, arrorró, mi sol, arrorró, pedazo de mi corazón...",
+&"type": "dialogue"
+},
+"10": {
+&"character": "Patricia",
+&"id": "10",
+&"next_id": "11",
+&"static_id": "",
+&"text": "[i]Solo fue un sueño, un maldito sueño.[/i]",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"type": ""
+},
+"13": {
+&"id": "13",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"id": "2",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"type": ""
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"type": "cue"
+},
+"5": {
+&"character": "Patricia",
+&"id": "5",
+&"next_id": "6",
+&"static_id": "",
+&"text": "¿Dónde está mi hija? ¿Dónde está mi bebé? Eva, ¿qué te hicieron?",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Patricia",
+&"id": "6",
+&"next_id": "7",
+&"static_id": "",
+&"text": "¿Quién sos?",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"id": "8",
+&"next_id": "9",
+&"type": ""
+},
+"9": {
+&"id": "9",
+&"next_id": "10",
+&"type": "cue"
+}
+}
+metadata/dialogue_manager_version = "4.0.3"

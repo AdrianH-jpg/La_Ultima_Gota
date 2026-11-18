@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dnj8d2n7gmqtg"]
+
+[ext_resource type="PackedScene" uid="uid://jc5jb15jksw5" path="res://scenes/main_menu.tscn" id="1_1lp2f"]
+
+[node name="Control" type="Control" unique_id=180257321]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="InvadersWrapper" type="AspectRatioContainer" parent="." unique_id=1758449890]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 1.7778
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="InvadersWrapper" unique_id=676789868]
+layout_mode = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="InvadersWrapper/SubViewportContainer" unique_id=1586763221]
+handle_input_locally = false
+audio_listener_enable_2d = true
+size = Vector2i(40, 22)
+size_2d_override = Vector2i(1152, 648)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="MainMenu" parent="InvadersWrapper/SubViewportContainer/SubViewport" unique_id=90037504 instance=ExtResource("1_1lp2f")]

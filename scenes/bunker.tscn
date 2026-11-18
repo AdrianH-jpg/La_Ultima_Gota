@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dhnqxkqrobsh1"]
+
+[ext_resource type="Script" uid="uid://bvv1a6ivlm5ke" path="res://scripts/bunker.gd" id="1_ewk1p"]
+[ext_resource type="Texture2D" uid="uid://dutn55cv44hhp" path="res://assets/sprites/bunker.png" id="2_cyfgi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7c24m"]
+size = Vector2(64, 64)
+
+[node name="Bunker" type="Area2D" unique_id=404529524 groups=["bunkers"]]
+script = ExtResource("1_ewk1p")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=762477576]
+scale = Vector2(2, 2)
+texture = ExtResource("2_cyfgi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1287811247 groups=["bunkers"]]
+shape = SubResource("RectangleShape2D_7c24m")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

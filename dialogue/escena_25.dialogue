@@ -1,0 +1,5 @@
+~ start
+do fondo("FondoTraqueraAtardecer")
+do Guion.mostrar("Eva", "pánico")
+Eva: No... No... No, no, no...
+=> END

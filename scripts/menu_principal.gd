@@ -14,11 +14,17 @@ extends Control
 @onready var Hover_SFX = $HoverSFX
 @onready var Play_SFX = $PlaySFX
 @onready var music = $MenuSFX
+var menu = "res://scenes/menu_principal.tscn"
+
 func _ready():
+	# Si este nodo no pertenece al grupo del menú, no hace nada
+	# Si la escena actual no es el menú, no hace nada
+	if get_tree().current_scene.scene_file_path != menu:
+		return
+		
+	# ---------- Código que solo debe ejecutarse en el menú ----------
 	timer_rayo.start(2.0)
 	
-	
-	# Estado inicial: todo negro, sin destello, y sin poder clickear los botones
 	oscuridad.color = Color.BLACK
 	oscuridad.modulate.a = 1.0
 	oscuridad.mouse_filter = Control.MOUSE_FILTER_STOP
@@ -32,16 +38,15 @@ func _ready():
 		return
 	_relampago()
 	
-	
-	music.stream.loop = true   # Por si no lo pusiste en el import
+	music.stream.loop = true
 	music.play()
+	
 	for boton in $MenuBox.get_children():
-		# Verificamos que el elemento sea realmente un botón (por si acaso pusiste un Label ahí adentro)
 		if boton is Button:
-			# Conectamos la señal a nuestra nueva función general.
-			# Usamos .bind(boton) para enviarle a la función exactamente QUÉ botón estamos tocando.
 			boton.mouse_entered.connect(_al_hacer_hover.bind(boton))
 			boton.mouse_exited.connect(_al_quitar_hover.bind(boton))
+			
+		
 func _al_hacer_hover(boton_tocado: Button) -> void:
 	Hover_SFX.play() # ¡Suena el hover!
 	
@@ -99,7 +104,7 @@ func _on_back_pressed() -> void:
 func _on_play_pressed() -> void:
 	 # aca a la primer escena del juego
 	$PlaySFX.play()
-	get_tree().change_scene_to_file("res://scenes/opening_sequence.gd.tscn")
+	get_tree().change_scene_to_file("res://scenes/juego.tscn")
 
 
 func _on_credits_pressed() -> void:

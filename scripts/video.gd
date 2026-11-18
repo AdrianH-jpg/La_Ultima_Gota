@@ -4,24 +4,14 @@ extends Control
 @onready var entorno = $WorldEnvironment
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	ojo.pivot_offset = ojo.size / 2.0 
+	pass
 	
 
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	# con el metodo get_local_mouse_position tomamos las coordenadas del mouse
-	var posicion_mouse = get_local_mouse_position()
-	
-	# Calculamos el centro del ojo de la vaca
-	var centro_ojo = ojo.position + ojo.pivot_offset
-	
-	# 3. destino menos el origen, como una flhecita imaginaria ( vector=) asi el ojo sigue al mouse
-	var direccion = posicion_mouse - centro_ojo
-	
-	# le da el angulo al vector o la direccion 
-	ojo.rotation = direccion.angle()
+	pass
 
 
 func _on_check_fullscreen_toggled(toggled_on: bool) -> void:

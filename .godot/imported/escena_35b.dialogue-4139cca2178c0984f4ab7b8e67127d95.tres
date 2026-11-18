@@ -1,0 +1,359 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_thctf"]
+
+[resource]
+script = ExtResource("1_thctf")
+using_states = PackedStringArray()
+cues = {
+"start": "1"
+}
+character_names = PackedStringArray("Guillermo", "Pilar", "José", "Eva")
+first_cue = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "cue"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Guillermo"
+}]), Array[Dictionary]([{
+&"i": 30,
+&"type": "string",
+&"value": "asustado"
+}, {
+&"i": 40,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Eva",
+&"id": "10",
+&"next_id": "11",
+&"static_id": "",
+&"text": "¿José...?",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "desesperada"
+}, {
+&"i": 37,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "12",
+&"type": "mutation"
+},
+"12": {
+&"character": "Eva",
+&"id": "12",
+&"next_id": "13",
+&"static_id": "",
+&"text": "[b]¡¡JOSÉ!![/b]",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "llorando"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "14",
+&"type": "mutation"
+},
+"14": {
+&"character": "Eva",
+&"id": "14",
+&"next_id": "15",
+&"static_id": "",
+&"text": "No... No, por favor... Vos no...",
+&"type": "dialogue"
+},
+"15": {
+&"id": "15",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "susurrando"
+}, {
+&"i": 36,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "16",
+&"type": "mutation"
+},
+"16": {
+&"character": "Eva",
+&"id": "16",
+&"next_id": "17",
+&"static_id": "",
+&"text": "Perdón... Perdoname...",
+&"type": "dialogue"
+},
+"17": {
+&"id": "17",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"18": {
+&"id": "18",
+&"next_id": "19",
+&"type": ""
+},
+"19": {
+&"id": "19",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"character": "Guillermo",
+&"id": "2",
+&"next_id": "3",
+&"static_id": "",
+&"text": "¡LA PUTA MADRE! ¡Casi la atropello!",
+&"type": "dialogue"
+},
+"3": {
+&"id": "3",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Pilar"
+}]), Array[Dictionary]([{
+&"i": 26,
+&"type": "string",
+&"value": "aterrada"
+}, {
+&"i": 36,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "4",
+&"type": "mutation"
+},
+"4": {
+&"character": "Pilar",
+&"id": "4",
+&"next_id": "5",
+&"static_id": "",
+&"text": "Guillermo... ¡Es Eva!",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "José"
+}]), Array[Dictionary]([{
+&"i": 25,
+&"type": "string",
+&"value": "gritando"
+}, {
+&"i": 35,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"6": {
+&"character": "José",
+&"id": "6",
+&"next_id": "7",
+&"static_id": "",
+&"text": "¡EVA! ¡Te iba a buscar!",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "José"
+}]), Array[Dictionary]([{
+&"i": 25,
+&"type": "string",
+&"value": "desesperado"
+}, {
+&"i": 38,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "8",
+&"type": "mutation"
+},
+"8": {
+&"character": "José",
+&"id": "8",
+&"next_id": "9",
+&"static_id": "",
+&"text": "¡Estás herida! ¡Tenemos que salir de acá!",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Eva"
+}]), Array[Dictionary]([{
+&"i": 24,
+&"type": "string",
+&"value": "aterrada"
+}, {
+&"i": 34,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "10",
+&"type": "mutation"
+}
+}
+metadata/dialogue_manager_version = "4.0.3"

@@ -1,0 +1,3 @@
+~ start
+do Guion.pantalla("Sábado 9 de noviembre de 1985", false)
+=> END

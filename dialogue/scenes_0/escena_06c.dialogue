@@ -1,0 +1,9 @@
+# ESCENA 6C - Eva ignora y se sienta (PENDIENTE: guion sin escribir)
+~ start
+do Director.hide_all_characters()
+do Director.black()
+do Director.background("salon_clases")
+do Director.show_character("eva", "sentada", "left")
+do Director.fade_in(0.8)
+Narrador: [PENDIENTE] Escena 6C.
+=> END

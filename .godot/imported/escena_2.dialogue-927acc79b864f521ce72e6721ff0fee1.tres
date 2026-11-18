@@ -1,0 +1,555 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_jascv"]
+
+[resource]
+script = ExtResource("1_jascv")
+using_states = PackedStringArray()
+cues = {
+"cuna": "9",
+"despierta": "30",
+"pesadilla_1": "14",
+"pesadilla_2": "24",
+"titulo_fecha": "1"
+}
+character_names = PackedStringArray("Patricia")
+first_cue = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "cue"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "fondo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": "string",
+&"value": "FondoHospital"
+}, {
+&"i": 24,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Patricia",
+&"id": "10",
+&"next_id": "11",
+&"static_id": "",
+&"text": "Arrorró, mi niña, arrorró, mi sol, arrorró, pedazo de mi corazón...",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"type": ""
+},
+"13": {
+&"id": "13",
+&"next_id": "14",
+&"type": "cue"
+},
+"14": {
+&"id": "14",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "sfx_stop",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": "string",
+&"value": "llanto_bebe"
+}, {
+&"i": 31,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "15",
+&"type": "mutation"
+},
+"15": {
+&"id": "15",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "parpadeo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": "number",
+&"value": 3
+}, {
+&"i": 13,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "16",
+&"type": "mutation"
+},
+"16": {
+&"id": "16",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "fondo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": "string",
+&"value": "FondoPesadilla"
+}, {
+&"i": 25,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "17",
+&"type": "mutation"
+},
+"17": {
+&"id": "17",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "sfx",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": "string",
+&"value": "SFX_lluvia"
+}, {
+&"i": 25,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "18",
+&"type": "mutation"
+},
+"18": {
+&"id": "18",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "rayo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 8,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "19",
+&"type": "mutation"
+},
+"19": {
+&"id": "19",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Patricia"
+}]), Array[Dictionary]([{
+&"i": 29,
+&"type": "string",
+&"value": "grita"
+}, {
+&"i": 36,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "20",
+&"type": "mutation"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "rayo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 8,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Patricia",
+&"id": "20",
+&"next_id": "21",
+&"static_id": "",
+&"text": "¡¿Dónde está mi hija?! ¿Dónde está mi bebé? Eva, ¡¿dónde estás?!",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"22": {
+&"id": "22",
+&"next_id": "23",
+&"type": ""
+},
+"23": {
+&"id": "23",
+&"next_id": "24",
+&"type": "cue"
+},
+"24": {
+&"id": "24",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "rayo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 8,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "25",
+&"type": "mutation"
+},
+"25": {
+&"id": "25",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Patricia"
+}]), Array[Dictionary]([{
+&"i": 29,
+&"type": "string",
+&"value": "grita"
+}, {
+&"i": 36,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "26",
+&"type": "mutation"
+},
+"26": {
+&"character": "Patricia",
+&"id": "26",
+&"next_id": "27",
+&"static_id": "",
+&"text": "¡¿Quién sos?!",
+&"type": "dialogue"
+},
+"27": {
+&"id": "27",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"28": {
+&"id": "28",
+&"next_id": "29",
+&"type": ""
+},
+"29": {
+&"id": "29",
+&"next_id": "30",
+&"type": "cue"
+},
+"3": {
+&"id": "3",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "sfx",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": "string",
+&"value": "llanto_bebe"
+}, {
+&"i": 26,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "4",
+&"type": "mutation"
+},
+"30": {
+&"id": "30",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "fondo",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": "string",
+&"value": "FondoHospitalCalma"
+}, {
+&"i": 29,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "31",
+&"type": "mutation"
+},
+"31": {
+&"id": "31",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Patricia"
+}]), Array[Dictionary]([{
+&"i": 29,
+&"type": "string",
+&"value": "confundida"
+}, {
+&"i": 41,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "32",
+&"type": "mutation"
+},
+"32": {
+&"character": "Patricia",
+&"id": "32",
+&"next_id": "33",
+&"static_id": "",
+&"text": "[i]Solo fue un sueño... Un maldito sueño.[/i]",
+&"type": "dialogue"
+},
+"33": {
+&"id": "33",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"34": {
+&"id": "34",
+&"next_id": "35",
+&"type": ""
+},
+"35": {
+&"id": "35",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"4": {
+&"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "pantalla",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": "string",
+&"value": "Domingo - 28 de abril de 1968"
+}]), Array[Dictionary]([{
+&"i": 51,
+&"type": "variable",
+&"value": "false"
+}, {
+&"i": 56,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "5",
+&"type": "mutation"
+},
+"5": {
+&"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "camara",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 10,
+&"type": "number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 12,
+&"type": "number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 14,
+&"type": "number",
+&"value": 1
+}]), Array[Dictionary]([{
+&"i": 16,
+&"type": "number",
+&"value": 4
+}, {
+&"i": 17,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"6": {
+&"id": "6",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"type": ""
+},
+"8": {
+&"id": "8",
+&"next_id": "9",
+&"type": "cue"
+},
+"9": {
+&"id": "9",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": "variable",
+&"value": "Guion"
+}, {
+&"i": 8,
+&"type": "dot"
+}, {
+&"function": "mostrar",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 17,
+&"type": "string",
+&"value": "Patricia"
+}]), Array[Dictionary]([{
+&"i": 29,
+&"type": "string",
+&"value": "canta"
+}, {
+&"i": 36,
+&"type": "parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "10",
+&"type": "mutation"
+}
+}
+metadata/dialogue_manager_version = "4.0.3"

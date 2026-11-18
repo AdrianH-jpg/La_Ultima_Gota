@@ -1,0 +1,17 @@
+# ESCENA 1 - EXT. MATADERO MUNICIPAL 2026 - DÍA (narrador, sin barra)
+# Fondo: ruinas del matadero, tela colorada en el alambrado, nubes grises detrás.
+~ start
+do Climate.set_visuals(false)
+do Director.hide_all_characters()
+do Director.black()
+do Director.background("matadero_ruinas_2026")
+do Director.sfx("viento_suave", true)
+do Director.sfx("aves", true)
+do Director.fade_in(1.5)
+do Director.wait(1.5)
+Narrador: El 10 de noviembre de 1985, el muro de contención de la Laguna Epecuén colapsó inundando rápidamente la localidad de Villa Epecuén de manera indetenible, pero con la suficiente lentitud para permitir que sus habitantes evacuaran el pueblo sin que se registraran víctimas fatales.
+Narrador: Es lo que cuenta la historia oficial... Pero la verdadera historia de la destrucción de Epecuén comienza antes, durante una fuerte tormenta el 28 de abril de 1968...
+do Director.stop_all_sfx(1.5)
+do Director.fade_out(1.5)
+do Director.goto("escena_02a_hospital")
+=> END

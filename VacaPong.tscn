@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://kaj7vuc8x3kc"]
+
+[ext_resource type="Script" uid="uid://cqn8y0fk6512d" path="res://scripts/VacaPong.gd" id="1_uuksi"]
+
+[node name="Container" type="Container" unique_id=678650847]
+offset_left = -733.0
+offset_top = -394.0
+offset_right = 755.0
+offset_bottom = 283.0
+mouse_filter = 2
+script = ExtResource("1_uuksi")
